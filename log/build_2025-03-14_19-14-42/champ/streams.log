@@ -1,0 +1,29 @@
+[0.017s] Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/build/champ': /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/champ/champ -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/champ
+[0.023s] [0mCMake Deprecation Warning at CMakeLists.txt:2 (cmake_minimum_required):
+[0.023s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.023s]   CMake.
+[0.023s] 
+[0.024s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.024s]   CMake that the project does not need compatibility with older versions.
+[0.024s] 
+[0.024s] [0m
+[0.033s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.033s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.033s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.033s]   CMake did not find one.
+[0.033s] 
+[0.033s]   Could not find a package configuration file provided by "catkin" with any
+[0.033s]   of the following names:
+[0.033s] 
+[0.033s]     catkinConfig.cmake
+[0.033s]     catkin-config.cmake
+[0.033s] 
+[0.033s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.033s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.033s]   provides a separate development package or SDK, be sure it has been
+[0.033s]   installed.
+[0.033s] 
+[0.033s] [0m
+[0.033s] -- Configuring incomplete, errors occurred!
+[0.033s] See also "/home/nisarg/Documents/repo/libchamp-imp/build/champ/CMakeFiles/CMakeOutput.log".
+[0.034s] Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/build/champ' returned '1': /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/champ/champ -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/champ

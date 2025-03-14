@@ -1,0 +1,29 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts__type_support.cpp.o"
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts__type_support.cpp.o.d"
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts_stamped__type_support.cpp.o"
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts_stamped__type_support.cpp.o.d"
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/joints__type_support.cpp.o"
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/joints__type_support.cpp.o.d"
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/pose__type_support.cpp.o"
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/pose__type_support.cpp.o.d"
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.cpp.o"
+  "CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.cpp.o.d"
+  "libquadruped_mujoco__rosidl_typesupport_introspection_cpp.pdb"
+  "libquadruped_mujoco__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts_stamped__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts_stamped__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/joints__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/pose__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

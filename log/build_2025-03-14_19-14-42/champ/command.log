@@ -1,0 +1,2 @@
+Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/build/champ': /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/champ/champ -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/champ
+Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/build/champ' returned '1': /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/champ/champ -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/champ

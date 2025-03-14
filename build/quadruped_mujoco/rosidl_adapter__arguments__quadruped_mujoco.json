@@ -1,0 +1,10 @@
+{
+  "package_name": "quadruped_mujoco",
+  "non_idl_tuples": [
+    "/home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco:msg/Contacts.msg",
+    "/home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco:msg/Joints.msg",
+    "/home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco:msg/Pose.msg",
+    "/home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco:msg/Velocities.msg",
+    "/home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco:msg/ContactsStamped.msg"
+  ]
+}

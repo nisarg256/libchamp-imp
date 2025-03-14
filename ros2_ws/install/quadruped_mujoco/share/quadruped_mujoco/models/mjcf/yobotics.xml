@@ -1,0 +1,175 @@
+<!-- quadruped_mujoco/models/mjcf/yobotics.xml -->
+<mujoco model="yobotics">
+    <compiler 
+        angle="radian" 
+        meshdir="../meshes/"
+        autolimits="true"
+    />
+    
+    <option 
+        timestep="0.001"
+        iterations="50" 
+        solver="Newton" 
+        tolerance="1e-10"
+        gravity="0 0 -9.81"
+    />
+    
+    <default>
+        <joint limited="true" damping="0.1" armature="0.01"/>
+        <motor ctrllimited="true" ctrlrange="-33.5 33.5"/>
+        <geom contype="1" conaffinity="1" friction="1.0 0.1 0.1" rgba="0.5 0.6 0.7 1"/>
+    </default>
+
+    <asset>
+        <mesh name="trunk" file="base.stl" scale="0.001 0.001 0.001"/>
+        <mesh name="hip" file="hip.stl" scale="0.001 0.001 0.001"/>
+        <mesh name="thigh" file="upper_leg.stl" scale="0.001 0.001 0.001"/>
+        <mesh name="calf" file="lower_leg.stl" scale="0.001 0.001 0.001"/>
+        
+        <material name="black" rgba="0.0 0.0 0.0 1.0"/>
+        <material name="blue" rgba="0.0 0.0 0.8 1.0"/>
+        <material name="green" rgba="0.0 0.8 0.0 1.0"/>
+        <material name="ground" rgba="0.9 0.9 0.9 1"/>
+    </asset>
+
+    <worldbody>
+        <!-- Add ground plane -->
+        <geom name="ground" type="plane" size="20 20 0.1" pos="0 0 0" material="ground"/>
+        
+        <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1"/>
+        <camera name="track" mode="trackcom" pos="0 -2 2" xyaxes="1 0 0 0 1 1"/>
+        
+        <body name="trunk" pos="0 0 0.5">
+            <joint type="free"/>
+            <geom type="mesh" mesh="trunk" material="black"/>
+            <site name="imu" pos="0 0 0"/>
+
+            <!-- Front Right Leg -->
+            <body name="FR_hip" pos="0.2 -0.11 0">
+                <joint name="FR_hip_joint" type="hinge" axis="1 0 0" range="-0.7 0.7"/>
+                <geom type="mesh" mesh="hip" material="blue"/>
+                
+                <body name="FR_thigh" pos="0 -0.08 0">
+                    <joint name="FR_thigh_joint" type="hinge" axis="0 1 0" range="-1.6 1.6"/>
+                    <geom type="mesh" mesh="thigh" material="green"/>
+                    
+                    <body name="FR_calf" pos="0 0 -0.2">
+                        <joint name="FR_calf_joint" type="hinge" axis="0 1 0" range="-2.4 -0.4"/>
+                        <geom type="mesh" mesh="calf" material="blue"/>
+                        
+                        <body name="FR_foot" pos="0 0 -0.2">
+                            <geom type="sphere" size="0.02" material="black"/>
+                            <site name="FR_foot_site"/>
+                        </body>
+                    </body>
+                </body>
+            </body>
+
+            <!-- Front Left Leg -->
+            <body name="FL_hip" pos="0.2 0.11 0">
+                <joint name="FL_hip_joint" type="hinge" axis="1 0 0" range="-0.7 0.7"/>
+                <geom type="mesh" mesh="hip" material="blue"/>
+                
+                <body name="FL_thigh" pos="0 0.08 0">
+                    <joint name="FL_thigh_joint" type="hinge" axis="0 1 0" range="-1.6 1.6"/>
+                    <geom type="mesh" mesh="thigh" material="green"/>
+                    
+                    <body name="FL_calf" pos="0 0 -0.2">
+                        <joint name="FL_calf_joint" type="hinge" axis="0 1 0" range="-2.4 -0.4"/>
+                        <geom type="mesh" mesh="calf" material="blue"/>
+                        
+                        <body name="FL_foot" pos="0 0 -0.2">
+                            <geom type="sphere" size="0.02" material="black"/>
+                            <site name="FL_foot_site"/>
+                        </body>
+                    </body>
+                </body>
+            </body>
+
+            <!-- Back Right Leg -->
+            <body name="BR_hip" pos="-0.2 -0.11 0">
+                <joint name="BR_hip_joint" type="hinge" axis="1 0 0" range="-0.7 0.7"/>
+                <geom type="mesh" mesh="hip" material="blue"/>
+                
+                <body name="BR_thigh" pos="0 -0.08 0">
+                    <joint name="BR_thigh_joint" type="hinge" axis="0 1 0" range="-1.6 1.6"/>
+                    <geom type="mesh" mesh="thigh" material="green"/>
+                    
+                    <body name="BR_calf" pos="0 0 -0.2">
+                        <joint name="BR_calf_joint" type="hinge" axis="0 1 0" range="-2.4 -0.4"/>
+                        <geom type="mesh" mesh="calf" material="blue"/>
+                        
+                        <body name="BR_foot" pos="0 0 -0.2">
+                            <geom type="sphere" size="0.02" material="black"/>
+                            <site name="BR_foot_site"/>
+                        </body>
+                    </body>
+                </body>
+            </body>
+
+            <!-- Back Left Leg -->
+            <body name="BL_hip" pos="-0.2 0.11 0">
+                <joint name="BL_hip_joint" type="hinge" axis="1 0 0" range="-0.7 0.7"/>
+                <geom type="mesh" mesh="hip" material="blue"/>
+                
+                <body name="BL_thigh" pos="0 0.08 0">
+                    <joint name="BL_thigh_joint" type="hinge" axis="0 1 0" range="-1.6 1.6"/>
+                    <geom type="mesh" mesh="thigh" material="green"/>
+                    
+                    <body name="BL_calf" pos="0 0 -0.2">
+                        <joint name="BL_calf_joint" type="hinge" axis="0 1 0" range="-2.4 -0.4"/>
+                        <geom type="mesh" mesh="calf" material="blue"/>
+                        
+                        <body name="BL_foot" pos="0 0 -0.2">
+                            <geom type="sphere" size="0.02" material="black"/>
+                            <site name="BL_foot_site"/>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+
+    <actuator>
+        <!-- Front Right Leg -->
+        <position name="FR_hip_pos" joint="FR_hip_joint" kp="100" ctrlrange="-0.7 0.7"/>
+        <position name="FR_thigh_pos" joint="FR_thigh_joint" kp="100" ctrlrange="-1.6 1.6"/>
+        <position name="FR_calf_pos" joint="FR_calf_joint" kp="100" ctrlrange="-2.4 -0.4"/>
+        <velocity name="FR_hip_vel" joint="FR_hip_joint" kv="1"/>
+        <velocity name="FR_thigh_vel" joint="FR_thigh_joint" kv="1"/>
+        <velocity name="FR_calf_vel" joint="FR_calf_joint" kv="1"/>
+        
+        <!-- Front Left Leg -->
+        <position name="FL_hip_pos" joint="FL_hip_joint" kp="100" ctrlrange="-0.7 0.7"/>
+        <position name="FL_thigh_pos" joint="FL_thigh_joint" kp="100" ctrlrange="-1.6 1.6"/>
+        <position name="FL_calf_pos" joint="FL_calf_joint" kp="100" ctrlrange="-2.4 -0.4"/>
+        <velocity name="FL_hip_vel" joint="FL_hip_joint" kv="1"/>
+        <velocity name="FL_thigh_vel" joint="FL_thigh_joint" kv="1"/>
+        <velocity name="FL_calf_vel" joint="FL_calf_joint" kv="1"/>
+        
+        <!-- Back Right Leg -->
+        <position name="BR_hip_pos" joint="BR_hip_joint" kp="100" ctrlrange="-0.7 0.7"/>
+        <position name="BR_thigh_pos" joint="BR_thigh_joint" kp="100" ctrlrange="-1.6 1.6"/>
+        <position name="BR_calf_pos" joint="BR_calf_joint" kp="100" ctrlrange="-2.4 -0.4"/>
+        <velocity name="BR_hip_vel" joint="BR_hip_joint" kv="1"/>
+        <velocity name="BR_thigh_vel" joint="BR_thigh_joint" kv="1"/>
+        <velocity name="BR_calf_vel" joint="BR_calf_joint" kv="1"/>
+        
+        <!-- Back Left Leg -->
+        <position name="BL_hip_pos" joint="BL_hip_joint" kp="100" ctrlrange="-0.7 0.7"/>
+        <position name="BL_thigh_pos" joint="BL_thigh_joint" kp="100" ctrlrange="-1.6 1.6"/>
+        <position name="BL_calf_pos" joint="BL_calf_joint" kp="100" ctrlrange="-2.4 -0.4"/>
+        <velocity name="BL_hip_vel" joint="BL_hip_joint" kv="1"/>
+        <velocity name="BL_thigh_vel" joint="BL_thigh_joint" kv="1"/>
+        <velocity name="BL_calf_vel" joint="BL_calf_joint" kv="1"/>
+    </actuator>
+
+    <sensor>
+        <accelerometer name="trunk_accel" site="imu"/>
+        <gyro name="trunk_gyro" site="imu"/>
+        <force name="FR_foot_force" site="FR_foot_site"/>
+        <force name="FL_foot_force" site="FL_foot_site"/>
+        <force name="BR_foot_force" site="BR_foot_site"/>
+        <force name="BL_foot_force" site="BL_foot_site"/>
+    </sensor>
+</mujoco>

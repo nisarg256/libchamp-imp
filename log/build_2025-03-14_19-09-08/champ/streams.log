@@ -1,0 +1,40 @@
+[0.020s] Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/build/champ': /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/champ/champ -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/champ
+[0.029s] [0mCMake Deprecation Warning at CMakeLists.txt:2 (cmake_minimum_required):
+[0.029s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.029s]   CMake.
+[0.029s] 
+[0.029s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.029s]   CMake that the project does not need compatibility with older versions.
+[0.029s] 
+[0.029s] [0m
+[0.224s] -- The C compiler identification is GNU 11.4.0
+[0.331s] -- The CXX compiler identification is GNU 11.4.0
+[0.336s] -- Detecting C compiler ABI info
+[0.395s] -- Detecting C compiler ABI info - done
+[0.401s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.401s] -- Detecting C compile features
+[0.401s] -- Detecting C compile features - done
+[0.403s] -- Detecting CXX compiler ABI info
+[0.475s] -- Detecting CXX compiler ABI info - done
+[0.484s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.484s] -- Detecting CXX compile features
+[0.484s] -- Detecting CXX compile features - done
+[0.492s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.492s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.492s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.492s]   CMake did not find one.
+[0.492s] 
+[0.492s]   Could not find a package configuration file provided by "catkin" with any
+[0.492s]   of the following names:
+[0.492s] 
+[0.492s]     catkinConfig.cmake
+[0.492s]     catkin-config.cmake
+[0.492s] 
+[0.492s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.492s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.492s]   provides a separate development package or SDK, be sure it has been
+[0.492s]   installed.
+[0.492s] 
+[0.492s] [0m
+[0.492s] -- Configuring incomplete, errors occurred!
+[0.492s] See also "/home/nisarg/Documents/repo/libchamp-imp/build/champ/CMakeFiles/CMakeOutput.log".

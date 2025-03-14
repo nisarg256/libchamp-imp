@@ -1,0 +1,2 @@
+Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/build/quadruped_mujoco': /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/quadruped_mujoco
+Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/build/quadruped_mujoco' returned '1': /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/quadruped_mujoco

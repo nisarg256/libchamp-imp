@@ -1,0 +1,427 @@
+[0.007s] Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco
+[0.043s] -- The C compiler identification is GNU 11.4.0
+[0.077s] -- The CXX compiler identification is GNU 11.4.0
+[0.083s] -- Detecting C compiler ABI info
+[0.131s] -- Detecting C compiler ABI info - done
+[0.135s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.135s] -- Detecting C compile features
+[0.136s] -- Detecting C compile features - done
+[0.137s] -- Detecting CXX compiler ABI info
+[0.190s] -- Detecting CXX compiler ABI info - done
+[0.194s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.194s] -- Detecting CXX compile features
+[0.195s] -- Detecting CXX compile features - done
+[0.196s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.296s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.378s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.411s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.414s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.420s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.427s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.438s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.467s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.469s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.528s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.545s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.569s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.575s] -- Looking for pthread.h
+[0.617s] -- Looking for pthread.h - found
+[0.618s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.664s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.664s] -- Found Threads: TRUE  
+[0.694s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.701s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.711s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.718s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.769s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.774s] -- Found mujoco: /usr/local/lib/libmujoco.so  
+[0.777s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):
+[0.777s]   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+[0.777s]   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+[0.777s]   cmake_policy command to set the policy and suppress this warning.
+[0.777s] 
+[0.777s]   FindOpenGL found both a legacy GL library:
+[0.777s] 
+[0.777s]     OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+[0.777s] 
+[0.777s]   and GLVND libraries for OpenGL and GLX:
+[0.777s] 
+[0.777s]     OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+[0.777s]     OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+[0.777s] 
+[0.777s]   OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+[0.777s]   compatibility with CMake 3.10 and below the legacy GL library will be used.
+[0.777s] Call Stack (most recent call first):
+[0.777s]   CMakeLists.txt:22 (find_package)
+[0.777s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.777s] [0m
+[0.777s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[0.802s] -- Found GLEW: /usr/include (found version "2.2.0") 
+[0.988s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.242s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.345s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.359s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.360s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.380s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.380s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.381s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.381s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.394s] -- Found PythonExtra: .so  
+[1.434s] -- Configuring done
+[1.459s] -- Generating done
+[1.467s] -- Build files have been written to: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco
+[1.474s] Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco
+[1.475s] Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --build /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco -- -j12 -l12
+[1.506s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.511s] [  4%] [32mBuilding CXX object CMakeFiles/mujoco_interface_node.dir/src/mujoco_interface.cpp.o[0m
+[1.511s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.518s] [  4%] Built target ament_cmake_python_copy_quadruped_mujoco
+[1.652s] running egg_info
+[1.653s] creating quadruped_mujoco.egg-info
+[1.653s] writing quadruped_mujoco.egg-info/PKG-INFO
+[1.653s] writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt
+[1.653s] writing top-level names to quadruped_mujoco.egg-info/top_level.txt
+[1.653s] writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[1.654s] reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[1.654s] writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[1.673s] [  4%] Built target ament_cmake_python_build_quadruped_mujoco_egg
+[1.770s] [  4%] Built target quadruped_mujoco__cpp
+[1.777s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.778s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.778s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.782s] [ 12%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/joints__functions.c.o[0m
+[1.782s] [ 12%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__functions.c.o[0m
+[1.784s] [ 13%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__functions.c.o[0m
+[1.785s] [ 15%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__functions.c.o[0m
+[1.786s] [ 16%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/pose__functions.c.o[0m
+[1.831s] [ 18%] [32m[1mLinking C shared library libquadruped_mujoco__rosidl_generator_c.so[0m
+[1.867s] [ 18%] Built target quadruped_mujoco__rosidl_generator_c
+[1.874s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.877s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.877s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.970s] [ 24%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/contacts__type_support.cpp.o[0m
+[1.972s] [ 29%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/joints__type_support.cpp.o[0m
+[1.972s] [ 29%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/velocities__type_support.cpp.o[0m
+[1.972s] [ 29%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/pose__type_support.cpp.o[0m
+[1.973s] [ 30%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/contacts_stamped__type_support.cpp.o[0m
+[2.108s] [ 32%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/contacts__type_support.cpp.o[0m
+[2.110s] [ 33%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/joints__type_support.cpp.o[0m
+[2.157s] [ 35%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts__type_support.cpp.o[0m
+[2.170s] [ 36%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/joints__type_support.cpp.o[0m
+[2.171s] [ 38%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/contacts__type_support.cpp.o[0m
+[2.203s] [ 40%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/joints__type_support.cpp.o[0m
+[2.203s] [ 41%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/pose__type_support.cpp.o[0m
+[2.216s] [ 43%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/pose__type_support.cpp.o[0m
+[2.216s] [ 44%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/velocities__type_support.cpp.o[0m
+[2.229s] [ 46%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/pose__type_support.cpp.o[0m
+[2.234s] [ 47%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.cpp.o[0m
+[2.249s] [ 49%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/contacts_stamped__type_support.cpp.o[0m
+[2.265s] [ 50%] [32m[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_cpp.so[0m
+[2.279s] [ 52%] [32m[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_c.so[0m
+[2.323s] [ 52%] Built target quadruped_mujoco__rosidl_typesupport_cpp
+[2.331s] [ 52%] Built target quadruped_mujoco__rosidl_typesupport_c
+[2.332s] [ 53%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/velocities__type_support.cpp.o[0m
+[2.341s] [ 55%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/contacts_stamped__type_support.cpp.o[0m
+[2.370s] [ 56%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/contacts__type_support_c.cpp.o[0m
+[2.376s] [ 58%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/contacts__type_support.c.o[0m
+[2.417s] [ 60%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/joints__type_support.c.o[0m
+[2.457s] [ 61%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/pose__type_support.c.o[0m
+[2.483s] [ 63%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts_stamped__type_support.cpp.o[0m
+[2.486s] [ 64%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/velocities__type_support.c.o[0m
+[2.517s] [ 66%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/contacts_stamped__type_support.c.o[0m
+[2.552s] [ 67%] [32m[1mLinking C shared library libquadruped_mujoco__rosidl_typesupport_introspection_c.so[0m
+[2.560s] [ 69%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/joints__type_support_c.cpp.o[0m
+[2.562s] [ 70%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/pose__type_support_c.cpp.o[0m
+[2.570s] [ 72%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/velocities__type_support_c.cpp.o[0m
+[2.583s] [ 73%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/contacts_stamped__type_support_c.cpp.o[0m
+[2.583s] [ 73%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c
+[2.752s] [ 75%] [32m[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.811s] [ 76%] [32m[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_introspection_cpp.so[0m
+[2.814s] [ 76%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp
+[2.866s] [ 76%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp
+[2.879s] [ 78%] [32m[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_fastrtps_c.so[0m
+[2.932s] [ 78%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c
+[2.946s] [ 78%] Built target quadruped_mujoco
+[2.961s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.303s] [ 80%] Built target quadruped_mujoco__py
+[3.317s] [ 84%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_pose_s.c.o[0m
+[3.317s] [ 84%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_joints_s.c.o[0m
+[3.317s] [ 84%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_contacts_s.c.o[0m
+[3.319s] [ 87%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_contacts_stamped_s.c.o[0m
+[3.319s] [ 87%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_velocities_s.c.o[0m
+[3.400s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/quadruped_mujoco/libquadruped_mujoco__rosidl_generator_py.so[0m
+[3.430s] [ 89%] Built target quadruped_mujoco__rosidl_generator_py
+[3.443s] [ 90%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_c.c.o[0m
+[3.446s] [ 92%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.448s] [ 93%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.504s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.506s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.510s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.533s] [ 98%] Built target quadruped_mujoco__rosidl_typesupport_c__pyext
+[3.535s] [ 98%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext
+[3.538s] [ 98%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext
+[4.448s] [100%] [32m[1mLinking CXX executable mujoco_interface_node[0m
+[4.622s] [100%] Built target mujoco_interface_node
+[4.629s] Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --build /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco -- -j12 -l12
+[4.635s] Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --install /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco
+[4.643s] -- Install configuration: ""
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/ament_index/resource_index/rosidl_interfaces/quadruped_mujoco
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/contacts_stamped.h
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/velocities.h
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/joints.h
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/contacts.h
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__functions.h
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__type_support.h
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__functions.c
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__functions.h
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__type_support.h
+[4.643s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__functions.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__struct.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__type_support.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__functions.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__struct.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__functions.c
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__functions.c
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__functions.c
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__struct.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__functions.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__functions.c
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__struct.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__struct.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__type_support.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__type_support.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h
+[4.644s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/pose.h
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/library_path.sh
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/library_path.dsv
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_generator_c.so
+[4.645s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_generator_c.so" to ""
+[4.645s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco
+[4.645s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.645s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_fastrtps_c.h
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__rosidl_typesupport_fastrtps_c.h
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__rosidl_typesupport_fastrtps_c.h
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_fastrtps_c.h
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_fastrtps_c.h
+[4.645s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_fastrtps_c.so
+[4.646s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_fastrtps_c.so" to ""
+[4.646s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco
+[4.646s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/pose.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/contacts.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/velocities.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/joints.hpp
+[4.646s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__traits.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__struct.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__traits.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__builder.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__type_support.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__struct.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__traits.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__type_support.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__type_support.hpp
+[4.646s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__struct.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__builder.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__struct.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__type_support.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__builder.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__struct.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__traits.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__type_support.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__traits.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__builder.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__builder.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/contacts_stamped.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.647s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco
+[4.647s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.647s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_fastrtps_cpp.hpp
+[4.647s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/dds_fastrtps
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__rosidl_typesupport_fastrtps_cpp.hpp
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_fastrtps_cpp.hpp
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_fastrtps_cpp.so
+[4.648s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.648s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco
+[4.648s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg
+[4.648s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_introspection_c.h
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__type_support.c
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__type_support.c
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_introspection_c.h
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__rosidl_typesupport_introspection_c.h
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_introspection_c.h
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__type_support.c
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__type_support.c
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__rosidl_typesupport_introspection_c.h
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__type_support.c
+[4.648s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_introspection_c.so
+[4.649s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_introspection_c.so" to ""
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_c.so
+[4.649s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_c.so" to ""
+[4.649s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco
+[4.649s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg
+[4.649s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__type_support.cpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__rosidl_typesupport_introspection_cpp.hpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__type_support.cpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__type_support.cpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_introspection_cpp.hpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_introspection_cpp.hpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__type_support.cpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__rosidl_typesupport_introspection_cpp.hpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__type_support.cpp
+[4.649s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_introspection_cpp.so
+[4.650s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_introspection_cpp.so" to ""
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_cpp.so
+[4.650s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_cpp.so" to ""
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/pythonpath.sh
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/pythonpath.dsv
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info/PKG-INFO
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info/dependency_links.txt
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info/top_level.txt
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info/SOURCES.txt
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_c.c
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/libquadruped_mujoco__rosidl_generator_py.so
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_velocities_s.c
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts_stamped.py
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts.py
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_joints_s.c
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/__init__.py
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts_stamped_s.c
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_pose_s.c
+[4.650s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_joints.py
+[4.651s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts_s.c
+[4.651s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_velocities.py
+[4.651s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_pose.py
+[4.651s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.651s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.651s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/__init__.py
+[4.651s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.651s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.651s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_introspection_c.c
+[4.674s] Listing '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco'...
+[4.674s] Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/__init__.py'...
+[4.674s] Listing '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg'...
+[4.674s] Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/__init__.py'...
+[4.674s] Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts.py'...
+[4.674s] Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts_stamped.py'...
+[4.674s] Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_joints.py'...
+[4.674s] Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_pose.py'...
+[4.675s] Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_velocities.py'...
+[4.677s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.677s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.677s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.677s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.677s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.677s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.677s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_generator_py.so
+[4.678s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_generator_py.so" to ""
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Contacts.idl
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Joints.idl
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Pose.idl
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Velocities.idl
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/ContactsStamped.idl
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Contacts.msg
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Joints.msg
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Pose.msg
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Velocities.msg
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/ContactsStamped.msg
+[4.678s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include
+[4.678s] -- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/geometry
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/controllers
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/mujoco_interface.hpp
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/kinematics
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/utils
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/leg_controller
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/body_controller
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_base
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_components.hpp
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp
+[4.678s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/config
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/config/gait
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/view_model.launch.py
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/urdf
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/urdf/yobotics.urdf
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/mjcf
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/mjcf/yobotics.xml
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/lower_leg.stl
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/base.stl
+[4.679s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/hip.STL
+[4.680s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/thigh.STL
+[4.682s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/upper_leg.stl
+[4.682s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm
+[4.683s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/base.stl
+[4.683s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/wrist2.stl
+[4.683s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/upper_arm.stl
+[4.683s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/wrist1.stl
+[4.683s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/lower_arm.stl
+[4.683s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/hip.stl
+[4.683s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/calf.STL
+[4.684s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/foot.STL
+[4.684s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/trunk.STL
+[4.689s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake
+[4.689s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/Findmujoco.cmake
+[4.689s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/mujoco_interface_node
+[4.690s] -- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/mujoco_interface_node" to ""
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/ament_index/resource_index/package_run_dependencies/quadruped_mujoco
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/ament_index/resource_index/parent_prefix_path/quadruped_mujoco
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/ament_prefix_path.sh
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/ament_prefix_path.dsv
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/path.sh
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/path.dsv
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/local_setup.bash
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/local_setup.sh
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/local_setup.zsh
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/local_setup.dsv
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/package.dsv
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/ament_index/resource_index/packages/quadruped_mujoco
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_cExport.cmake
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_cExport-noconfig.cmake
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_typesupport_fastrtps_cExport.cmake
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.690s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_cppExport.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_introspection_cExport.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_cExport.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_cExport-noconfig.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_introspection_cppExport.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_cppExport.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_cppExport-noconfig.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_pyExport.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_pyExport-noconfig.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/rosidl_cmake-extras.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/ament_cmake_export_libraries-extras.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/ament_cmake_export_targets-extras.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujocoConfig.cmake
+[4.691s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujocoConfig-version.cmake
+[4.692s] -- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/package.xml
+[4.693s] Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --install /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco

@@ -1,0 +1,379 @@
+[0.057s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'quadruped_mujoco']
+[0.057s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['quadruped_mujoco'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d644025f070>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d644021c760>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d644021c760>>, mixin_verb=('build',))
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.141s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nisarg/Documents/repo/libchamp-imp'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'champ/champ' with type 'ros.catkin' and name 'champ'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_base) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_base) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_base) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_base) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_base) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_base) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_base) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_base) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_base) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'champ/champ_base' with type 'ros.catkin' and name 'champ_base'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_bringup) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_bringup) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_bringup) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_bringup) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_bringup) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_bringup) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_bringup) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_bringup) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'champ/champ_bringup' with type 'ros.catkin' and name 'champ_bringup'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_config) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_config) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_config) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_config) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_config) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_config) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_config) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_config) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_config) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'champ/champ_config' with type 'ros.catkin' and name 'champ_config'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_description) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_description) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_description) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_description) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_description) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_description) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_description) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_description) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_description) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'champ/champ_description' with type 'ros.catkin' and name 'champ_description'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_gazebo) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_gazebo) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_gazebo) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_gazebo) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_gazebo) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_gazebo) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_gazebo) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_gazebo) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'champ/champ_gazebo' with type 'ros.catkin' and name 'champ_gazebo'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_msgs) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_msgs) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_msgs) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_msgs) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_msgs) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_msgs) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_msgs) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_msgs) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'champ/champ_msgs' with type 'ros.catkin' and name 'champ_msgs'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_navigation) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_navigation) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_navigation) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_navigation) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_navigation) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_navigation) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_navigation) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/champ_navigation) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'champ/champ_navigation' with type 'ros.catkin' and name 'champ_navigation'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(champ/docs/images) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/bla) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/body_controller) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/geometry) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/kinematics) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/leg_controller) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/macros) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/odometry) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/quadruped_base) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(libchamp/utils) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'quadruped_mujoco': Error(s) in package 'quadruped_mujoco/package.xml':
+The manifest contains invalid XML:
+not well-formed (invalid token): line 1, column 0
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(quadruped_mujoco) by extension 'python'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'quadruped_mujoco' with type 'cmake' and name 'quadruped_mujoco'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(urdf_and_models) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'champ' in 'champ/champ'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'champ_description' in 'champ/champ_description'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'champ_msgs' in 'champ/champ_msgs'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'champ_navigation' in 'champ/champ_navigation'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'champ_base' in 'champ/champ_base'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'champ_gazebo' in 'champ/champ_gazebo'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'champ_bringup' in 'champ/champ_bringup'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'champ_config' in 'champ/champ_config'
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.181s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/nisarg/Documents/repo/helium-quadruped-mjc/install
+[0.182s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/nisarg/quadruped_ws/install
+[0.182s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 395 installed packages in /opt/ros/humble
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'quadruped_mujoco' build argument 'cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'quadruped_mujoco' build argument 'cmake_target' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'quadruped_mujoco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'quadruped_mujoco' build argument 'cmake_clean_cache' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'quadruped_mujoco' build argument 'cmake_clean_first' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'quadruped_mujoco' build argument 'cmake_force_configure' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'quadruped_mujoco' build argument 'ament_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'quadruped_mujoco' build argument 'catkin_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'quadruped_mujoco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.208s] DEBUG:colcon.colcon_core.verb:Building package 'quadruped_mujoco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nisarg/Documents/repo/libchamp-imp/build/quadruped_mujoco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nisarg/Documents/repo/libchamp-imp/install/quadruped_mujoco', 'merge_install': False, 'path': '/home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco', 'symlink_install': False, 'test_result_base': None}
+[0.208s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.209s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.209s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco'
+[0.210s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.210s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.210s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/build/quadruped_mujoco': /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/quadruped_mujoco
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/build/quadruped_mujoco' returned '1': /usr/bin/cmake /home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco -DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/quadruped_mujoco
+[0.554s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.554s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.554s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[0.554s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.557s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.557s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.557s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.564s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.564s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nisarg/Documents/repo/libchamp-imp/install/local_setup.ps1'
+[0.564s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nisarg/Documents/repo/libchamp-imp/install/_local_setup_util_ps1.py'
+[0.565s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nisarg/Documents/repo/libchamp-imp/install/setup.ps1'
+[0.566s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nisarg/Documents/repo/libchamp-imp/install/local_setup.sh'
+[0.566s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nisarg/Documents/repo/libchamp-imp/install/_local_setup_util_sh.py'
+[0.567s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nisarg/Documents/repo/libchamp-imp/install/setup.sh'
+[0.567s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nisarg/Documents/repo/libchamp-imp/install/local_setup.bash'
+[0.567s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nisarg/Documents/repo/libchamp-imp/install/setup.bash'
+[0.568s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nisarg/Documents/repo/libchamp-imp/install/local_setup.zsh'
+[0.568s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nisarg/Documents/repo/libchamp-imp/install/setup.zsh'

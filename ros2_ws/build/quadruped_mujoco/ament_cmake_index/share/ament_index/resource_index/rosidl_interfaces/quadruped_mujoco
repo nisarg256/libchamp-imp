@@ -1,0 +1,10 @@
+msg/Contacts.idl
+msg/Contacts.msg
+msg/ContactsStamped.idl
+msg/ContactsStamped.msg
+msg/Joints.idl
+msg/Joints.msg
+msg/Pose.idl
+msg/Pose.msg
+msg/Velocities.idl
+msg/Velocities.msg

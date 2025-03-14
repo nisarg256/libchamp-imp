@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "quadruped_mujoco__py",
+		"source" : "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/quadruped_mujoco__py"
+	}
+}

@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from quadruped_mujoco/msg/Joints.msg
+// generated code does not contain a copyright notice
+
+
+module quadruped_mujoco {
+  module msg {
+    @verbatim (language="comment", text=
+      "quadruped_mujoco/msg/Joints.msg")
+    struct Joints {
+      sequence<float> position;
+    };
+  };
+};

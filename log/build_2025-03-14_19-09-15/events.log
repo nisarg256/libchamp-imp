@@ -1,0 +1,53 @@
+[0.000000] (-) TimerEvent: {}
+[0.000197] (-) JobUnselected: {'identifier': 'champ'}
+[0.000384] (-) JobUnselected: {'identifier': 'champ_base'}
+[0.000417] (-) JobUnselected: {'identifier': 'champ_bringup'}
+[0.000425] (-) JobUnselected: {'identifier': 'champ_config'}
+[0.000432] (-) JobUnselected: {'identifier': 'champ_description'}
+[0.000440] (-) JobUnselected: {'identifier': 'champ_gazebo'}
+[0.000446] (-) JobUnselected: {'identifier': 'champ_msgs'}
+[0.000461] (-) JobUnselected: {'identifier': 'champ_navigation'}
+[0.000470] (quadruped_mujoco) JobQueued: {'identifier': 'quadruped_mujoco', 'dependencies': OrderedDict()}
+[0.000481] (quadruped_mujoco) JobStarted: {'identifier': 'quadruped_mujoco'}
+[0.006252] (quadruped_mujoco) JobProgress: {'identifier': 'quadruped_mujoco', 'progress': 'cmake'}
+[0.006529] (quadruped_mujoco) Command: {'cmd': ['/usr/bin/cmake', '/home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco', '-DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/install/quadruped_mujoco'], 'cwd': '/home/nisarg/Documents/repo/libchamp-imp/build/quadruped_mujoco', 'env': OrderedDict([('LANGUAGE', 'en_IN:en'), ('USER', 'nisarg'), ('ROS_PACKAGE_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nisarg/quadruped_ws/install/unitree_go/lib:/home/nisarg/quadruped_ws/install/unitree_api/lib:/home/nisarg/quadruped_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/nisarg/.mujoco/mujoco-2.3.2/lib'), ('HOME', '/home/nisarg'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nisarg/Documents/repo/libchamp-imp/quadruped_mujoco'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2077'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=58fb2e70a84f26ae4837249467d40824'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/nisarg/Documents/repo/helium-quadruped-mjc/install:/home/nisarg/quadruped_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nisarg'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nisarg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nisarg/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nisarg-OMEN:@/tmp/.ICE-unix/2077,unix/nisarg-OMEN:/tmp/.ICE-unix/2077'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/aa0289b4_f0d4_4df0_8369_f9fc0a83c526'), ('MUJOCO_PATH', '/home/nisarg/.mujoco/mujoco-2.3.2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '47'), ('AMENT_PREFIX_PATH', '/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nisarg/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nisarg/Documents/repo/libchamp-imp/build/quadruped_mujoco'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/nisarg/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=58fb2e70a84f26ae4837249467d40824'), ('MUJOCO_PLUGIN_PATH', '/home/nisarg/.mujoco/mujoco-2.3.2/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller/lib/python3.10/site-packages:/home/nisarg/quadruped_ws/install/unitree_go/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/unitree_api/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/champ_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ')]), 'shell': False}
+[0.016627] (quadruped_mujoco) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099892] (-) TimerEvent: {}
+[0.103355] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.119908] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.121131] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.124829] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.130470] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.137569] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.156531] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.157530] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.200018] (-) TimerEvent: {}
+[0.224863] (quadruped_mujoco) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.254392] (quadruped_mujoco) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.261775] (quadruped_mujoco) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.271619] (quadruped_mujoco) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.273842] (quadruped_mujoco) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.300132] (-) TimerEvent: {}
+[0.319431] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.329203] (quadruped_mujoco) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:17 (find_package):\n'}
+[0.329320] (quadruped_mujoco) StderrLine: {'line': b'  By not providing "Findmujoco.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.329390] (quadruped_mujoco) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "mujoco", but\n'}
+[0.329423] (quadruped_mujoco) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.329456] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.329481] (quadruped_mujoco) StderrLine: {'line': b'  Could not find a package configuration file provided by "mujoco" with any\n'}
+[0.329519] (quadruped_mujoco) StderrLine: {'line': b'  of the following names:\n'}
+[0.329543] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.329566] (quadruped_mujoco) StderrLine: {'line': b'    mujocoConfig.cmake\n'}
+[0.329588] (quadruped_mujoco) StderrLine: {'line': b'    mujoco-config.cmake\n'}
+[0.329611] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.329637] (quadruped_mujoco) StderrLine: {'line': b'  Add the installation prefix of "mujoco" to CMAKE_PREFIX_PATH or set\n'}
+[0.329659] (quadruped_mujoco) StderrLine: {'line': b'  "mujoco_DIR" to a directory containing one of the above files.  If "mujoco"\n'}
+[0.329682] (quadruped_mujoco) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.329704] (quadruped_mujoco) StderrLine: {'line': b'  installed.\n'}
+[0.329726] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.329747] (quadruped_mujoco) StderrLine: {'line': b'\x1b[0m\n'}
+[0.329768] (quadruped_mujoco) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.329802] (quadruped_mujoco) StdoutLine: {'line': b'See also "/home/nisarg/Documents/repo/libchamp-imp/build/quadruped_mujoco/CMakeFiles/CMakeOutput.log".\n'}
+[0.334759] (quadruped_mujoco) CommandEnded: {'returncode': 1}
+[0.335181] (quadruped_mujoco) JobEnded: {'identifier': 'quadruped_mujoco', 'rc': 1}
+[0.345666] (-) EventReactorShutdown: {}

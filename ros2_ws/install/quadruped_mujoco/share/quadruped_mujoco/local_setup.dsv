@@ -1,0 +1,4 @@
+source;share/quadruped_mujoco/environment/ament_prefix_path.sh
+source;share/quadruped_mujoco/environment/library_path.sh
+source;share/quadruped_mujoco/environment/path.sh
+source;share/quadruped_mujoco/environment/pythonpath.sh
