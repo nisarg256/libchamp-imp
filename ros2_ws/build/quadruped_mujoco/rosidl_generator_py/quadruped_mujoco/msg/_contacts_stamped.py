@@ -42,6 +42,10 @@ class Metaclass_ContactsStamped(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__contacts_stamped
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__contacts_stamped
 
+            from quadruped_mujoco.msg import Contacts
+            if Contacts.__class__._TYPE_SUPPORT is None:
+                Contacts.__class__.__import_type_support__()
+
             from std_msgs.msg import Header
             if Header.__class__._TYPE_SUPPORT is None:
                 Header.__class__.__import_type_support__()
@@ -65,12 +69,12 @@ class ContactsStamped(metaclass=Metaclass_ContactsStamped):
 
     _fields_and_field_types = {
         'header': 'std_msgs/Header',
-        'contacts': 'sequence<boolean>',
+        'contacts': 'quadruped_mujoco/Contacts',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('boolean')),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['quadruped_mujoco', 'msg'], 'Contacts'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -79,7 +83,8 @@ class ContactsStamped(metaclass=Metaclass_ContactsStamped):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from std_msgs.msg import Header
         self.header = kwargs.get('header', Header())
-        self.contacts = kwargs.get('contacts', [])
+        from quadruped_mujoco.msg import Contacts
+        self.contacts = kwargs.get('contacts', Contacts())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -143,17 +148,8 @@ class ContactsStamped(metaclass=Metaclass_ContactsStamped):
     @contacts.setter
     def contacts(self, value):
         if __debug__:
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
+            from quadruped_mujoco.msg import Contacts
             assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, bool) for v in value) and
-                 True), \
-                "The 'contacts' field must be a set or sequence and each value of type 'bool'"
+                isinstance(value, Contacts), \
+                "The 'contacts' field must be a sub message of type 'Contacts'"
         self._contacts = value

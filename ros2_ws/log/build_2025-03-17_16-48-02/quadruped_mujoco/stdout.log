@@ -1,0 +1,34 @@
+[  2%] Built target mujoco_interface_node
+[ 11%] Built target quadruped_mujoco__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_copy_quadruped_mujoco
+[ 12%] Built target quadruped_mujoco__cpp
+[ 22%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c
+[ 31%] Built target quadruped_mujoco__rosidl_typesupport_c
+[ 40%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp
+[ 49%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c
+[ 61%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp
+[ 67%] Built target quadruped_mujoco__rosidl_typesupport_cpp
+[ 67%] Built target quadruped_mujoco
+[ 70%] Built target quadruped_mujoco_lib
+[35m[1mConsolidate compiler generated dependencies of target mujoco_sim_node[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_controller_node[0m
+[35m[1mConsolidate compiler generated dependencies of target trot_node[0m
+[ 71%] Built target quadruped_mujoco__py
+[ 72%] [32mBuilding CXX object CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o[0m
+[ 76%] Built target turn_node
+[ 79%] Built target waypoint_nav_node
+[ 81%] Built target trot_node
+[ 89%] Built target quadruped_mujoco__rosidl_generator_py
+[ 92%] Built target quadruped_mujoco__rosidl_typesupport_c__pyext
+[ 94%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing quadruped_mujoco.egg-info/PKG-INFO
+writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt
+writing top-level names to quadruped_mujoco.egg-info/top_level.txt
+reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_quadruped_mujoco_egg
+[ 98%] [32m[1mLinking CXX executable mujoco_sim_node[0m
+[ 98%] Built target mujoco_sim_node

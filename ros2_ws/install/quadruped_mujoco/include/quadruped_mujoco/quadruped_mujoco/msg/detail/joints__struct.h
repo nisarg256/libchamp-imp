@@ -19,6 +19,8 @@ extern "C"
 
 // Include directives for member types
 // Member 'position'
+// Member 'velocity'
+// Member 'effort'
 #include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in msg/Joints in the package quadruped_mujoco.
@@ -28,6 +30,8 @@ extern "C"
 typedef struct quadruped_mujoco__msg__Joints
 {
   rosidl_runtime_c__float__Sequence position;
+  rosidl_runtime_c__float__Sequence velocity;
+  rosidl_runtime_c__float__Sequence effort;
 } quadruped_mujoco__msg__Joints;
 
 // Struct for a sequence of quadruped_mujoco__msg__Joints.

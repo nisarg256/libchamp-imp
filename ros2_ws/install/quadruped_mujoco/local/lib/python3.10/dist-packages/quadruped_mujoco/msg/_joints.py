@@ -6,6 +6,8 @@
 # Import statements for member types
 
 # Member 'position'
+# Member 'velocity'
+# Member 'effort'
 import array  # noqa: E402, I100
 
 import builtins  # noqa: E402, I100
@@ -61,13 +63,19 @@ class Joints(metaclass=Metaclass_Joints):
 
     __slots__ = [
         '_position',
+        '_velocity',
+        '_effort',
     ]
 
     _fields_and_field_types = {
         'position': 'sequence<float>',
+        'velocity': 'sequence<float>',
+        'effort': 'sequence<float>',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
@@ -76,6 +84,8 @@ class Joints(metaclass=Metaclass_Joints):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.position = array.array('f', kwargs.get('position', []))
+        self.velocity = array.array('f', kwargs.get('velocity', []))
+        self.effort = array.array('f', kwargs.get('effort', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -107,6 +117,10 @@ class Joints(metaclass=Metaclass_Joints):
         if not isinstance(other, self.__class__):
             return False
         if self.position != other.position:
+            return False
+        if self.velocity != other.velocity:
+            return False
+        if self.effort != other.effort:
             return False
         return True
 
@@ -142,3 +156,59 @@ class Joints(metaclass=Metaclass_Joints):
                  all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
                 "The 'position' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
         self._position = array.array('f', value)
+
+    @builtins.property
+    def velocity(self):
+        """Message field 'velocity'."""
+        return self._velocity
+
+    @velocity.setter
+    def velocity(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'velocity' array.array() must have the type code of 'f'"
+            self._velocity = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'velocity' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._velocity = array.array('f', value)
+
+    @builtins.property
+    def effort(self):
+        """Message field 'effort'."""
+        return self._effort
+
+    @effort.setter
+    def effort(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'effort' array.array() must have the type code of 'f'"
+            self._effort = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'effort' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._effort = array.array('f', value)

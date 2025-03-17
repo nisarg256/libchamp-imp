@@ -34,8 +34,38 @@ extern "C"
 {
 #endif
 
+#include "geometry_msgs/msg/detail/point__functions.h"  // position
+#include "geometry_msgs/msg/detail/quaternion__functions.h"  // orientation
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
+size_t get_serialized_size_geometry_msgs__msg__Point(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
+size_t max_serialized_size_geometry_msgs__msg__Point(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point)();
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
+size_t get_serialized_size_geometry_msgs__msg__Quaternion(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
+size_t max_serialized_size_geometry_msgs__msg__Quaternion(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Quaternion)();
 
 
 using _Pose__ros_msg_type = quadruped_mujoco__msg__Pose;
@@ -49,34 +79,32 @@ static bool _Pose__cdr_serialize(
     return false;
   }
   const _Pose__ros_msg_type * ros_message = static_cast<const _Pose__ros_msg_type *>(untyped_ros_message);
-  // Field name: x
+  // Field name: position
   {
-    cdr << ros_message->x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->position, cdr))
+    {
+      return false;
+    }
   }
 
-  // Field name: y
+  // Field name: orientation
   {
-    cdr << ros_message->y;
-  }
-
-  // Field name: z
-  {
-    cdr << ros_message->z;
-  }
-
-  // Field name: roll
-  {
-    cdr << ros_message->roll;
-  }
-
-  // Field name: pitch
-  {
-    cdr << ros_message->pitch;
-  }
-
-  // Field name: yaw
-  {
-    cdr << ros_message->yaw;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Quaternion
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->orientation, cdr))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -91,34 +119,32 @@ static bool _Pose__cdr_deserialize(
     return false;
   }
   _Pose__ros_msg_type * ros_message = static_cast<_Pose__ros_msg_type *>(untyped_ros_message);
-  // Field name: x
+  // Field name: position
   {
-    cdr >> ros_message->x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->position))
+    {
+      return false;
+    }
   }
 
-  // Field name: y
+  // Field name: orientation
   {
-    cdr >> ros_message->y;
-  }
-
-  // Field name: z
-  {
-    cdr >> ros_message->z;
-  }
-
-  // Field name: roll
-  {
-    cdr >> ros_message->roll;
-  }
-
-  // Field name: pitch
-  {
-    cdr >> ros_message->pitch;
-  }
-
-  // Field name: yaw
-  {
-    cdr >> ros_message->yaw;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Quaternion
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->orientation))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -138,42 +164,14 @@ size_t get_serialized_size_quadruped_mujoco__msg__Pose(
   (void)padding;
   (void)wchar_size;
 
-  // field.name x
-  {
-    size_t item_size = sizeof(ros_message->x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name y
-  {
-    size_t item_size = sizeof(ros_message->y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name z
-  {
-    size_t item_size = sizeof(ros_message->z);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name roll
-  {
-    size_t item_size = sizeof(ros_message->roll);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name pitch
-  {
-    size_t item_size = sizeof(ros_message->pitch);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name yaw
-  {
-    size_t item_size = sizeof(ros_message->yaw);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // field.name position
+
+  current_alignment += get_serialized_size_geometry_msgs__msg__Point(
+    &(ros_message->position), current_alignment);
+  // field.name orientation
+
+  current_alignment += get_serialized_size_geometry_msgs__msg__Quaternion(
+    &(ros_message->orientation), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -203,53 +201,43 @@ size_t max_serialized_size_quadruped_mujoco__msg__Pose(
   full_bounded = true;
   is_plain = true;
 
-  // member: x
+  // member: position
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_geometry_msgs__msg__Point(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
-  // member: y
+  // member: orientation
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: z
-  {
-    size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: roll
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: pitch
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: yaw
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_geometry_msgs__msg__Quaternion(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -260,7 +248,7 @@ size_t max_serialized_size_quadruped_mujoco__msg__Pose(
     using DataType = quadruped_mujoco__msg__Pose;
     is_plain =
       (
-      offsetof(DataType, yaw) +
+      offsetof(DataType, orientation) +
       last_member_size
       ) == ret_val;
   }

@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/primitives_sequence.h"  // position
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // position
+#include "rosidl_runtime_c/primitives_sequence.h"  // effort, position, velocity
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // effort, position, velocity
 
 // forward declare type support functions
 
@@ -55,6 +55,22 @@ static bool _Joints__cdr_serialize(
   {
     size_t size = ros_message->position.size;
     auto array_ptr = ros_message->position.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: velocity
+  {
+    size_t size = ros_message->velocity.size;
+    auto array_ptr = ros_message->velocity.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: effort
+  {
+    size_t size = ros_message->effort.size;
+    auto array_ptr = ros_message->effort.data;
     cdr << static_cast<uint32_t>(size);
     cdr.serializeArray(array_ptr, size);
   }
@@ -87,6 +103,38 @@ static bool _Joints__cdr_deserialize(
     cdr.deserializeArray(array_ptr, size);
   }
 
+  // Field name: velocity
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->velocity.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->velocity);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->velocity, size)) {
+      fprintf(stderr, "failed to create array for field 'velocity'");
+      return false;
+    }
+    auto array_ptr = ros_message->velocity.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: effort
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->effort.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->effort);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->effort, size)) {
+      fprintf(stderr, "failed to create array for field 'effort'");
+      return false;
+    }
+    auto array_ptr = ros_message->effort.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -108,6 +156,28 @@ size_t get_serialized_size_quadruped_mujoco__msg__Joints(
   {
     size_t array_size = ros_message->position.size;
     auto array_ptr = ros_message->position.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name velocity
+  {
+    size_t array_size = ros_message->velocity.size;
+    auto array_ptr = ros_message->velocity.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name effort
+  {
+    size_t array_size = ros_message->effort.size;
+    auto array_ptr = ros_message->effort.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     (void)array_ptr;
@@ -156,6 +226,30 @@ size_t max_serialized_size_quadruped_mujoco__msg__Joints(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: velocity
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: effort
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -165,7 +259,7 @@ size_t max_serialized_size_quadruped_mujoco__msg__Joints(
     using DataType = quadruped_mujoco__msg__Joints;
     is_plain =
       (
-      offsetof(DataType, position) +
+      offsetof(DataType, effort) +
       last_member_size
       ) == ret_val;
   }

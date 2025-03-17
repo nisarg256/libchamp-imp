@@ -1,0 +1,411 @@
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/controllers/quadruped_controller.cpp:1[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |             bool [01;35m[Khas_swung_[m[K;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   17 |             bool [01;35m[Khas_started[m[K;
+      |                  [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+      |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+      |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/controllers/quadruped_controller.cpp:1[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |     LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |             bool [01;35m[Khas_swung_[m[K;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   17 |             bool [01;35m[Khas_started[m[K;
+      |                  [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+      |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+      |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+      |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |             bool [01;35m[Khas_swung_[m[K;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   17 |             bool [01;35m[Khas_started[m[K;
+      |                  [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+      |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+      |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+      |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |             bool [01;35m[Khas_swung_[m[K;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   17 |             bool [01;35m[Khas_started[m[K;
+      |                  [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+      |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+      |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+      |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:[m[K In constructor ‘[01m[Kchamp::TrotController::TrotController()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:11:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kchamp::QuadrupedController::QuadrupedController()[m[K’
+   11 |             TrotController() : QuadrupedController([01;31m[K)[m[K
+      |                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:57:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::QuadrupedController::QuadrupedController(rclcpp::Node::SharedPtr)[m[K’
+   57 |             [01;36m[KQuadrupedController[m[K(rclcpp::Node::SharedPtr node);
+      |             [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:57:13:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::QuadrupedController::QuadrupedController(const champ::QuadrupedController&)[m[K’
+   17 |     class [01;36m[KQuadrupedController[m[K
+      |           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:[m[K At global scope:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:10:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadruped_mujoco[m[K’ was not declared in this scope
+   10 |         rclcpp::Publisher<[01;31m[Kquadruped_mujoco[m[K::msg::Joints>::SharedPtr joint_cmd_pub_;
+      |                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:10:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   10 |         rclcpp::Publisher<quadruped_mujoco::msg::Joints[01;31m[K>[m[K::SharedPtr joint_cmd_pub_;
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:10:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   10 |         rclcpp::Publisher<quadruped_mujoco::msg::Joints>::[01;31m[KSharedPtr[m[K joint_cmd_pub_;
+      |                                                           [01;31m[K^~~~~~~~~[m[K
+      |                                                                    [32m[K;[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:10:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_pub_[m[K’ does not name a type
+   10 |         rclcpp::Publisher<quadruped_mujoco::msg::Joints>::SharedPtr [01;31m[Kjoint_cmd_pub_[m[K;
+      |                                                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:[m[K In member function ‘[01m[Kvoid TrotNode::cmdVelCallback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:23:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadruped_mujoco[m[K’ has not been declared
+   23 |             auto joint_msg = [01;31m[Kquadruped_mujoco[m[K::msg::Joints();
+      |                              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_pub_[m[K’ was not declared in this scope
+   29 |             [01;31m[Kjoint_cmd_pub_[m[K->publish(joint_msg);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:[m[K In constructor ‘[01m[Kchamp::WaypointController::WaypointController(rclcpp::Node::SharedPtr)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:39:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kchamp::QuadrupedController::QuadrupedController()[m[K’
+   39 |                 angular_vel_(0.5[01;31m[K)[m[K
+      |                                 [01;31m[K^[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:57:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::QuadrupedController::QuadrupedController(rclcpp::Node::SharedPtr)[m[K’
+   57 |             [01;36m[KQuadrupedController[m[K(rclcpp::Node::SharedPtr node);
+      |             [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:57:13:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::QuadrupedController::QuadrupedController(const champ::QuadrupedController&)[m[K’
+   17 |     class [01;36m[KQuadrupedController[m[K
+      |           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:[m[K In member function ‘[01m[Kvirtual void champ::WaypointController::execute(const champ::Velocities&)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:97:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class champ::QuadrupedController[m[K’ {aka ‘[01m[Kclass champ::QuadrupedController[m[K’} has no member named ‘[01m[KvelocityCommand[m[K’
+   97 |                 base_controller_->[01;31m[KvelocityCommand[m[K(foot_positions_, req_vel_);
+      |                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:[m[K In member function ‘[01m[Kvirtual void champ::WaypointController::initializeGaitConfig()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:114:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class champ::QuadrupedController[m[K’ {aka ‘[01m[Kclass champ::QuadrupedController[m[K’} has no member named ‘[01m[KsetGaitConfig[m[K’
+  114 |                 base_controller_->[01;31m[KsetGaitConfig[m[K(gait_config);
+      |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:[m[K In member function ‘[01m[Kchamp::Pose champ::WaypointController::getCurrentPose() const[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:118:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class champ::QuadrupedController[m[K’ {aka ‘[01m[Kclass champ::QuadrupedController[m[K’} has no member named ‘[01m[KgetCurrentPose[m[K’
+  118 |             Pose getCurrentPose() const { return base_controller_->[01;31m[KgetCurrentPose[m[K(); }
+      |                                                                    [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:[m[K In member function ‘[01m[Kvoid champ::WaypointController::calculateJointAngles()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:123:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kchamp::Kinematics champ::QuadrupedController::kinematics_[m[K’ is protected within this context
+  123 |                     base_controller_->[01;31m[Kkinematics_[m[K.inverse(hip, upper, lower, *base_controller_->legs[i], foot_positions_[i]);
+      |                                       [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:33:24:[m[K [01;36m[Knote: [m[Kdeclared protected here
+   33 |             Kinematics [01;36m[Kkinematics_[m[K;
+      |                        [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:123:97:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class champ::QuadrupedController[m[K’ {aka ‘[01m[Kclass champ::QuadrupedController[m[K’} has no member named ‘[01m[Klegs[m[K’
+  123 |                     base_controller_->kinematics_.inverse(hip, upper, lower, *base_controller_->[01;31m[Klegs[m[K[i], foot_positions_[i]);
+      |                                                                                                 [01;31m[K^~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:[m[K In constructor ‘[01m[KTrotNode::TrotNode()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:39:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_pub_[m[K’ was not declared in this scope
+   39 |             [01;31m[Kjoint_cmd_pub_[m[K = create_publisher<quadruped_mujoco::msg::Joints>(
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:[m[K At global scope:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:11:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadruped_mujoco[m[K’ was not declared in this scope
+   11 |         rclcpp::Publisher<[01;31m[Kquadruped_mujoco[m[K::msg::Joints>::SharedPtr joint_cmd_pub_;
+      |                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:11:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   11 |         rclcpp::Publisher<quadruped_mujoco::msg::Joints[01;31m[K>[m[K::SharedPtr joint_cmd_pub_;
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:11:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   11 |         rclcpp::Publisher<quadruped_mujoco::msg::Joints>::[01;31m[KSharedPtr[m[K joint_cmd_pub_;
+      |                                                           [01;31m[K^~~~~~~~~[m[K
+      |                                                                    [32m[K;[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:39:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadruped_mujoco[m[K’ was not declared in this scope
+   39 |             joint_cmd_pub_ = create_publisher<[01;31m[Kquadruped_mujoco[m[K::msg::Joints>(
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:39:30:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   39 |             joint_cmd_pub_ = [01;31m[Kcreate_publisher<quadruped_mujoco::msg::Joints>[m[K(
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:39:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTrotNode::create_publisher<<expression error> >(const char [15], int)[m[K’
+   39 |             joint_cmd_pub_ = [01;31m[Kcreate_publisher<quadruped_mujoco::msg::Joints>([m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   40 | [01;31m[K                "joint_commands", 10)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~[m[K                                        
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:39:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   39 |             joint_cmd_pub_ = [01;31m[Kcreate_publisher<quadruped_mujoco::msg::Joints>([m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   40 | [01;31m[K                "joint_commands", 10)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~[m[K                                        
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:11:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_pub_[m[K’ does not name a type
+   11 |         rclcpp::Publisher<quadruped_mujoco::msg::Joints>::SharedPtr [01;31m[Kjoint_cmd_pub_[m[K;
+      |                                                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:[m[K In member function ‘[01m[Kvoid WaypointNavNode::controlLoop()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:24:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadruped_mujoco[m[K’ has not been declared
+   24 |                 auto joint_msg = [01;31m[Kquadruped_mujoco[m[K::msg::Joints();
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:30:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_pub_[m[K’ was not declared in this scope
+   30 |                 [01;31m[Kjoint_cmd_pub_[m[K->publish(joint_msg);
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:[m[K In constructor ‘[01m[Kchamp::TurnController::TurnController()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:11:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kchamp::QuadrupedController::QuadrupedController()[m[K’
+   11 |             TurnController() : QuadrupedController([01;31m[K)[m[K
+      |                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:57:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::QuadrupedController::QuadrupedController(rclcpp::Node::SharedPtr)[m[K’
+   57 |             [01;36m[KQuadrupedController[m[K(rclcpp::Node::SharedPtr node);
+      |             [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:57:13:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::QuadrupedController::QuadrupedController(const champ::QuadrupedController&)[m[K’
+   17 |     class [01;36m[KQuadrupedController[m[K
+      |           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |             bool [01;35m[Khas_swung_[m[K;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   17 |             bool [01;35m[Khas_started[m[K;
+      |                  [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+      |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+      |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |     LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:[m[K In constructor ‘[01m[KWaypointNavNode::WaypointNavNode()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:43:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_pub_[m[K’ was not declared in this scope
+   43 |             [01;31m[Kjoint_cmd_pub_[m[K = create_publisher<quadruped_mujoco::msg::Joints>(
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:[m[K At global scope:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:10:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadruped_mujoco[m[K’ was not declared in this scope
+   10 |         rclcpp::Publisher<[01;31m[Kquadruped_mujoco[m[K::msg::Joints>::SharedPtr joint_cmd_pub_;
+      |                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:10:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   10 |         rclcpp::Publisher<quadruped_mujoco::msg::Joints[01;31m[K>[m[K::SharedPtr joint_cmd_pub_;
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:10:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   10 |         rclcpp::Publisher<quadruped_mujoco::msg::Joints>::[01;31m[KSharedPtr[m[K joint_cmd_pub_;
+      |                                                           [01;31m[K^~~~~~~~~[m[K
+      |                                                                    [32m[K;[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:10:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_pub_[m[K’ does not name a type
+   10 |         rclcpp::Publisher<quadruped_mujoco::msg::Joints>::SharedPtr [01;31m[Kjoint_cmd_pub_[m[K;
+      |                                                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:[m[K In member function ‘[01m[Kvoid TurnNode::cmdVelCallback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:22:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadruped_mujoco[m[K’ has not been declared
+   22 |             auto joint_msg = [01;31m[Kquadruped_mujoco[m[K::msg::Joints();
+      |                              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:43:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadruped_mujoco[m[K’ was not declared in this scope
+   43 |             joint_cmd_pub_ = create_publisher<[01;31m[Kquadruped_mujoco[m[K::msg::Joints>(
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:43:30:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   43 |             joint_cmd_pub_ = [01;31m[Kcreate_publisher<quadruped_mujoco::msg::Joints>[m[K(
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:43:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KWaypointNavNode::create_publisher<<expression error> >(const char [15], int)[m[K’
+   43 |             joint_cmd_pub_ = [01;31m[Kcreate_publisher<quadruped_mujoco::msg::Joints>([m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   44 | [01;31m[K                "joint_commands", 10)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~[m[K                                        
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:43:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   43 |             joint_cmd_pub_ = [01;31m[Kcreate_publisher<quadruped_mujoco::msg::Joints>([m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   44 | [01;31m[K                "joint_commands", 10)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~[m[K                                        
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:28:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_pub_[m[K’ was not declared in this scope
+   28 |             [01;31m[Kjoint_cmd_pub_[m[K->publish(joint_msg);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:[m[K In constructor ‘[01m[KTurnNode::TurnNode()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:38:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_cmd_pub_[m[K’ was not declared in this scope
+   38 |             [01;31m[Kjoint_cmd_pub_[m[K = create_publisher<quadruped_mujoco::msg::Joints>(
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:38:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadruped_mujoco[m[K’ was not declared in this scope
+   38 |             joint_cmd_pub_ = create_publisher<[01;31m[Kquadruped_mujoco[m[K::msg::Joints>(
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:38:30:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   38 |             joint_cmd_pub_ = [01;31m[Kcreate_publisher<quadruped_mujoco::msg::Joints>[m[K(
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:38:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurnNode::create_publisher<<expression error> >(const char [15], int)[m[K’
+   38 |             joint_cmd_pub_ = [01;31m[Kcreate_publisher<quadruped_mujoco::msg::Joints>([m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   39 | [01;31m[K                "joint_commands", 10)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~[m[K                                        
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:38:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   38 |             joint_cmd_pub_ = [01;31m[Kcreate_publisher<quadruped_mujoco::msg::Joints>([m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   39 | [01;31m[K                "joint_commands", 10)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~[m[K                                        
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:[m[K In constructor ‘[01m[Kchamp::TrotController::TrotController()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:11:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kchamp::QuadrupedController::QuadrupedController()[m[K’
+   11 |             TrotController() : QuadrupedController([01;31m[K)[m[K
+      |                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:57:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::QuadrupedController::QuadrupedController(rclcpp::Node::SharedPtr)[m[K’
+   57 |             [01;36m[KQuadrupedController[m[K(rclcpp::Node::SharedPtr node);
+      |             [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:57:13:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::QuadrupedController::QuadrupedController(const champ::QuadrupedController&)[m[K’
+   17 |     class [01;36m[KQuadrupedController[m[K
+      |           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [CMakeFiles/quadruped_controller_node.dir/build.make:76: CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:657: CMakeFiles/quadruped_controller_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = champ::QuadrupedController; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = champ::QuadrupedController; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<champ::QuadrupedController>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = champ::QuadrupedController; _Args = {std::shared_ptr<rclcpp::Node>&}][m[K’
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:33:71:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Kchamp::QuadrupedController[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Kchamp::QuadrupedController[m[K’:
+   17 |     class [01;36m[KQuadrupedController[m[K
+      |           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:60:26:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual void champ::QuadrupedController::initializeGaitConfig()[m[K’
+   60 |             virtual void [01;36m[KinitializeGaitConfig[m[K() = 0;
+      |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:61:26:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual void champ::QuadrupedController::execute(const champ::Velocities&)[m[K’
+   61 |             virtual void [01;36m[Kexecute[m[K(const Velocities &req_vel) = 0;
+      |                          [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/trot_node.dir/build.make:76: CMakeFiles/trot_node.dir/src/nodes/trot_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:685: CMakeFiles/trot_node.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/turn_node.dir/build.make:76: CMakeFiles/turn_node.dir/src/nodes/turn_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:713: CMakeFiles/turn_node.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/waypoint_nav_node.dir/build.make:76: CMakeFiles/waypoint_nav_node.dir/src/nodes/waypoint_nav_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:741: CMakeFiles/waypoint_nav_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

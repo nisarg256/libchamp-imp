@@ -17,6 +17,8 @@
 // Include directives for member types
 // Member 'header'
 #include "std_msgs/msg/detail/header__traits.hpp"
+// Member 'contacts'
+#include "quadruped_mujoco/msg/detail/contacts__traits.hpp"
 
 namespace quadruped_mujoco
 {
@@ -38,19 +40,8 @@ inline void to_flow_style_yaml(
 
   // member: contacts
   {
-    if (msg.contacts.size() == 0) {
-      out << "contacts: []";
-    } else {
-      out << "contacts: [";
-      size_t pending_items = msg.contacts.size();
-      for (auto item : msg.contacts) {
-        rosidl_generator_traits::value_to_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
+    out << "contacts: ";
+    to_flow_style_yaml(msg.contacts, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -73,19 +64,8 @@ inline void to_block_style_yaml(
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    if (msg.contacts.size() == 0) {
-      out << "contacts: []\n";
-    } else {
-      out << "contacts:\n";
-      for (auto item : msg.contacts) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
-      }
-    }
+    out << "contacts:\n";
+    to_block_style_yaml(msg.contacts, out, indentation + 2);
   }
 }  // NOLINT(readability/fn_size)
 
@@ -135,11 +115,11 @@ inline const char * name<quadruped_mujoco::msg::ContactsStamped>()
 
 template<>
 struct has_fixed_size<quadruped_mujoco::msg::ContactsStamped>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, has_fixed_size<quadruped_mujoco::msg::Contacts>::value && has_fixed_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct has_bounded_size<quadruped_mujoco::msg::ContactsStamped>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, has_bounded_size<quadruped_mujoco::msg::Contacts>::value && has_bounded_size<std_msgs::msg::Header>::value> {};
 
 template<>
 struct is_message<quadruped_mujoco::msg::ContactsStamped>

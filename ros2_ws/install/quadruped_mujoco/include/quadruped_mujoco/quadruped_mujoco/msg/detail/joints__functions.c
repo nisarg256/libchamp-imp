@@ -13,6 +13,8 @@
 
 // Include directives for member types
 // Member `position`
+// Member `velocity`
+// Member `effort`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
@@ -23,6 +25,16 @@ quadruped_mujoco__msg__Joints__init(quadruped_mujoco__msg__Joints * msg)
   }
   // position
   if (!rosidl_runtime_c__float__Sequence__init(&msg->position, 0)) {
+    quadruped_mujoco__msg__Joints__fini(msg);
+    return false;
+  }
+  // velocity
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->velocity, 0)) {
+    quadruped_mujoco__msg__Joints__fini(msg);
+    return false;
+  }
+  // effort
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->effort, 0)) {
     quadruped_mujoco__msg__Joints__fini(msg);
     return false;
   }
@@ -37,6 +49,10 @@ quadruped_mujoco__msg__Joints__fini(quadruped_mujoco__msg__Joints * msg)
   }
   // position
   rosidl_runtime_c__float__Sequence__fini(&msg->position);
+  // velocity
+  rosidl_runtime_c__float__Sequence__fini(&msg->velocity);
+  // effort
+  rosidl_runtime_c__float__Sequence__fini(&msg->effort);
 }
 
 bool
@@ -48,6 +64,18 @@ quadruped_mujoco__msg__Joints__are_equal(const quadruped_mujoco__msg__Joints * l
   // position
   if (!rosidl_runtime_c__float__Sequence__are_equal(
       &(lhs->position), &(rhs->position)))
+  {
+    return false;
+  }
+  // velocity
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->velocity), &(rhs->velocity)))
+  {
+    return false;
+  }
+  // effort
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->effort), &(rhs->effort)))
   {
     return false;
   }
@@ -65,6 +93,18 @@ quadruped_mujoco__msg__Joints__copy(
   // position
   if (!rosidl_runtime_c__float__Sequence__copy(
       &(input->position), &(output->position)))
+  {
+    return false;
+  }
+  // velocity
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->velocity), &(output->velocity)))
+  {
+    return false;
+  }
+  // effort
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->effort), &(output->effort)))
   {
     return false;
   }

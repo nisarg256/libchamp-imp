@@ -1,1 +1,1 @@
-rclcpp;std_msgs;geometry_msgs;sensor_msgs;tf2;tf2_ros;robot_state_publisher;rviz2;rosidl_default_runtime
+rclcpp;std_msgs;geometry_msgs;sensor_msgs;nav_msgs;tf2;tf2_ros;mujoco;rosidl_default_runtime;robot_state_publisher;rviz2

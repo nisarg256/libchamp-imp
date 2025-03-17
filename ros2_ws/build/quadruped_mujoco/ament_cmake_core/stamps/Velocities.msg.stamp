@@ -1,4 +1,3 @@
 # quadruped_mujoco/msg/Velocities.msg
-float32 linear_x
-float32 linear_y
-float32 angular_z
+geometry_msgs/Vector3 linear
+geometry_msgs/Vector3 angular

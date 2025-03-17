@@ -2,6 +2,7 @@
 // with input from quadruped_mujoco/msg/ContactsStamped.msg
 // generated code does not contain a copyright notice
 
+#include "quadruped_mujoco/msg/Contacts.idl"
 #include "std_msgs/msg/Header.idl"
 
 module quadruped_mujoco {
@@ -9,7 +10,7 @@ module quadruped_mujoco {
     struct ContactsStamped {
       std_msgs::msg::Header header;
 
-      sequence<boolean> contacts;
+      quadruped_mujoco::msg::Contacts contacts;
     };
   };
 };

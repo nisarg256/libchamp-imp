@@ -37,35 +37,6 @@ void ContactsStamped_fini_function(void * message_memory)
   typed_message->~ContactsStamped();
 }
 
-size_t size_function__ContactsStamped__contacts(const void * untyped_member)
-{
-  const auto * member = reinterpret_cast<const std::vector<bool> *>(untyped_member);
-  return member->size();
-}
-
-void fetch_function__ContactsStamped__contacts(
-  const void * untyped_member, size_t index, void * untyped_value)
-{
-  const auto & member = *reinterpret_cast<const std::vector<bool> *>(untyped_member);
-  auto & value = *reinterpret_cast<bool *>(untyped_value);
-  value = member[index];
-}
-
-void assign_function__ContactsStamped__contacts(
-  void * untyped_member, size_t index, const void * untyped_value)
-{
-  auto & member = *reinterpret_cast<std::vector<bool> *>(untyped_member);
-  const auto & value = *reinterpret_cast<const bool *>(untyped_value);
-  member[index] = value;
-}
-
-void resize_function__ContactsStamped__contacts(void * untyped_member, size_t size)
-{
-  auto * member =
-    reinterpret_cast<std::vector<bool> *>(untyped_member);
-  member->resize(size);
-}
-
 static const ::rosidl_typesupport_introspection_cpp::MessageMember ContactsStamped_message_member_array[2] = {
   {
     "header",  // name
@@ -86,20 +57,20 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ContactsStamp
   },
   {
     "contacts",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
-    true,  // is array
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<quadruped_mujoco::msg::Contacts>(),  // members of sub message
+    false,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(quadruped_mujoco::msg::ContactsStamped, contacts),  // bytes offset in struct
     nullptr,  // default value
-    size_function__ContactsStamped__contacts,  // size() function pointer
+    nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
-    fetch_function__ContactsStamped__contacts,  // fetch(index, &value) function pointer
-    assign_function__ContactsStamped__contacts,  // assign(index, value) function pointer
-    resize_function__ContactsStamped__contacts  // resize(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 

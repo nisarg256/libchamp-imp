@@ -2,296 +2,143 @@
 #ifndef GEOMETRY_HPP
 #define GEOMETRY_HPP
 
-#include <cmath>
 #include "quadruped_mujoco/bla/basic_linear_algebra.h"
+#include <cmath>
 
-namespace geometry {
-    class Point : public Matrix<3,1>
+namespace geometry
+{
+    class Point 
     {
+        private:
+            float x_, y_, z_;
+
         public:
-            Point() { Fill(0); }
-            Point(const Point &obj) : Matrix<3,1>() { (*this) = obj; }
-            Point(const Matrix<3,1> &obj) { (*this) = obj; }
+            Point(float x = 0.0f, float y = 0.0f, float z = 0.0f) : 
+                x_(x), y_(y), z_(z) {}
 
-            float Magnitude()
-            {
-                float ret = 0;
+            // Getter/setter methods
+            float& x() { return x_; }
+            float& y() { return y_; }
+            float& z() { return z_; }
 
-                for(int i = 0; i < 3; i++)
-                    ret += pow((*this)(i),2);
+            const float& x() const { return x_; }
+            const float& y() const { return y_; }
+            const float& z() const { return z_; }
 
-                return sqrtf(ret);
+            // Operator overloads for vector operations
+            Point operator+(const Point& other) const {
+                return Point(x_ + other.x_, y_ + other.y_, z_ + other.z_);
             }
 
-            float DotProduct(Point &obj)
-            {
-                float sum = 0;
-
-                for(int i = 0; i < 3; i++)
-                    sum += (*this)(i) * obj(i);
-
-                return sum;
+            Point operator-(const Point& other) const {
+                return Point(x_ - other.x_, y_ - other.y_, z_ - other.z_);
             }
 
-            Point CrossProduct(Point &p)
-            {
-                Point ret;
-
-                ret.X() = (*this).Y() * p.Z() - (*this).Z() * p.Y();
-                ret.Y() = (*this).Z() * p.X() - (*this).X() * p.Z();
-                ret.Z() = (*this).X() * p.Y() - (*this).Y() * p.X();
-
-                return ret;
-            }
-
-            float &X() { return (*this)(0); }
-            float &Y() { return (*this)(1); }
-            float &Z() { return (*this)(2); }
-
-            template<class opMemT> Point &operator=(const Matrix<3,1,opMemT> &obj)
-            {
-                for(int i = 0; i < 3; i++)
-                    (*this)(i,0) = obj(i,0);
-
-                return *this;
-            }
+            // Uppercase X,Y,Z methods for compatibility
+            float X() const { return x_; }
+            float Y() const { return y_; }
+            float Z() const { return z_; }
     };
 
-    // A rotation matrix class in a 3 dimensional space
     class Rotation : public Matrix<3,3>
     {
         public:
-            Rotation() { *this = Identity<3,3>(); }
-            Rotation(const Rotation &obj) : Matrix<3,3>() { (*this) = obj; }
-            Rotation(const Matrix<3,3> &obj) { (*this) = obj; }
-
-            Rotation &FromEulerAngles(float psi, float theta, float phi)
+            Rotation() : Matrix<3,3>() 
             {
-                (*this)(0,0) = cosf(phi) * cosf(theta);
-                (*this)(1,0) = cosf(theta) * sinf(phi);
-                (*this)(2,0) = -sinf(theta);
-
-                (*this)(0,1) = cosf(phi) * sinf(psi) * sinf(theta) - cosf(psi) * sinf(phi);
-                (*this)(1,1) = cosf(psi) * cosf(phi) + sinf(psi) * sinf(phi) * sinf(theta);
-                (*this)(2,1) = cosf(theta) * sinf(psi);
-
-                (*this)(0,2) = sinf(psi) * sinf(phi) + cosf(psi) * cosf(phi) * sinf(theta);
-                (*this)(1,2) = cosf(psi) * sinf(phi) * sinf(theta) - cosf(phi) * sinf(psi);
-                (*this)(2,2) = cosf(psi) * cosf(theta);
-
-                return (*this);
-            }    
-
-            Matrix<3,2> ToEulerAngles()
-            {
-                Matrix<3,2> ret;
-
-                if((*this)(2,0) != 0)
-                {
-                    ret(1,0) = -asinf((*this)(2,0));
-                    ret(1,1) = M_PI - ret(1,0);
-
-                    ret(0,0) = atan2f((*this)(2,1) / cosf(ret(1,0)),(*this)(2,2) / cosf(ret(1,0)));
-                    ret(0,1) = atan2f((*this)(2,1) / cosf(ret(1,1)),(*this)(2,2) / cosf(ret(1,1)));
-
-                    ret(2,0) = atan2f((*this)(1,0) / cosf(ret(1,0)),(*this)(0,0) / cosf(ret(1,0)));
-                    ret(2,1) = atan2f((*this)(1,0) / cosf(ret(1,1)),(*this)(0,0) / cosf(ret(1,1)));
-                }
-                else
-                {
-                    ret(2,0) = ret(2,1) = 0;
-
-                    if((*this)(2,0) == -1)
-                    {
-                        ret(1,0) = ret(1,1) = M_PI_2;
-                        ret(0,0) = ret(0,1) = atan2f((*this)(0,1),(*this)(0,2));
-                    }
-                    else
-                    {
-                        ret(1,0) = ret(1,1) = -M_PI_2;
-                        ret(0,0) = ret(0,1) = atan2f(-(*this)(0,1),-(*this)(0,2));
-                    }
-                }
-
-                return ret;
+                Identity();
             }
 
-            Rotation &RotateX(float phi)
-            {
-                float tmp1, tmp2;
-
-                tmp1 = (*this)(1,0) * cosf(phi) - (*this)(2,0) * sinf(phi);
-                tmp2 = (*this)(2,0) * cosf(phi) + (*this)(1,0) * sinf(phi);
-                (*this)(1,0) = tmp1;
-                (*this)(2,0) = tmp2;
-
-                tmp1 = (*this)(1,1) * cosf(phi) - (*this)(2,1) * sinf(phi);
-                tmp2 = (*this)(2,1) * cosf(phi) + (*this)(1,1) * sinf(phi);
-                (*this)(1,1) = tmp1;
-                (*this)(2,1) = tmp2;
-
-                tmp1 = (*this)(1,2) * cosf(phi) - (*this)(2,2) * sinf(phi);
-                tmp2 = (*this)(2,2) * cosf(phi) + (*this)(1,2) * sinf(phi);
-                (*this)(1,2) = tmp1;
-                (*this)(2,2) = tmp2;
-
-                return (*this);
-            }    
-            
-            Rotation &RotateY(float theta)
-            {
-                float tmp1, tmp2;
-
-                tmp1 = (*this)(0,0) * cosf(theta) + (*this)(2,0) * sinf(theta);
-                tmp2 = (*this)(2,0) * cosf(theta) - (*this)(0,0) * sinf(theta);
-                (*this)(0,0) = tmp1;
-                (*this)(2,0) = tmp2;
-
-                tmp1 = (*this)(0,1) * cosf(theta) + (*this)(2,1) * sinf(theta);
-                tmp2 = (*this)(2,1) * cosf(theta) - (*this)(0,1) * sinf(theta);
-                (*this)(0,1) = tmp1;
-                (*this)(2,1) = tmp2;
-
-                tmp1 = (*this)(0,2) * cosf(theta) + (*this)(2,2) * sinf(theta);
-                tmp2 = (*this)(2,2) * cosf(theta) - (*this)(0,2) * sinf(theta);
-                (*this)(0,2) = tmp1;
-                (*this)(2,2) = tmp2;
-
-                return (*this);
+            Rotation(const Rotation &obj) : Matrix<3,3>() 
+            { 
+                for(int i = 0; i < 3; i++)
+                    for(int j = 0; j < 3; j++)
+                        (*this)(i,j) = obj(i,j);
             }
 
-            Rotation &RotateZ(float psi)
+            void RotateX(float angle)
             {
-                float tmp1, tmp2;
-
-                tmp1 = (*this)(0,0) * cosf(psi) -  (*this)(1,0) * sinf(psi);
-                tmp2 = (*this)(1,0) * cosf(psi) +  (*this)(0,0) * sinf(psi);
-                (*this)(0,0) = tmp1;
-                (*this)(1,0) = tmp2;
-
-                tmp1 = (*this)(0,1) * cosf(psi) -  (*this)(1,1) * sinf(psi);
-                tmp2 = (*this)(1,1) * cosf(psi) +  (*this)(0,1) * sinf(psi);
-                (*this)(0,1) = tmp1;
-                (*this)(1,1) = tmp2;
-
-
-                tmp1 = (*this)(0,2) * cosf(psi) -  (*this)(1,2) * sinf(psi);
-                tmp2 = (*this)(1,2) * cosf(psi) +  (*this)(0,2) * sinf(psi);
-                (*this)(0,2) = tmp1;
-                (*this)(1,2) = tmp2;
-
-                return (*this);
+                float c = cos(angle);
+                float s = sin(angle);
+                
+                (*this)(1,1) = c;  (*this)(1,2) = -s;
+                (*this)(2,1) = s;  (*this)(2,2) = c;
             }
-            
-            template<class opMemT> Rotation &operator=(const Matrix<3,3,opMemT> &obj)
-            {
-                for(int i = 0; i < Rows; i++)
-                    for(int j = 0; j < Cols; j++)
-                        (*this)(i,j)  = obj(i,j);
 
-                return *this;
+            void RotateY(float angle)
+            {
+                float c = cos(angle);
+                float s = sin(angle);
+                
+                (*this)(0,0) = c;   (*this)(0,2) = s;
+                (*this)(2,0) = -s;  (*this)(2,2) = c;
+            }
+
+            void RotateZ(float angle)
+            {
+                float c = cos(angle);
+                float s = sin(angle);
+                
+                (*this)(0,0) = c;  (*this)(0,1) = -s;
+                (*this)(1,0) = s;  (*this)(1,1) = c;
+            }
+
+            void Identity()
+            {
+                (*this)(0,0) = 1; (*this)(0,1) = 0; (*this)(0,2) = 0;
+                (*this)(1,0) = 0; (*this)(1,1) = 1; (*this)(1,2) = 0;
+                (*this)(2,0) = 0; (*this)(2,1) = 0; (*this)(2,2) = 1;
             }
     };
 
-    // A transformation matrix class (rotation plus a coordinate) in a 3 dimensional space
-    class Transformation
+    class Transformation : public Matrix<4,4>
     {
         public:
             Rotation R;
             Point p;
 
-            Transformation() { R = Identity<3,3>(); p.Fill(0); }
-            Transformation(const Transformation &obj) { (*this) = obj; }
-
-            Transformation operator*=(Transformation &obj)
-            {
-                p.Matrix<3>::operator=(R * obj.p + p);
-                R.Matrix<3,3>::operator=(R * obj.R);
-
-                return *this;
+            Transformation() : Matrix<4,4>() {
+                Identity();
             }
 
-            Transformation operator*(Transformation &obj)
-            {
-                Transformation ret;
-
-                ret.p.Matrix<3>::operator=(R * obj.p + p);
-                ret.R.Matrix<3,3>::operator=(R * obj.R);
-
-                return ret;
+            void Identity() {
+                for(int i = 0; i < 4; i++)
+                    for(int j = 0; j < 4; j++)
+                        (*this)(i,j) = (i == j) ? 1.0f : 0.0f;
             }
 
-            float &operator()(int row, int col)
-            {
-                static float dummy;
-
-                if(col == 3)
-                    return (row == 3)? (dummy = 1) : p(row);
-                else
-                    return (row == 3)? (dummy = 0) : R(row,col);
+            void Translate(float x, float y, float z) {
+                (*this)(0,3) += x;
+                (*this)(1,3) += y;
+                (*this)(2,3) += z;
             }
 
-            float &X() { return p(0); }
-            float &Y() { return p(1); }
-            float &Z() { return p(2); }
-
-            Transformation &RotateX(float phi)
-            {
-                Point tmp;
-                R.RotateX(phi);
-
-                tmp.X() = p.X();
-                tmp.Y() = cosf(phi) * p.Y() - sinf(phi) * p.Z();
-                tmp.Z() = sinf(phi) * p.Y() + cosf(phi) * p.Z();
-
-                p = tmp;
-
-                return *this;
+            void RotateX(float angle) {
+                float c = cosf(angle);
+                float s = sinf(angle);
+                (*this)(1,1) = c;
+                (*this)(1,2) = -s;
+                (*this)(2,1) = s;
+                (*this)(2,2) = c;
             }
 
-            Transformation &RotateY(float theta)
-            {
-                Point tmp;
-                R.RotateY(theta);
-
-                tmp.X() = cosf(theta) * p.X() + sinf(theta) * p.Z();
-                tmp.Y() = p.Y();
-                tmp.Z() = -sinf(theta) * p.X() + cosf(theta) * p.Z();
-
-                p = tmp;
-
-                return *this;
+            void RotateY(float angle) {
+                float c = cosf(angle);
+                float s = sinf(angle);
+                (*this)(0,0) = c;
+                (*this)(0,2) = s;
+                (*this)(2,0) = -s;
+                (*this)(2,2) = c;
             }
 
-            Transformation &RotateZ(float psi)
-            {
-                Point tmp;
-                R.RotateZ(psi);
-
-                tmp.X() = cosf(psi) * p.X() - sinf(psi) * p.Y();
-                tmp.Y() = sinf(psi) * p.X() + cosf(psi) * p.Y();
-                tmp.Z() = p.Z();
-
-                p = tmp;
-
-                return *this;
-            }
-
-            Transformation Translate(float x, float y, float z)
-            {
-                (*this).p(0) += x;
-                (*this).p(1) += y;
-                (*this).p(2) += z;
-
-                return (*this);
-            }
-
-            template<class opMemT> Transformation &operator=(const Matrix<4,4,opMemT> &obj)
-            {
-                R = obj.Submatrix(Slice<0,3>(),Slice<0,3>());
-                p = obj.Submatrix(Slice<0,3>(),Slice<3,4>());
-
-                return *this;
+            void RotateZ(float angle) {
+                float c = cosf(angle);
+                float s = sinf(angle);
+                (*this)(0,0) = c;
+                (*this)(0,1) = -s;
+                (*this)(1,0) = s;
+                (*this)(1,1) = c;
             }
     };
 }
+
+#endif

@@ -1,0 +1,840 @@
+[0.000000] (-) TimerEvent: {}
+[0.000382] (quadruped_mujoco) JobQueued: {'identifier': 'quadruped_mujoco', 'dependencies': OrderedDict()}
+[0.000475] (quadruped_mujoco) JobStarted: {'identifier': 'quadruped_mujoco'}
+[0.006773] (quadruped_mujoco) JobProgress: {'identifier': 'quadruped_mujoco', 'progress': 'cmake'}
+[0.007140] (quadruped_mujoco) Command: {'cmd': ['/usr/bin/cmake', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco', '-DCMAKE_INSTALL_PREFIX=/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco'], 'cwd': '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco', 'env': OrderedDict([('LANGUAGE', 'en_IN:en'), ('USER', 'nisarg'), ('ROS_PACKAGE_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib:/home/nisarg/.mujoco/mujoco210/bin:/home/nisarg/quadruped_ws/install/unitree_go/lib:/home/nisarg/quadruped_ws/install/unitree_api/lib:/home/nisarg/quadruped_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nisarg'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2064'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install:/home/nisarg/Documents/repo/libchamp-imp/install:/home/nisarg/Documents/repo/helium-quadruped-mjc/install:/home/nisarg/quadruped_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nisarg'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nisarg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nisarg/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nisarg-OMEN:@/tmp/.ICE-unix/2064,unix/nisarg-OMEN:/tmp/.ICE-unix/2064'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a2c74410_1cec_4ef8_bca7_33967d08ea0c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '47'), ('AMENT_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nisarg/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CMAKE_MODULE_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/nisarg/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('MUJOCO_PLUGIN_PATH', '/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller/lib/python3.10/site-packages:/home/nisarg/quadruped_ws/install/unitree_go/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/unitree_api/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/champ_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble'), ('MUJOCO_KEY_PATH', '/home/nisarg/.mujoco/mjkey.txt')]), 'shell': False}
+[0.067823] (quadruped_mujoco) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099732] (-) TimerEvent: {}
+[0.127311] (quadruped_mujoco) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.133171] (quadruped_mujoco) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199886] (-) TimerEvent: {}
+[0.213777] (quadruped_mujoco) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.220458] (quadruped_mujoco) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.220756] (quadruped_mujoco) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.221239] (quadruped_mujoco) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.224138] (quadruped_mujoco) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299053] (quadruped_mujoco) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.299989] (-) TimerEvent: {}
+[0.304404] (quadruped_mujoco) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.304657] (quadruped_mujoco) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.305055] (quadruped_mujoco) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.307837] (quadruped_mujoco) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400230] (-) TimerEvent: {}
+[0.451599] (quadruped_mujoco) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500312] (-) TimerEvent: {}
+[0.522840] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.556039] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.559772] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.565741] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.574276] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.585875] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600435] (-) TimerEvent: {}
+[0.617307] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.619367] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700608] (-) TimerEvent: {}
+[0.701499] (quadruped_mujoco) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.727610] (quadruped_mujoco) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.757846] (quadruped_mujoco) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.764271] (quadruped_mujoco) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800722] (-) TimerEvent: {}
+[0.833551] (quadruped_mujoco) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.833824] (quadruped_mujoco) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.900866] (-) TimerEvent: {}
+[0.916706] (quadruped_mujoco) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.917885] (quadruped_mujoco) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.959935] (quadruped_mujoco) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.981013] (quadruped_mujoco) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.992703] (quadruped_mujoco) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.000283] (quadruped_mujoco) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.000928] (-) TimerEvent: {}
+[1.062554] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.069416] (quadruped_mujoco) StdoutLine: {'line': b'-- Found mujoco: /usr/local/lib/libmujoco.so  \n'}
+[1.072790] (quadruped_mujoco) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):\n'}
+[1.072922] (quadruped_mujoco) StderrLine: {'line': b'  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when\n'}
+[1.073002] (quadruped_mujoco) StderrLine: {'line': b'  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the\n'}
+[1.073089] (quadruped_mujoco) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[1.073165] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[1.073239] (quadruped_mujoco) StderrLine: {'line': b'  FindOpenGL found both a legacy GL library:\n'}
+[1.073318] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[1.073394] (quadruped_mujoco) StderrLine: {'line': b'    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so\n'}
+[1.073471] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[1.073546] (quadruped_mujoco) StderrLine: {'line': b'  and GLVND libraries for OpenGL and GLX:\n'}
+[1.073623] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[1.073698] (quadruped_mujoco) StderrLine: {'line': b'    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so\n'}
+[1.073775] (quadruped_mujoco) StderrLine: {'line': b'    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so\n'}
+[1.073850] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[1.073926] (quadruped_mujoco) StderrLine: {'line': b'  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for\n'}
+[1.074002] (quadruped_mujoco) StderrLine: {'line': b'  compatibility with CMake 3.10 and below the legacy GL library will be used.\n'}
+[1.074115] (quadruped_mujoco) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.074193] (quadruped_mujoco) StderrLine: {'line': b'  CMakeLists.txt:28 (find_package)\n'}
+[1.074267] (quadruped_mujoco) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.074350] (quadruped_mujoco) StderrLine: {'line': b'\x1b[0m\n'}
+[1.074425] (quadruped_mujoco) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[1.101161] (-) TimerEvent: {}
+[1.103111] (quadruped_mujoco) StdoutLine: {'line': b'-- Found GLEW: /usr/include (found version "2.2.0") \n'}
+[1.201258] (-) TimerEvent: {}
+[1.301554] (-) TimerEvent: {}
+[1.336928] (quadruped_mujoco) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.401746] (-) TimerEvent: {}
+[1.502062] (-) TimerEvent: {}
+[1.602328] (-) TimerEvent: {}
+[1.661132] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.702531] (-) TimerEvent: {}
+[1.785442] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.802716] (-) TimerEvent: {}
+[1.803200] (quadruped_mujoco) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.804800] (quadruped_mujoco) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.826485] (quadruped_mujoco) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.826612] (quadruped_mujoco) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.826647] (quadruped_mujoco) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.826679] (quadruped_mujoco) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.842930] (quadruped_mujoco) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.902068] (quadruped_mujoco) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.902781] (-) TimerEvent: {}
+[1.947436] (quadruped_mujoco) StdoutLine: {'line': b'-- Generating done\n'}
+[1.966960] (quadruped_mujoco) StdoutLine: {'line': b'-- Build files have been written to: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco\n'}
+[1.976331] (quadruped_mujoco) CommandEnded: {'returncode': 0}
+[1.977397] (quadruped_mujoco) JobProgress: {'identifier': 'quadruped_mujoco', 'progress': 'build'}
+[1.977798] (quadruped_mujoco) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco', '--', '-j12', '-l12'], 'cwd': '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco', 'env': OrderedDict([('LANGUAGE', 'en_IN:en'), ('USER', 'nisarg'), ('ROS_PACKAGE_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib:/home/nisarg/.mujoco/mujoco210/bin:/home/nisarg/quadruped_ws/install/unitree_go/lib:/home/nisarg/quadruped_ws/install/unitree_api/lib:/home/nisarg/quadruped_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nisarg'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2064'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install:/home/nisarg/Documents/repo/libchamp-imp/install:/home/nisarg/Documents/repo/helium-quadruped-mjc/install:/home/nisarg/quadruped_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nisarg'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nisarg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nisarg/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nisarg-OMEN:@/tmp/.ICE-unix/2064,unix/nisarg-OMEN:/tmp/.ICE-unix/2064'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a2c74410_1cec_4ef8_bca7_33967d08ea0c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '47'), ('AMENT_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nisarg/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CMAKE_MODULE_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/nisarg/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('MUJOCO_PLUGIN_PATH', '/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller/lib/python3.10/site-packages:/home/nisarg/quadruped_ws/install/unitree_go/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/unitree_api/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/champ_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble'), ('MUJOCO_KEY_PATH', '/home/nisarg/.mujoco/mjkey.txt')]), 'shell': False}
+[2.002908] (-) TimerEvent: {}
+[2.021897] (quadruped_mujoco) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.033226] (quadruped_mujoco) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.037469] (quadruped_mujoco) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/mujoco_interface_node.dir/src/mujoco_interface.cpp.o\x1b[0m\n'}
+[2.043160] (quadruped_mujoco) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_quadruped_mujoco\n'}
+[2.103044] (-) TimerEvent: {}
+[2.203311] (-) TimerEvent: {}
+[2.218490] (quadruped_mujoco) StdoutLine: {'line': b'running egg_info\n'}
+[2.218877] (quadruped_mujoco) StdoutLine: {'line': b'creating quadruped_mujoco.egg-info\n'}
+[2.219009] (quadruped_mujoco) StdoutLine: {'line': b'writing quadruped_mujoco.egg-info/PKG-INFO\n'}
+[2.219146] (quadruped_mujoco) StdoutLine: {'line': b'writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt\n'}
+[2.219238] (quadruped_mujoco) StdoutLine: {'line': b'writing top-level names to quadruped_mujoco.egg-info/top_level.txt\n'}
+[2.219348] (quadruped_mujoco) StdoutLine: {'line': b"writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'\n"}
+[2.220716] (quadruped_mujoco) StdoutLine: {'line': b"reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'\n"}
+[2.221464] (quadruped_mujoco) StdoutLine: {'line': b"writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'\n"}
+[2.248174] (quadruped_mujoco) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_quadruped_mujoco_egg\n'}
+[2.305087] (-) TimerEvent: {}
+[2.339341] (quadruped_mujoco) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/pose__functions.c.o\x1b[0m\n'}
+[2.341041] (quadruped_mujoco) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__functions.c.o\x1b[0m\n'}
+[2.342973] (quadruped_mujoco) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__functions.c.o\x1b[0m\n'}
+[2.343298] (quadruped_mujoco) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/joints__functions.c.o\x1b[0m\n'}
+[2.348571] (quadruped_mujoco) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__functions.c.o\x1b[0m\n'}
+[2.374932] (quadruped_mujoco) StdoutLine: {'line': b'[ 10%] Built target quadruped_mujoco__cpp\n'}
+[2.382206] (quadruped_mujoco) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.382697] (quadruped_mujoco) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.383837] (quadruped_mujoco) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.396415] (quadruped_mujoco) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libquadruped_mujoco__rosidl_generator_c.so\x1b[0m\n'}
+[2.405177] (-) TimerEvent: {}
+[2.433983] (quadruped_mujoco) StdoutLine: {'line': b'[ 15%] Built target quadruped_mujoco__rosidl_generator_c\n'}
+[2.443080] (quadruped_mujoco) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.445233] (quadruped_mujoco) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.445730] (quadruped_mujoco) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.505274] (-) TimerEvent: {}
+[2.605549] (-) TimerEvent: {}
+[2.616784] (quadruped_mujoco) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/contacts_stamped__type_support.cpp.o\x1b[0m\n'}
+[2.616939] (quadruped_mujoco) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/contacts__type_support.cpp.o\x1b[0m\n'}
+[2.617064] (quadruped_mujoco) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/pose__type_support.cpp.o\x1b[0m\n'}
+[2.617147] (quadruped_mujoco) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/joints__type_support.cpp.o\x1b[0m\n'}
+[2.617520] (quadruped_mujoco) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadruped_mujoco/msg/velocities__type_support.cpp.o\x1b[0m\n'}
+[2.707068] (-) TimerEvent: {}
+[2.761905] (quadruped_mujoco) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/joints__type_support.cpp.o\x1b[0m\n'}
+[2.766247] (quadruped_mujoco) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/contacts__type_support.cpp.o\x1b[0m\n'}
+[2.807173] (-) TimerEvent: {}
+[2.826622] (quadruped_mujoco) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/pose__type_support.cpp.o\x1b[0m\n'}
+[2.851556] (quadruped_mujoco) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/velocities__type_support.cpp.o\x1b[0m\n'}
+[2.870470] (quadruped_mujoco) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadruped_mujoco/msg/contacts_stamped__type_support.cpp.o\x1b[0m\n'}
+[2.902338] (quadruped_mujoco) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.903580] (quadruped_mujoco) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/contacts__type_support_c.cpp.o\x1b[0m\n'}
+[2.908088] (-) TimerEvent: {}
+[2.910011] (quadruped_mujoco) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/joints__type_support_c.cpp.o\x1b[0m\n'}
+[2.913175] (quadruped_mujoco) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts__type_support.cpp.o\x1b[0m\n'}
+[2.917504] (quadruped_mujoco) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/pose__type_support_c.cpp.o\x1b[0m\n'}
+[2.919912] (quadruped_mujoco) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/velocities__type_support_c.cpp.o\x1b[0m\n'}
+[2.925429] (quadruped_mujoco) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/joints__type_support.cpp.o\x1b[0m\n'}
+[2.944642] (quadruped_mujoco) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadruped_mujoco/msg/detail/contacts_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[2.957227] (quadruped_mujoco) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/contacts__type_support.cpp.o\x1b[0m\n'}
+[2.963607] (quadruped_mujoco) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.973092] (quadruped_mujoco) StdoutLine: {'line': b'[ 45%] Built target quadruped_mujoco__rosidl_typesupport_c\n'}
+[2.983074] (quadruped_mujoco) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/pose__type_support.cpp.o\x1b[0m\n'}
+[3.008216] (-) TimerEvent: {}
+[3.011084] (quadruped_mujoco) StdoutLine: {'line': b'[ 46%] Built target quadruped_mujoco__rosidl_typesupport_cpp\n'}
+[3.034242] (quadruped_mujoco) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.cpp.o\x1b[0m\n'}
+[3.054835] (quadruped_mujoco) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/contacts__type_support.c.o\x1b[0m\n'}
+[3.108337] (-) TimerEvent: {}
+[3.117370] (quadruped_mujoco) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/joints__type_support.c.o\x1b[0m\n'}
+[3.171914] (quadruped_mujoco) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/pose__type_support.c.o\x1b[0m\n'}
+[3.208451] (-) TimerEvent: {}
+[3.209471] (quadruped_mujoco) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/velocities__type_support.c.o\x1b[0m\n'}
+[3.247920] (quadruped_mujoco) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/contacts_stamped__type_support.c.o\x1b[0m\n'}
+[3.257337] (quadruped_mujoco) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/contacts_stamped__type_support.cpp.o\x1b[0m\n'}
+[3.274292] (quadruped_mujoco) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/joints__type_support.cpp.o\x1b[0m\n'}
+[3.292474] (quadruped_mujoco) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libquadruped_mujoco__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.307180] (quadruped_mujoco) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco_lib.dir/src/controllers/quadruped_controller.cpp.o\x1b[0m\n'}
+[3.308570] (-) TimerEvent: {}
+[3.328435] (quadruped_mujoco) StdoutLine: {'line': b'[ 59%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c\n'}
+[3.339091] (quadruped_mujoco) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/pose__type_support.cpp.o\x1b[0m\n'}
+[3.397161] (quadruped_mujoco) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/velocities__type_support.cpp.o\x1b[0m\n'}
+[3.406289] (quadruped_mujoco) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadruped_mujoco/msg/detail/dds_fastrtps/contacts_stamped__type_support.cpp.o\x1b[0m\n'}
+[3.408672] (-) TimerEvent: {}
+[3.508968] (-) TimerEvent: {}
+[3.609335] (-) TimerEvent: {}
+[3.632245] (quadruped_mujoco) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.709434] (-) TimerEvent: {}
+[3.722720] (quadruped_mujoco) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.724517] (quadruped_mujoco) StdoutLine: {'line': b'[ 66%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c\n'}
+[3.809544] (-) TimerEvent: {}
+[3.810317] (quadruped_mujoco) StdoutLine: {'line': b'[ 66%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp\n'}
+[3.823314] (quadruped_mujoco) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libquadruped_mujoco__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.903134] (quadruped_mujoco) StdoutLine: {'line': b'[ 67%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp\n'}
+[3.909655] (-) TimerEvent: {}
+[3.925028] (quadruped_mujoco) StdoutLine: {'line': b'[ 67%] Built target quadruped_mujoco\n'}
+[3.948282] (quadruped_mujoco) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.009747] (-) TimerEvent: {}
+[4.110000] (-) TimerEvent: {}
+[4.210258] (-) TimerEvent: {}
+[4.310581] (-) TimerEvent: {}
+[4.406657] (quadruped_mujoco) StdoutLine: {'line': b'[ 68%] Built target quadruped_mujoco__py\n'}
+[4.410691] (-) TimerEvent: {}
+[4.425434] (quadruped_mujoco) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_joints_s.c.o\x1b[0m\n'}
+[4.425650] (quadruped_mujoco) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_pose_s.c.o\x1b[0m\n'}
+[4.425729] (quadruped_mujoco) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_contacts_s.c.o\x1b[0m\n'}
+[4.425785] (quadruped_mujoco) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_contacts_stamped_s.c.o\x1b[0m\n'}
+[4.431311] (quadruped_mujoco) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_velocities_s.c.o\x1b[0m\n'}
+[4.510829] (-) TimerEvent: {}
+[4.542494] (quadruped_mujoco) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/quadruped_mujoco/libquadruped_mujoco__rosidl_generator_py.so\x1b[0m\n'}
+[4.596106] (quadruped_mujoco) StdoutLine: {'line': b'[ 76%] Built target quadruped_mujoco__rosidl_generator_py\n'}
+[4.610959] (-) TimerEvent: {}
+[4.616216] (quadruped_mujoco) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.619330] (quadruped_mujoco) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.628057] (quadruped_mujoco) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.711064] (-) TimerEvent: {}
+[4.738232] (quadruped_mujoco) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.741276] (quadruped_mujoco) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.749215] (quadruped_mujoco) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.781714] (quadruped_mujoco) StdoutLine: {'line': b'[ 84%] Built target quadruped_mujoco__rosidl_typesupport_c__pyext\n'}
+[4.782455] (quadruped_mujoco) StdoutLine: {'line': b'[ 84%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.800285] (quadruped_mujoco) StdoutLine: {'line': b'[ 84%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext\n'}
+[4.811171] (-) TimerEvent: {}
+[4.911443] (-) TimerEvent: {}
+[5.011697] (-) TimerEvent: {}
+[5.112079] (-) TimerEvent: {}
+[5.212330] (-) TimerEvent: {}
+[5.253952] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6\x1b[m\x1b[K,\n'}
+[5.254126] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[5.254183] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/controllers/quadruped_controller.cpp:1\x1b[m\x1b[K:\n'}
+[5.254234] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.254281] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::has_swung_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.254365] (quadruped_mujoco) StderrLine: {'line': b'   64 |             bool \x1b[01;35m\x1b[Khas_swung_\x1b[m\x1b[K;\n'}
+[5.254405] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.254440] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool champ::PhaseGenerator::has_started\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.254478] (quadruped_mujoco) StderrLine: {'line': b'   17 |             bool \x1b[01;35m\x1b[Khas_started\x1b[m\x1b[K;\n'}
+[5.254511] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.254543] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.254579] (quadruped_mujoco) StderrLine: {'line': b'   19 |             \x1b[01;35m\x1b[KPhaseGenerator\x1b[m\x1b[K(QuadrupedBase &base, Time time = now()):\n'}
+[5.254612] (quadruped_mujoco) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.254644] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.254679] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktarget_velocity\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.254713] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(\x1b[01;35m\x1b[Kfloat target_velocity\x1b[m\x1b[K, float step_length, Time time = now())\n'}
+[5.254744] (quadruped_mujoco) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.254776] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstep_length\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.254814] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(float target_velocity, \x1b[01;35m\x1b[Kfloat step_length\x1b[m\x1b[K, Time time = now())\n'}
+[5.254844] (quadruped_mujoco) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.254875] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[5.254906] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/controllers/quadruped_controller.cpp:1\x1b[m\x1b[K:\n'}
+[5.254938] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.254969] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.255002] (quadruped_mujoco) StderrLine: {'line': b'   13 |             LegController(QuadrupedBase &base, \x1b[01;35m\x1b[KPhaseGenerator::Time time = PhaseGenerator::now()\x1b[m\x1b[K):\n'}
+[5.255047] (quadruped_mujoco) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.312525] (-) TimerEvent: {}
+[5.356488] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/controllers/quadruped_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void champ::QuadrupedController::execute(const champ::Velocities&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.356621] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/controllers/quadruped_controller.cpp:207:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq_vel\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.356675] (quadruped_mujoco) StderrLine: {'line': b'  207 |     void QuadrupedController::execute(\x1b[01;35m\x1b[Kconst Velocities &req_vel\x1b[m\x1b[K)\n'}
+[5.356710] (quadruped_mujoco) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.412720] (-) TimerEvent: {}
+[5.513067] (-) TimerEvent: {}
+[5.613291] (-) TimerEvent: {}
+[5.713554] (-) TimerEvent: {}
+[5.813913] (-) TimerEvent: {}
+[5.914211] (-) TimerEvent: {}
+[6.014540] (-) TimerEvent: {}
+[6.019545] (quadruped_mujoco) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable mujoco_interface_node\x1b[0m\n'}
+[6.114675] (-) TimerEvent: {}
+[6.215014] (-) TimerEvent: {}
+[6.249129] (quadruped_mujoco) StdoutLine: {'line': b'[ 85%] Built target mujoco_interface_node\n'}
+[6.315094] (-) TimerEvent: {}
+[6.415405] (-) TimerEvent: {}
+[6.515814] (-) TimerEvent: {}
+[6.616235] (-) TimerEvent: {}
+[6.716576] (-) TimerEvent: {}
+[6.816921] (-) TimerEvent: {}
+[6.917259] (-) TimerEvent: {}
+[7.017605] (-) TimerEvent: {}
+[7.117946] (-) TimerEvent: {}
+[7.218257] (-) TimerEvent: {}
+[7.318520] (-) TimerEvent: {}
+[7.418796] (-) TimerEvent: {}
+[7.519138] (-) TimerEvent: {}
+[7.619381] (-) TimerEvent: {}
+[7.719696] (-) TimerEvent: {}
+[7.820038] (-) TimerEvent: {}
+[7.920292] (-) TimerEvent: {}
+[8.020653] (-) TimerEvent: {}
+[8.121031] (-) TimerEvent: {}
+[8.221289] (-) TimerEvent: {}
+[8.321614] (-) TimerEvent: {}
+[8.421915] (-) TimerEvent: {}
+[8.522317] (-) TimerEvent: {}
+[8.622570] (-) TimerEvent: {}
+[8.722796] (-) TimerEvent: {}
+[8.823158] (-) TimerEvent: {}
+[8.923505] (-) TimerEvent: {}
+[9.023844] (-) TimerEvent: {}
+[9.124198] (-) TimerEvent: {}
+[9.224459] (-) TimerEvent: {}
+[9.324712] (-) TimerEvent: {}
+[9.425048] (-) TimerEvent: {}
+[9.525280] (-) TimerEvent: {}
+[9.625614] (-) TimerEvent: {}
+[9.725831] (-) TimerEvent: {}
+[9.826080] (-) TimerEvent: {}
+[9.926292] (-) TimerEvent: {}
+[10.026542] (-) TimerEvent: {}
+[10.126861] (-) TimerEvent: {}
+[10.227159] (-) TimerEvent: {}
+[10.327473] (-) TimerEvent: {}
+[10.427817] (-) TimerEvent: {}
+[10.528076] (-) TimerEvent: {}
+[10.628395] (-) TimerEvent: {}
+[10.728728] (-) TimerEvent: {}
+[10.829054] (-) TimerEvent: {}
+[10.929383] (-) TimerEvent: {}
+[11.029711] (-) TimerEvent: {}
+[11.130043] (-) TimerEvent: {}
+[11.230375] (-) TimerEvent: {}
+[11.330621] (-) TimerEvent: {}
+[11.430941] (-) TimerEvent: {}
+[11.531291] (-) TimerEvent: {}
+[11.631622] (-) TimerEvent: {}
+[11.731944] (-) TimerEvent: {}
+[11.832291] (-) TimerEvent: {}
+[11.932621] (-) TimerEvent: {}
+[12.032937] (-) TimerEvent: {}
+[12.133240] (-) TimerEvent: {}
+[12.233755] (-) TimerEvent: {}
+[12.334008] (-) TimerEvent: {}
+[12.434301] (-) TimerEvent: {}
+[12.534570] (-) TimerEvent: {}
+[12.634852] (-) TimerEvent: {}
+[12.735170] (-) TimerEvent: {}
+[12.835432] (-) TimerEvent: {}
+[12.891308] (quadruped_mujoco) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libquadruped_mujoco_lib.so\x1b[0m\n'}
+[12.935629] (-) TimerEvent: {}
+[13.036002] (-) TimerEvent: {}
+[13.136387] (-) TimerEvent: {}
+[13.236745] (-) TimerEvent: {}
+[13.337100] (-) TimerEvent: {}
+[13.437400] (-) TimerEvent: {}
+[13.443747] (quadruped_mujoco) StdoutLine: {'line': b'[ 87%] Built target quadruped_mujoco_lib\n'}
+[13.468586] (quadruped_mujoco) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/turn_node.dir/src/nodes/turn_node.cpp.o\x1b[0m\n'}
+[13.468997] (quadruped_mujoco) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object CMakeFiles/trot_node.dir/src/nodes/trot_node.cpp.o\x1b[0m\n'}
+[13.470086] (quadruped_mujoco) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o\x1b[0m\n'}
+[13.473643] (quadruped_mujoco) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_nav_node.dir/src/nodes/waypoint_nav_node.cpp.o\x1b[0m\n'}
+[13.474169] (quadruped_mujoco) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o\x1b[0m\n'}
+[13.537508] (-) TimerEvent: {}
+[13.637838] (-) TimerEvent: {}
+[13.738082] (-) TimerEvent: {}
+[13.838374] (-) TimerEvent: {}
+[13.938720] (-) TimerEvent: {}
+[14.039074] (-) TimerEvent: {}
+[14.139374] (-) TimerEvent: {}
+[14.239740] (-) TimerEvent: {}
+[14.340085] (-) TimerEvent: {}
+[14.440389] (-) TimerEvent: {}
+[14.540753] (-) TimerEvent: {}
+[14.641066] (-) TimerEvent: {}
+[14.741373] (-) TimerEvent: {}
+[14.841701] (-) TimerEvent: {}
+[14.942062] (-) TimerEvent: {}
+[15.025287] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6\x1b[m\x1b[K,\n'}
+[15.025591] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[15.025749] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4\x1b[m\x1b[K,\n'}
+[15.025840] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2\x1b[m\x1b[K:\n'}
+[15.025923] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.026009] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::has_swung_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.026123] (quadruped_mujoco) StderrLine: {'line': b'   64 |             bool \x1b[01;35m\x1b[Khas_swung_\x1b[m\x1b[K;\n'}
+[15.026209] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.026293] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool champ::PhaseGenerator::has_started\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.026403] (quadruped_mujoco) StderrLine: {'line': b'   17 |             bool \x1b[01;35m\x1b[Khas_started\x1b[m\x1b[K;\n'}
+[15.026487] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.026572] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.026673] (quadruped_mujoco) StderrLine: {'line': b'   19 |             \x1b[01;35m\x1b[KPhaseGenerator\x1b[m\x1b[K(QuadrupedBase &base, Time time = now()):\n'}
+[15.026763] (quadruped_mujoco) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.026852] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.026943] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktarget_velocity\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.027040] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(\x1b[01;35m\x1b[Kfloat target_velocity\x1b[m\x1b[K, float step_length, Time time = now())\n'}
+[15.027137] (quadruped_mujoco) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.027223] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstep_length\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.027320] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(float target_velocity, \x1b[01;35m\x1b[Kfloat step_length\x1b[m\x1b[K, Time time = now())\n'}
+[15.027412] (quadruped_mujoco) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.027497] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[15.027584] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4\x1b[m\x1b[K,\n'}
+[15.027669] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2\x1b[m\x1b[K:\n'}
+[15.027755] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.027851] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.027942] (quadruped_mujoco) StderrLine: {'line': b'   13 |             LegController(QuadrupedBase &base, \x1b[01;35m\x1b[KPhaseGenerator::Time time = PhaseGenerator::now()\x1b[m\x1b[K):\n'}
+[15.028315] (quadruped_mujoco) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.028538] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6\x1b[m\x1b[K,\n'}
+[15.028668] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[15.028763] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4\x1b[m\x1b[K,\n'}
+[15.028851] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2\x1b[m\x1b[K:\n'}
+[15.028936] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.029038] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::has_swung_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.029158] (quadruped_mujoco) StderrLine: {'line': b'   64 |             bool \x1b[01;35m\x1b[Khas_swung_\x1b[m\x1b[K;\n'}
+[15.029244] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.029327] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool champ::PhaseGenerator::has_started\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.029418] (quadruped_mujoco) StderrLine: {'line': b'   17 |             bool \x1b[01;35m\x1b[Khas_started\x1b[m\x1b[K;\n'}
+[15.029506] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.029591] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.029685] (quadruped_mujoco) StderrLine: {'line': b'   19 |             \x1b[01;35m\x1b[KPhaseGenerator\x1b[m\x1b[K(QuadrupedBase &base, Time time = now()):\n'}
+[15.029775] (quadruped_mujoco) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.029855] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.029947] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktarget_velocity\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.030039] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(\x1b[01;35m\x1b[Kfloat target_velocity\x1b[m\x1b[K, float step_length, Time time = now())\n'}
+[15.030130] (quadruped_mujoco) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.030211] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstep_length\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.030292] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(float target_velocity, \x1b[01;35m\x1b[Kfloat step_length\x1b[m\x1b[K, Time time = now())\n'}
+[15.030372] (quadruped_mujoco) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.030452] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[15.030529] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4\x1b[m\x1b[K,\n'}
+[15.030606] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2\x1b[m\x1b[K:\n'}
+[15.030682] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.030762] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.030844] (quadruped_mujoco) StderrLine: {'line': b'   13 |     LegController(QuadrupedBase &base, \x1b[01;35m\x1b[KPhaseGenerator::Time time = PhaseGenerator::now()\x1b[m\x1b[K):\n'}
+[15.030929] (quadruped_mujoco) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.031005] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[15.042132] (-) TimerEvent: {}
+[15.063528] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6\x1b[m\x1b[K,\n'}
+[15.063878] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[15.063992] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4\x1b[m\x1b[K,\n'}
+[15.064106] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2\x1b[m\x1b[K:\n'}
+[15.064195] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.064283] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::has_swung_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.064382] (quadruped_mujoco) StderrLine: {'line': b'   64 |             bool \x1b[01;35m\x1b[Khas_swung_\x1b[m\x1b[K;\n'}
+[15.064464] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.064553] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool champ::PhaseGenerator::has_started\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.064651] (quadruped_mujoco) StderrLine: {'line': b'   17 |             bool \x1b[01;35m\x1b[Khas_started\x1b[m\x1b[K;\n'}
+[15.064736] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.064824] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.064913] (quadruped_mujoco) StderrLine: {'line': b'   19 |             \x1b[01;35m\x1b[KPhaseGenerator\x1b[m\x1b[K(QuadrupedBase &base, Time time = now()):\n'}
+[15.064995] (quadruped_mujoco) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.065095] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.065189] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktarget_velocity\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.065276] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(\x1b[01;35m\x1b[Kfloat target_velocity\x1b[m\x1b[K, float step_length, Time time = now())\n'}
+[15.065357] (quadruped_mujoco) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.065439] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstep_length\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.065530] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(float target_velocity, \x1b[01;35m\x1b[Kfloat step_length\x1b[m\x1b[K, Time time = now())\n'}
+[15.065609] (quadruped_mujoco) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.065690] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[15.065770] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4\x1b[m\x1b[K,\n'}
+[15.065850] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2\x1b[m\x1b[K:\n'}
+[15.065928] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.066016] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.066114] (quadruped_mujoco) StderrLine: {'line': b'   13 |             LegController(QuadrupedBase &base, \x1b[01;35m\x1b[KPhaseGenerator::Time time = PhaseGenerator::now()\x1b[m\x1b[K):\n'}
+[15.066195] (quadruped_mujoco) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.142238] (-) TimerEvent: {}
+[15.164751] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid WaypointNavNode::pathCallback(nav_msgs::msg::Path_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.164974] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:31:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.165107] (quadruped_mujoco) StderrLine: {'line': b'   31 |         void pathCallback(\x1b[01;35m\x1b[Kconst nav_msgs::msg::Path::SharedPtr msg\x1b[m\x1b[K)\n'}
+[15.165196] (quadruped_mujoco) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[15.242391] (-) TimerEvent: {}
+[15.342724] (-) TimerEvent: {}
+[15.370700] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6\x1b[m\x1b[K,\n'}
+[15.370916] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[15.371016] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4\x1b[m\x1b[K,\n'}
+[15.371193] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2\x1b[m\x1b[K:\n'}
+[15.371280] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.371364] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::has_swung_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.371448] (quadruped_mujoco) StderrLine: {'line': b'   64 |             bool \x1b[01;35m\x1b[Khas_swung_\x1b[m\x1b[K;\n'}
+[15.371529] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.371614] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool champ::PhaseGenerator::has_started\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.371763] (quadruped_mujoco) StderrLine: {'line': b'   17 |             bool \x1b[01;35m\x1b[Khas_started\x1b[m\x1b[K;\n'}
+[15.371850] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.371929] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.372014] (quadruped_mujoco) StderrLine: {'line': b'   19 |             \x1b[01;35m\x1b[KPhaseGenerator\x1b[m\x1b[K(QuadrupedBase &base, Time time = now()):\n'}
+[15.372129] (quadruped_mujoco) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.372209] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.372300] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktarget_velocity\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.372384] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(\x1b[01;35m\x1b[Kfloat target_velocity\x1b[m\x1b[K, float step_length, Time time = now())\n'}
+[15.372463] (quadruped_mujoco) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.372541] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstep_length\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.372632] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(float target_velocity, \x1b[01;35m\x1b[Kfloat step_length\x1b[m\x1b[K, Time time = now())\n'}
+[15.372712] (quadruped_mujoco) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.372790] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[15.372876] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4\x1b[m\x1b[K,\n'}
+[15.372957] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2\x1b[m\x1b[K:\n'}
+[15.373051] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.373140] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.373223] (quadruped_mujoco) StderrLine: {'line': b'   13 |             LegController(QuadrupedBase &base, \x1b[01;35m\x1b[KPhaseGenerator::Time time = PhaseGenerator::now()\x1b[m\x1b[K):\n'}
+[15.373301] (quadruped_mujoco) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.442871] (-) TimerEvent: {}
+[15.543166] (-) TimerEvent: {}
+[15.565785] (quadruped_mujoco) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable quadruped_controller_node\x1b[0m\n'}
+[15.643275] (-) TimerEvent: {}
+[15.743624] (-) TimerEvent: {}
+[15.843996] (-) TimerEvent: {}
+[15.893776] (quadruped_mujoco) StdoutLine: {'line': b'[ 94%] Built target quadruped_controller_node\n'}
+[15.944208] (-) TimerEvent: {}
+[16.044549] (-) TimerEvent: {}
+[16.144975] (-) TimerEvent: {}
+[16.245315] (-) TimerEvent: {}
+[16.345657] (-) TimerEvent: {}
+[16.445963] (-) TimerEvent: {}
+[16.546290] (-) TimerEvent: {}
+[16.646731] (-) TimerEvent: {}
+[16.747164] (-) TimerEvent: {}
+[16.847597] (-) TimerEvent: {}
+[16.948041] (-) TimerEvent: {}
+[17.048356] (-) TimerEvent: {}
+[17.148780] (-) TimerEvent: {}
+[17.249201] (-) TimerEvent: {}
+[17.349510] (-) TimerEvent: {}
+[17.449814] (-) TimerEvent: {}
+[17.550082] (-) TimerEvent: {}
+[17.650361] (-) TimerEvent: {}
+[17.750647] (-) TimerEvent: {}
+[17.850954] (-) TimerEvent: {}
+[17.951235] (-) TimerEvent: {}
+[18.051547] (-) TimerEvent: {}
+[18.151824] (-) TimerEvent: {}
+[18.252114] (-) TimerEvent: {}
+[18.352394] (-) TimerEvent: {}
+[18.452681] (-) TimerEvent: {}
+[18.552969] (-) TimerEvent: {}
+[18.653287] (-) TimerEvent: {}
+[18.753601] (-) TimerEvent: {}
+[18.853912] (-) TimerEvent: {}
+[18.954234] (-) TimerEvent: {}
+[19.054548] (-) TimerEvent: {}
+[19.154831] (-) TimerEvent: {}
+[19.225266] (quadruped_mujoco) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable trot_node\x1b[0m\n'}
+[19.255080] (-) TimerEvent: {}
+[19.355435] (-) TimerEvent: {}
+[19.397451] (quadruped_mujoco) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable waypoint_nav_node\x1b[0m\n'}
+[19.455586] (-) TimerEvent: {}
+[19.556051] (-) TimerEvent: {}
+[19.625927] (quadruped_mujoco) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable mujoco_sim_node\x1b[0m\n'}
+[19.656212] (-) TimerEvent: {}
+[19.669833] (quadruped_mujoco) StdoutLine: {'line': b'[ 98%] Built target trot_node\n'}
+[19.756445] (-) TimerEvent: {}
+[19.788956] (quadruped_mujoco) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turn_node\x1b[0m\n'}
+[19.837073] (quadruped_mujoco) StdoutLine: {'line': b'[100%] Built target waypoint_nav_node\n'}
+[19.856581] (-) TimerEvent: {}
+[19.957043] (-) TimerEvent: {}
+[20.032924] (quadruped_mujoco) StdoutLine: {'line': b'[100%] Built target mujoco_sim_node\n'}
+[20.057119] (-) TimerEvent: {}
+[20.157414] (-) TimerEvent: {}
+[20.195714] (quadruped_mujoco) StdoutLine: {'line': b'[100%] Built target turn_node\n'}
+[20.206562] (quadruped_mujoco) CommandEnded: {'returncode': 0}
+[20.207518] (quadruped_mujoco) JobProgress: {'identifier': 'quadruped_mujoco', 'progress': 'install'}
+[20.215875] (quadruped_mujoco) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco'], 'cwd': '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco', 'env': OrderedDict([('LANGUAGE', 'en_IN:en'), ('USER', 'nisarg'), ('ROS_PACKAGE_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib:/home/nisarg/.mujoco/mujoco210/bin:/home/nisarg/quadruped_ws/install/unitree_go/lib:/home/nisarg/quadruped_ws/install/unitree_api/lib:/home/nisarg/quadruped_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nisarg'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2064'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install:/home/nisarg/Documents/repo/libchamp-imp/install:/home/nisarg/Documents/repo/helium-quadruped-mjc/install:/home/nisarg/quadruped_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nisarg'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nisarg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nisarg/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nisarg-OMEN:@/tmp/.ICE-unix/2064,unix/nisarg-OMEN:/tmp/.ICE-unix/2064'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a2c74410_1cec_4ef8_bca7_33967d08ea0c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '47'), ('AMENT_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nisarg/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CMAKE_MODULE_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/nisarg/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('MUJOCO_PLUGIN_PATH', '/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller/lib/python3.10/site-packages:/home/nisarg/quadruped_ws/install/unitree_go/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/unitree_api/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/champ_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble'), ('MUJOCO_KEY_PATH', '/home/nisarg/.mujoco/mjkey.txt')]), 'shell': False}
+[20.221834] (quadruped_mujoco) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.222005] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/ament_index/resource_index/rosidl_interfaces/quadruped_mujoco\n'}
+[20.222128] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco\n'}
+[20.222222] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg\n'}
+[20.222354] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/contacts_stamped.h\n'}
+[20.222447] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/velocities.h\n'}
+[20.222609] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/joints.h\n'}
+[20.222727] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/contacts.h\n'}
+[20.222814] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail\n'}
+[20.222902] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__functions.h\n'}
+[20.222989] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__type_support.h\n'}
+[20.223209] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__functions.c\n'}
+[20.223498] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__functions.h\n'}
+[20.223658] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__type_support.h\n'}
+[20.223787] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__functions.h\n'}
+[20.223910] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__struct.h\n'}
+[20.224015] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__type_support.h\n'}
+[20.224155] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__functions.h\n'}
+[20.224202] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__struct.h\n'}
+[20.224237] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__functions.c\n'}
+[20.224270] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__functions.c\n'}
+[20.224303] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__functions.c\n'}
+[20.224335] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__struct.h\n'}
+[20.224365] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__functions.h\n'}
+[20.224396] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__functions.c\n'}
+[20.224426] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__struct.h\n'}
+[20.224456] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__struct.h\n'}
+[20.224486] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__type_support.h\n'}
+[20.224517] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__type_support.h\n'}
+[20.224547] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h\n'}
+[20.224601] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/pose.h\n'}
+[20.224634] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/library_path.sh\n'}
+[20.224666] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/library_path.dsv\n'}
+[20.224697] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_generator_c.so\n'}
+[20.224792] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_generator_c.so" to ""\n'}
+[20.224824] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco\n'}
+[20.224856] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg\n'}
+[20.224915] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[20.224948] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail\n'}
+[20.224979] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_fastrtps_c.h\n'}
+[20.225009] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__rosidl_typesupport_fastrtps_c.h\n'}
+[20.225049] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[20.225080] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_fastrtps_c.h\n'}
+[20.225112] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_fastrtps_c.h\n'}
+[20.225142] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_fastrtps_c.so\n'}
+[20.225173] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[20.225205] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco\n'}
+[20.225236] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg\n'}
+[20.225266] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/pose.hpp\n'}
+[20.225296] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/contacts.hpp\n'}
+[20.225327] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/velocities.hpp\n'}
+[20.225388] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/joints.hpp\n'}
+[20.225419] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail\n'}
+[20.225450] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__traits.hpp\n'}
+[20.225526] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__struct.hpp\n'}
+[20.225557] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__traits.hpp\n'}
+[20.225589] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__builder.hpp\n'}
+[20.225619] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__type_support.hpp\n'}
+[20.225655] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__struct.hpp\n'}
+[20.225687] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__traits.hpp\n'}
+[20.225719] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__type_support.hpp\n'}
+[20.225751] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__type_support.hpp\n'}
+[20.225786] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__struct.hpp\n'}
+[20.225819] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__builder.hpp\n'}
+[20.225850] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__struct.hpp\n'}
+[20.225883] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__type_support.hpp\n'}
+[20.225914] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__builder.hpp\n'}
+[20.225944] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__struct.hpp\n'}
+[20.226026] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__traits.hpp\n'}
+[20.226145] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__type_support.hpp\n'}
+[20.226346] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__traits.hpp\n'}
+[20.226458] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__builder.hpp\n'}
+[20.226586] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__builder.hpp\n'}
+[20.226700] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/contacts_stamped.hpp\n'}
+[20.226797] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[20.226895] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco\n'}
+[20.226993] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg\n'}
+[20.227140] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[20.227263] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail\n'}
+[20.227373] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.227492] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.227590] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/dds_fastrtps\n'}
+[20.227687] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.227776] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.227876] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.227957] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_fastrtps_cpp.so\n'}
+[20.228069] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[20.228185] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco\n'}
+[20.228306] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg\n'}
+[20.228425] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail\n'}
+[20.228515] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_introspection_c.h\n'}
+[20.228598] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__type_support.c\n'}
+[20.228680] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__type_support.c\n'}
+[20.228820] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_introspection_c.h\n'}
+[20.228940] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__rosidl_typesupport_introspection_c.h\n'}
+[20.229065] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_introspection_c.h\n'}
+[20.229173] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__type_support.c\n'}
+[20.229281] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__type_support.c\n'}
+[20.229375] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__rosidl_typesupport_introspection_c.h\n'}
+[20.229457] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__type_support.c\n'}
+[20.229537] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[20.229624] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_introspection_c.so\n'}
+[20.229706] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_introspection_c.so" to ""\n'}
+[20.229787] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_c.so\n'}
+[20.229867] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_c.so" to ""\n'}
+[20.229946] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco\n'}
+[20.230029] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg\n'}
+[20.230118] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail\n'}
+[20.230206] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__type_support.cpp\n'}
+[20.230286] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.230364] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/velocities__type_support.cpp\n'}
+[20.230450] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__type_support.cpp\n'}
+[20.230528] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.230608] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.230687] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.230765] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/pose__type_support.cpp\n'}
+[20.230843] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.230929] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/quadruped_mujoco/quadruped_mujoco/msg/detail/contacts_stamped__type_support.cpp\n'}
+[20.231012] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_introspection_cpp.so\n'}
+[20.231115] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[20.231200] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_cpp.so\n'}
+[20.231282] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_typesupport_cpp.so" to ""\n'}
+[20.231362] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/pythonpath.sh\n'}
+[20.231442] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/pythonpath.dsv\n'}
+[20.231527] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info\n'}
+[20.231607] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[20.231686] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[20.231766] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[20.231844] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[20.231928] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco\n'}
+[20.232006] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_c.c\n'}
+[20.232101] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/libquadruped_mujoco__rosidl_generator_py.so\n'}
+[20.232187] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg\n'}
+[20.232265] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_velocities_s.c\n'}
+[20.232342] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts_stamped.py\n'}
+[20.232422] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts.py\n'}
+[20.232500] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_joints_s.c\n'}
+[20.232576] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/__init__.py\n'}
+[20.232653] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts_stamped_s.c\n'}
+[20.232729] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_pose_s.c\n'}
+[20.232806] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_joints.py\n'}
+[20.232883] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts_s.c\n'}
+[20.232966] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_velocities.py\n'}
+[20.233051] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_pose.py\n'}
+[20.233132] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.233206] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.233281] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/__init__.py\n'}
+[20.233368] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[20.233443] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.233518] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[20.257369] (quadruped_mujoco) StdoutLine: {'line': b"Listing '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco'...\n"}
+[20.257530] (-) TimerEvent: {}
+[20.257632] (quadruped_mujoco) StdoutLine: {'line': b"Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/__init__.py'...\n"}
+[20.257724] (quadruped_mujoco) StdoutLine: {'line': b"Listing '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg'...\n"}
+[20.257805] (quadruped_mujoco) StdoutLine: {'line': b"Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/__init__.py'...\n"}
+[20.257882] (quadruped_mujoco) StdoutLine: {'line': b"Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts.py'...\n"}
+[20.257958] (quadruped_mujoco) StdoutLine: {'line': b"Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_contacts_stamped.py'...\n"}
+[20.258063] (quadruped_mujoco) StdoutLine: {'line': b"Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_joints.py'...\n"}
+[20.258144] (quadruped_mujoco) StdoutLine: {'line': b"Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_pose.py'...\n"}
+[20.258218] (quadruped_mujoco) StdoutLine: {'line': b"Compiling '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/msg/_velocities.py'...\n"}
+[20.260514] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.260810] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[20.260908] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.261049] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[20.261145] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.261192] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages/quadruped_mujoco/quadruped_mujoco_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[20.261227] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_generator_py.so\n'}
+[20.261302] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco__rosidl_generator_py.so" to ""\n'}
+[20.261337] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Contacts.idl\n'}
+[20.261414] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Joints.idl\n'}
+[20.261448] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Pose.idl\n'}
+[20.261519] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Velocities.idl\n'}
+[20.261551] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/ContactsStamped.idl\n'}
+[20.261629] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Contacts.msg\n'}
+[20.261661] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Joints.msg\n'}
+[20.261692] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Pose.msg\n'}
+[20.261750] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/Velocities.msg\n'}
+[20.261783] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/msg/ContactsStamped.msg\n'}
+[20.261836] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco_lib.so\n'}
+[20.269879] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/libquadruped_mujoco_lib.so" to ""\n'}
+[20.269958] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/trot_node\n'}
+[20.273686] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/trot_node" to ""\n'}
+[20.273734] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/turn_node\n'}
+[20.277687] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/turn_node" to ""\n'}
+[20.277786] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/waypoint_nav_node\n'}
+[20.281267] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/waypoint_nav_node" to ""\n'}
+[20.281357] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/quadruped_controller_node\n'}
+[20.281506] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/quadruped_controller_node" to ""\n'}
+[20.281581] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/mujoco_sim_node\n'}
+[20.283992] (quadruped_mujoco) StdoutLine: {'line': b'-- Set runtime path of "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib/quadruped_mujoco/mujoco_sim_node" to ""\n'}
+[20.284092] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include/\n'}
+[20.284128] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco\n'}
+[20.284159] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/macros\n'}
+[20.284190] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/macros/macros.h\n'}
+[20.284218] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/geometry\n'}
+[20.284245] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/geometry/geometry.hpp\n'}
+[20.284398] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/controllers\n'}
+[20.284473] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/controllers/turn_controller.hpp\n'}
+[20.284511] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/controllers/waypoint_controller.hpp\n'}
+[20.284547] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/controllers/trot_controller.hpp\n'}
+[20.284575] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/controllers/quadruped_controller.hpp\n'}
+[20.284604] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/mujoco_interface.hpp\n'}
+[20.284634] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/kinematics\n'}
+[20.284662] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/kinematics/kinematics.hpp\n'}
+[20.284689] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/leg_controller\n'}
+[20.284823] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/leg_controller/trajectory_planner.hpp\n'}
+[20.284901] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/leg_controller/phase_generator.hpp\n'}
+[20.284946] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/leg_controller/leg_controller.hpp\n'}
+[20.284979] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/bla\n'}
+[20.285009] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/bla/basic_linear_algebra.h\n'}
+[20.285061] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/body_controller\n'}
+[20.285091] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/body_controller/body_controller.hpp\n'}
+[20.285121] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/quadruped_base\n'}
+[20.285149] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/quadruped_base/gait_config.hpp\n'}
+[20.285194] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/quadruped_base/quadruped_components.hpp\n'}
+[20.285223] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/quadruped_base/quadruped_base.hpp\n'}
+[20.285252] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/include//quadruped_mujoco/quadruped_base/quadruped_leg.hpp\n'}
+[20.285280] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch\n'}
+[20.285307] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/turn.launch.py\n'}
+[20.285335] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/trot.launch.py\n'}
+[20.285363] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/absolute_debug.launch.py\n'}
+[20.285391] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/simulation.launch.py\n'}
+[20.285419] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/debug_compat.launch.py\n'}
+[20.285446] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/waypoint_nav.launch.py\n'}
+[20.285474] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/view_model.launch.py\n'}
+[20.285520] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/trot_without_sim.launch.py\n'}
+[20.285548] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/debug_mujoco.launch.py\n'}
+[20.285573] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models\n'}
+[20.285601] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/mjcf\n'}
+[20.285628] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/mjcf/simple_yobotics.xml\n'}
+[20.285656] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/mjcf/yobotics_compat.xml\n'}
+[20.285683] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/mjcf/yobotics.xml\n'}
+[20.285710] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes\n'}
+[20.285738] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/lower_leg.stl\n'}
+[20.285765] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/base.stl\n'}
+[20.285807] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/hip.STL\n'}
+[20.286754] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/thigh.STL\n'}
+[20.289542] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/upper_leg.stl\n'}
+[20.289624] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm\n'}
+[20.289660] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/base.stl\n'}
+[20.289859] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/wrist2.stl\n'}
+[20.289934] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/upper_arm.stl\n'}
+[20.289988] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/wrist1.stl\n'}
+[20.290038] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/arm/lower_arm.stl\n'}
+[20.290161] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/hip.stl\n'}
+[20.290234] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/calf.STL\n'}
+[20.290935] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/foot.STL\n'}
+[20.291499] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/models/meshes/trunk.STL\n'}
+[20.296406] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch\n'}
+[20.296512] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/turn.launch.py\n'}
+[20.296551] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/trot.launch.py\n'}
+[20.296581] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/absolute_debug.launch.py\n'}
+[20.296612] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/simulation.launch.py\n'}
+[20.296646] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/debug_compat.launch.py\n'}
+[20.296690] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/waypoint_nav.launch.py\n'}
+[20.296720] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/view_model.launch.py\n'}
+[20.296749] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/trot_without_sim.launch.py\n'}
+[20.296777] (quadruped_mujoco) StdoutLine: {'line': b'-- Up-to-date: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/launch/debug_mujoco.launch.py\n'}
+[20.296805] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/ament_index/resource_index/package_run_dependencies/quadruped_mujoco\n'}
+[20.296834] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/ament_index/resource_index/parent_prefix_path/quadruped_mujoco\n'}
+[20.296863] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/ament_prefix_path.sh\n'}
+[20.296890] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/ament_prefix_path.dsv\n'}
+[20.296932] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/path.sh\n'}
+[20.296984] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/environment/path.dsv\n'}
+[20.297013] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/local_setup.bash\n'}
+[20.297048] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/local_setup.sh\n'}
+[20.297077] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/local_setup.zsh\n'}
+[20.297105] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/local_setup.dsv\n'}
+[20.297148] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/package.dsv\n'}
+[20.297177] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/ament_index/resource_index/packages/quadruped_mujoco\n'}
+[20.297219] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_cExport.cmake\n'}
+[20.297272] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_cExport-noconfig.cmake\n'}
+[20.297339] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[20.297397] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[20.297457] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_cppExport.cmake\n'}
+[20.297514] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[20.297572] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[20.297631] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_introspection_cExport.cmake\n'}
+[20.297686] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[20.297746] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_cExport.cmake\n'}
+[20.297805] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[20.297866] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[20.297922] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[20.297981] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_cppExport.cmake\n'}
+[20.298043] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujoco__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[20.298106] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_pyExport.cmake\n'}
+[20.298161] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_pyExport-noconfig.cmake\n'}
+[20.298218] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujocoExport.cmake\n'}
+[20.298278] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujocoExport-noconfig.cmake\n'}
+[20.298331] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/rosidl_cmake-extras.cmake\n'}
+[20.298386] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.298440] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.298500] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.298554] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[20.298610] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[20.298661] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[20.298721] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujocoConfig.cmake\n'}
+[20.298761] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake/quadruped_mujocoConfig-version.cmake\n'}
+[20.298813] (quadruped_mujoco) StdoutLine: {'line': b'-- Installing: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/package.xml\n'}
+[20.300426] (quadruped_mujoco) CommandEnded: {'returncode': 0}
+[20.311672] (quadruped_mujoco) JobEnded: {'identifier': 'quadruped_mujoco', 'rc': 0}
+[20.312226] (-) EventReactorShutdown: {}

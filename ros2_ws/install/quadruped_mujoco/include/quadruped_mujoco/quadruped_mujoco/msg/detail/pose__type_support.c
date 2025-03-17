@@ -12,6 +12,16 @@
 #include "quadruped_mujoco/msg/detail/pose__struct.h"
 
 
+// Include directives for member types
+// Member `position`
+#include "geometry_msgs/msg/point.h"
+// Member `position`
+#include "geometry_msgs/msg/detail/point__rosidl_typesupport_introspection_c.h"
+// Member `orientation`
+#include "geometry_msgs/msg/quaternion.h"
+// Member `orientation`
+#include "geometry_msgs/msg/detail/quaternion__rosidl_typesupport_introspection_c.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,16 +41,16 @@ void quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_fini_
   quadruped_mujoco__msg__Pose__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_message_member_array[6] = {
+static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_message_member_array[2] = {
   {
-    "x",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    "position",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(quadruped_mujoco__msg__Pose, x),  // bytes offset in struct
+    offsetof(quadruped_mujoco__msg__Pose, position),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -50,82 +60,14 @@ static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__
     NULL  // resize(index) function pointer
   },
   {
-    "y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    "orientation",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(quadruped_mujoco__msg__Pose, y),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "z",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(quadruped_mujoco__msg__Pose, z),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "roll",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(quadruped_mujoco__msg__Pose, roll),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "pitch",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(quadruped_mujoco__msg__Pose, pitch),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "yaw",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(quadruped_mujoco__msg__Pose, yaw),  // bytes offset in struct
+    offsetof(quadruped_mujoco__msg__Pose, orientation),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -139,7 +81,7 @@ static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__
 static const rosidl_typesupport_introspection_c__MessageMembers quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_message_members = {
   "quadruped_mujoco__msg",  // message namespace
   "Pose",  // message name
-  6,  // number of fields
+  2,  // number of fields
   sizeof(quadruped_mujoco__msg__Pose),
   quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_message_member_array,  // message members
   quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -157,6 +99,10 @@ static rosidl_message_type_support_t quadruped_mujoco__msg__Pose__rosidl_typesup
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_quadruped_mujoco
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, quadruped_mujoco, msg, Pose)() {
+  quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Point)();
+  quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_message_member_array[1].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Quaternion)();
   if (!quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_message_type_support_handle.typesupport_identifier) {
     quadruped_mujoco__msg__Pose__rosidl_typesupport_introspection_c__Pose_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

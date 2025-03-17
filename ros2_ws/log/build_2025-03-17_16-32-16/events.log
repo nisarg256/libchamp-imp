@@ -1,0 +1,314 @@
+[0.000000] (-) TimerEvent: {}
+[0.000409] (quadruped_mujoco) JobQueued: {'identifier': 'quadruped_mujoco', 'dependencies': OrderedDict()}
+[0.000493] (quadruped_mujoco) JobStarted: {'identifier': 'quadruped_mujoco'}
+[0.006971] (quadruped_mujoco) JobProgress: {'identifier': 'quadruped_mujoco', 'progress': 'cmake'}
+[0.007424] (quadruped_mujoco) JobProgress: {'identifier': 'quadruped_mujoco', 'progress': 'build'}
+[0.008049] (quadruped_mujoco) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco', '--', '-j12', '-l12'], 'cwd': '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco', 'env': OrderedDict([('LANGUAGE', 'en_IN:en'), ('USER', 'nisarg'), ('ROS_PACKAGE_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib:/home/nisarg/.mujoco/mujoco210/bin:/home/nisarg/quadruped_ws/install/unitree_go/lib:/home/nisarg/quadruped_ws/install/unitree_api/lib:/home/nisarg/quadruped_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nisarg'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2064'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install:/home/nisarg/Documents/repo/libchamp-imp/install:/home/nisarg/Documents/repo/helium-quadruped-mjc/install:/home/nisarg/quadruped_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nisarg'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nisarg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nisarg/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nisarg-OMEN:@/tmp/.ICE-unix/2064,unix/nisarg-OMEN:/tmp/.ICE-unix/2064'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a2c74410_1cec_4ef8_bca7_33967d08ea0c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '47'), ('AMENT_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nisarg/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CMAKE_MODULE_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/nisarg/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('MUJOCO_PLUGIN_PATH', '/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller/lib/python3.10/site-packages:/home/nisarg/quadruped_ws/install/unitree_go/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/unitree_api/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/champ_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble'), ('MUJOCO_KEY_PATH', '/home/nisarg/.mujoco/mjkey.txt')]), 'shell': False}
+[0.038468] (quadruped_mujoco) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099325] (-) TimerEvent: {}
+[0.163896] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.183794] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.185294] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.189417] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.195795] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.199408] (-) TimerEvent: {}
+[0.203947] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.225634] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.226525] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299520] (-) TimerEvent: {}
+[0.303093] (quadruped_mujoco) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.336518] (quadruped_mujoco) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.357124] (quadruped_mujoco) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.367965] (quadruped_mujoco) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.370823] (quadruped_mujoco) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.399632] (-) TimerEvent: {}
+[0.423504] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.430255] (quadruped_mujoco) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):\n'}
+[0.430510] (quadruped_mujoco) StderrLine: {'line': b'  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when\n'}
+[0.430626] (quadruped_mujoco) StderrLine: {'line': b'  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the\n'}
+[0.430739] (quadruped_mujoco) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[0.430831] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.430925] (quadruped_mujoco) StderrLine: {'line': b'  FindOpenGL found both a legacy GL library:\n'}
+[0.431016] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.431105] (quadruped_mujoco) StderrLine: {'line': b'    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so\n'}
+[0.431198] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.431286] (quadruped_mujoco) StderrLine: {'line': b'  and GLVND libraries for OpenGL and GLX:\n'}
+[0.431379] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.431472] (quadruped_mujoco) StderrLine: {'line': b'    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so\n'}
+[0.431567] (quadruped_mujoco) StderrLine: {'line': b'    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so\n'}
+[0.431705] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.431798] (quadruped_mujoco) StderrLine: {'line': b'  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for\n'}
+[0.431878] (quadruped_mujoco) StderrLine: {'line': b'  compatibility with CMake 3.10 and below the legacy GL library will be used.\n'}
+[0.431958] (quadruped_mujoco) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.432041] (quadruped_mujoco) StderrLine: {'line': b'  CMakeLists.txt:28 (find_package)\n'}
+[0.432122] (quadruped_mujoco) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.432201] (quadruped_mujoco) StderrLine: {'line': b'\x1b[0m\n'}
+[0.499744] (-) TimerEvent: {}
+[0.600044] (-) TimerEvent: {}
+[0.700381] (-) TimerEvent: {}
+[0.729478] (quadruped_mujoco) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.800495] (-) TimerEvent: {}
+[0.900849] (-) TimerEvent: {}
+[1.001395] (-) TimerEvent: {}
+[1.078128] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.101508] (-) TimerEvent: {}
+[1.200507] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.201608] (-) TimerEvent: {}
+[1.221162] (quadruped_mujoco) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.240524] (quadruped_mujoco) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.240727] (quadruped_mujoco) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.240776] (quadruped_mujoco) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.283772] (quadruped_mujoco) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.301719] (-) TimerEvent: {}
+[1.334329] (quadruped_mujoco) StdoutLine: {'line': b'-- Generating done\n'}
+[1.372395] (quadruped_mujoco) StdoutLine: {'line': b'-- Build files have been written to: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco\n'}
+[1.398059] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mujoco_interface_node\x1b[0m\n'}
+[1.398325] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_generator_c\x1b[0m\n'}
+[1.401879] (-) TimerEvent: {}
+[1.417447] (quadruped_mujoco) StdoutLine: {'line': b'[  1%] Built target quadruped_mujoco__cpp\n'}
+[1.422997] (quadruped_mujoco) StdoutLine: {'line': b'[ 10%] Built target quadruped_mujoco__rosidl_generator_c\n'}
+[1.431446] (quadruped_mujoco) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_copy_quadruped_mujoco\n'}
+[1.437134] (quadruped_mujoco) StdoutLine: {'line': b'[ 12%] Built target mujoco_interface_node\n'}
+[1.439211] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.440154] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.441972] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.442356] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.442531] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_c\x1b[0m\n'}
+[1.447720] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.457156] (quadruped_mujoco) StdoutLine: {'line': b'[ 22%] Built target quadruped_mujoco__rosidl_typesupport_c\n'}
+[1.460188] (quadruped_mujoco) StdoutLine: {'line': b'[ 31%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp\n'}
+[1.463032] (quadruped_mujoco) StdoutLine: {'line': b'[ 48%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c\n'}
+[1.463333] (quadruped_mujoco) StdoutLine: {'line': b'[ 49%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp\n'}
+[1.464385] (quadruped_mujoco) StdoutLine: {'line': b'[ 58%] Built target quadruped_mujoco__rosidl_typesupport_cpp\n'}
+[1.466790] (quadruped_mujoco) StdoutLine: {'line': b'[ 67%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c\n'}
+[1.477332] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco_lib\x1b[0m\n'}
+[1.487237] (quadruped_mujoco) StdoutLine: {'line': b'[ 67%] Built target quadruped_mujoco\n'}
+[1.493404] (quadruped_mujoco) StdoutLine: {'line': b'[ 70%] Built target quadruped_mujoco_lib\n'}
+[1.501970] (-) TimerEvent: {}
+[1.502406] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target waypoint_nav_node\x1b[0m\n'}
+[1.503892] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mujoco_sim_node\x1b[0m\n'}
+[1.505966] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target turn_node\x1b[0m\n'}
+[1.506162] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_controller_node\x1b[0m\n'}
+[1.506357] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target trot_node\x1b[0m\n'}
+[1.509352] (quadruped_mujoco) StdoutLine: {'line': b'[ 71%] Built target quadruped_mujoco__py\n'}
+[1.517191] (quadruped_mujoco) StdoutLine: {'line': b'[ 74%] Built target waypoint_nav_node\n'}
+[1.521007] (quadruped_mujoco) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o\x1b[0m\n'}
+[1.522458] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_generator_py\x1b[0m\n'}
+[1.523029] (quadruped_mujoco) StdoutLine: {'line': b'[ 77%] Built target turn_node\n'}
+[1.523460] (quadruped_mujoco) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o\x1b[0m\n'}
+[1.524035] (quadruped_mujoco) StdoutLine: {'line': b'[ 81%] Built target trot_node\n'}
+[1.540933] (quadruped_mujoco) StdoutLine: {'line': b'[ 89%] Built target quadruped_mujoco__rosidl_generator_py\n'}
+[1.549513] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.549884] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[1.551158] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.561001] (quadruped_mujoco) StdoutLine: {'line': b'[ 93%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.561183] (quadruped_mujoco) StdoutLine: {'line': b'[ 94%] Built target quadruped_mujoco__rosidl_typesupport_c__pyext\n'}
+[1.563782] (quadruped_mujoco) StdoutLine: {'line': b'[ 97%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext\n'}
+[1.602065] (-) TimerEvent: {}
+[1.622929] (quadruped_mujoco) StdoutLine: {'line': b'running egg_info\n'}
+[1.623459] (quadruped_mujoco) StdoutLine: {'line': b'writing quadruped_mujoco.egg-info/PKG-INFO\n'}
+[1.623664] (quadruped_mujoco) StdoutLine: {'line': b'writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt\n'}
+[1.623781] (quadruped_mujoco) StdoutLine: {'line': b'writing top-level names to quadruped_mujoco.egg-info/top_level.txt\n'}
+[1.625438] (quadruped_mujoco) StdoutLine: {'line': b"reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'\n"}
+[1.625826] (quadruped_mujoco) StdoutLine: {'line': b"writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'\n"}
+[1.648965] (quadruped_mujoco) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_quadruped_mujoco_egg\n'}
+[1.702207] (-) TimerEvent: {}
+[1.802543] (-) TimerEvent: {}
+[1.902902] (-) TimerEvent: {}
+[2.003216] (-) TimerEvent: {}
+[2.103542] (-) TimerEvent: {}
+[2.203905] (-) TimerEvent: {}
+[2.304222] (-) TimerEvent: {}
+[2.404556] (-) TimerEvent: {}
+[2.504875] (-) TimerEvent: {}
+[2.605201] (-) TimerEvent: {}
+[2.705539] (-) TimerEvent: {}
+[2.805873] (-) TimerEvent: {}
+[2.906217] (-) TimerEvent: {}
+[3.006542] (-) TimerEvent: {}
+[3.106913] (-) TimerEvent: {}
+[3.173518] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6\x1b[m\x1b[K,\n'}
+[3.173848] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[3.174025] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4\x1b[m\x1b[K,\n'}
+[3.174158] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2\x1b[m\x1b[K:\n'}
+[3.174282] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.174518] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kchamp::PhaseGenerator::has_swung_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.174681] (quadruped_mujoco) StderrLine: {'line': b'   64 |             bool \x1b[01;35m\x1b[Khas_swung_\x1b[m\x1b[K;\n'}
+[3.174774] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.174922] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool champ::PhaseGenerator::has_started\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.175049] (quadruped_mujoco) StderrLine: {'line': b'   17 |             bool \x1b[01;35m\x1b[Khas_started\x1b[m\x1b[K;\n'}
+[3.175173] (quadruped_mujoco) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.175342] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.175455] (quadruped_mujoco) StderrLine: {'line': b'   19 |             \x1b[01;35m\x1b[KPhaseGenerator\x1b[m\x1b[K(QuadrupedBase &base, Time time = now()):\n'}
+[3.175542] (quadruped_mujoco) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.175638] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.175731] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktarget_velocity\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.175819] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(\x1b[01;35m\x1b[Kfloat target_velocity\x1b[m\x1b[K, float step_length, Time time = now())\n'}
+[3.175901] (quadruped_mujoco) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.175982] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kstep_length\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.176088] (quadruped_mujoco) StderrLine: {'line': b'   32 |             void run(float target_velocity, \x1b[01;35m\x1b[Kfloat step_length\x1b[m\x1b[K, Time time = now())\n'}
+[3.176170] (quadruped_mujoco) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.176252] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12\x1b[m\x1b[K,\n'}
+[3.176341] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4\x1b[m\x1b[K,\n'}
+[3.176423] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2\x1b[m\x1b[K:\n'}
+[3.176503] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.176707] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.176797] (quadruped_mujoco) StderrLine: {'line': b'   13 |     LegController(QuadrupedBase &base, \x1b[01;35m\x1b[KPhaseGenerator::Time time = PhaseGenerator::now()\x1b[m\x1b[K):\n'}
+[3.176879] (quadruped_mujoco) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.176960] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[3.207026] (-) TimerEvent: {}
+[3.288999] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KQuadrupedControllerNode::QuadrupedControllerNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.289429] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:22:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<champ::TrotController>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<champ::QuadrupedController>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.289525] (quadruped_mujoco) StderrLine: {'line': b'   22 | ontroller_ = std::make_shared<champ::QuadrupedController>(*quadruped_\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[3.289616] (quadruped_mujoco) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.289703] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[3.289781] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[3.289859] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[3.289934] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.290023] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = champ::TrotController]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.290103] (quadruped_mujoco) StderrLine: {'line': b'  363 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[3.290185] (quadruped_mujoco) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.290258] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.290332] (quadruped_mujoco) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr.h: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<champ::QuadrupedController>&; _Tp = champ::TrotController]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.290410] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<champ::TrotController>::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<champ::TrotController>::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = champ::QuadrupedController]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.290489] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:22:83:\x1b[m\x1b[K   required from here\n'}
+[3.290572] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:130:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::shared_ptr<champ::TrotController>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.290673] (quadruped_mujoco) StderrLine: {'line': b'  130 |         using \x1b[01;31m\x1b[K_Assignable\x1b[m\x1b[K = typename enable_if<\n'}
+[3.290753] (quadruped_mujoco) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.290828] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = champ::TrotController]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.290904] (quadruped_mujoco) StderrLine: {'line': b'  374 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[3.290978] (quadruped_mujoco) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.291052] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.291132] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:22:83:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<champ::QuadrupedController>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::auto_ptr<_Up>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.291210] (quadruped_mujoco) StderrLine: {'line': b'   22 | ontroller_ = std::make_shared<champ::QuadrupedController>(*quadruped_\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[3.291286] (quadruped_mujoco) StderrLine: {'line': b'      |                                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.291361] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[3.291438] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[3.291514] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[3.291590] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.291687] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = champ::TrotController]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.291769] (quadruped_mujoco) StderrLine: {'line': b'  391 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[3.291845] (quadruped_mujoco) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.291919] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.291995] (quadruped_mujoco) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr.h: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<champ::QuadrupedController>; _Tp = champ::TrotController]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.292075] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<champ::TrotController>::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<champ::TrotController>::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = champ::QuadrupedController]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.292166] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:22:83:\x1b[m\x1b[K   required from here\n'}
+[3.292244] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:130:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::shared_ptr<champ::TrotController>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.292321] (quadruped_mujoco) StderrLine: {'line': b'  130 |         using \x1b[01;31m\x1b[K_Assignable\x1b[m\x1b[K = typename enable_if<\n'}
+[3.292395] (quadruped_mujoco) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.292470] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = champ::TrotController]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.292550] (quadruped_mujoco) StderrLine: {'line': b'  399 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[3.292636] (quadruped_mujoco) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.292716] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.292791] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:22:83:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<champ::QuadrupedController>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.292884] (quadruped_mujoco) StderrLine: {'line': b'   22 | ontroller_ = std::make_shared<champ::QuadrupedController>(*quadruped_\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[3.292963] (quadruped_mujoco) StderrLine: {'line': b'      |                                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.293038] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[3.293113] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[3.293187] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[3.293261] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.293340] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = champ::TrotController]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.293417] (quadruped_mujoco) StderrLine: {'line': b'  359 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[3.293491] (quadruped_mujoco) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.293566] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<champ::QuadrupedController>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<champ::TrotController>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.293658] (quadruped_mujoco) StderrLine: {'line': b'  359 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[3.293734] (quadruped_mujoco) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.293807] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = champ::TrotController]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.293881] (quadruped_mujoco) StderrLine: {'line': b'  383 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[3.293954] (quadruped_mujoco) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.294026] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<champ::QuadrupedController>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<champ::TrotController>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.294104] (quadruped_mujoco) StderrLine: {'line': b'  383 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[3.294177] (quadruped_mujoco) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.294250] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:27:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KjointStatesCallback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KQuadrupedControllerNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.294326] (quadruped_mujoco) StderrLine: {'line': b'   27 |                 std::bind(&QuadrupedControllerNode::\x1b[01;31m\x1b[KjointStatesCallback\x1b[m\x1b[K, this, std::placeholders::_1));\n'}
+[3.294400] (quadruped_mujoco) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.294482] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:31:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcmdVelCallback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KQuadrupedControllerNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.294569] (quadruped_mujoco) StderrLine: {'line': b'   31 |                 std::bind(&QuadrupedControllerNode::\x1b[01;31m\x1b[KcmdVelCallback\x1b[m\x1b[K, this, std::placeholders::_1));\n'}
+[3.294653] (quadruped_mujoco) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.307131] (-) TimerEvent: {}
+[3.407477] (-) TimerEvent: {}
+[3.507804] (-) TimerEvent: {}
+[3.594483] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[3.594713] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[3.594821] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[3.594918] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[3.595011] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.595103] (quadruped_mujoco) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = champ::QuadrupedController; _Args = {champ::QuadrupedBase&}; _Tp = champ::QuadrupedController]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.595197] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = champ::QuadrupedController; _Args = {champ::QuadrupedBase&}; _Tp = champ::QuadrupedController; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<champ::QuadrupedController>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.595356] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {champ::QuadrupedBase&}; _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.595452] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; _Args = {champ::QuadrupedBase&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.595541] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::QuadrupedController>; _Args = {champ::QuadrupedBase&}; _Tp = champ::QuadrupedController; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.595635] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::QuadrupedController>; _Args = {champ::QuadrupedBase&}; _Tp = champ::QuadrupedController]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.595741] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; _Args = {champ::QuadrupedBase&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.595828] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = champ::QuadrupedController; _Args = {champ::QuadrupedBase&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.595912] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:22:71:\x1b[m\x1b[K   required from here\n'}
+[3.595994] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid new-expression of abstract class type \xe2\x80\x98\x1b[01m\x1b[Kchamp::QuadrupedController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.596078] (quadruped_mujoco) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[3.596160] (quadruped_mujoco) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.596253] (quadruped_mujoco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4\x1b[m\x1b[K,\n'}
+[3.596336] (quadruped_mujoco) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2\x1b[m\x1b[K:\n'}
+[3.596417] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:17:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  because the following virtual functions are pure within \xe2\x80\x98\x1b[01m\x1b[Kchamp::QuadrupedController\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.596500] (quadruped_mujoco) StderrLine: {'line': b'   17 |     class \x1b[01;36m\x1b[KQuadrupedController\x1b[m\x1b[K\n'}
+[3.596581] (quadruped_mujoco) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.596672] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:60:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual void champ::QuadrupedController::initializeGaitConfig()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.596758] (quadruped_mujoco) StderrLine: {'line': b'   60 |             virtual void \x1b[01;36m\x1b[KinitializeGaitConfig\x1b[m\x1b[K() = 0;\n'}
+[3.596841] (quadruped_mujoco) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.596925] (quadruped_mujoco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:61:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual void champ::QuadrupedController::execute(const champ::Velocities&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.597024] (quadruped_mujoco) StderrLine: {'line': b'   61 |             virtual void \x1b[01;36m\x1b[Kexecute\x1b[m\x1b[K(const Velocities &req_vel) = 0;\n'}
+[3.597112] (quadruped_mujoco) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.607906] (-) TimerEvent: {}
+[3.708221] (-) TimerEvent: {}
+[3.808527] (-) TimerEvent: {}
+[3.837140] (quadruped_mujoco) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/quadruped_controller_node.dir/build.make:76: CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o] Error 1\n'}
+[3.837402] (quadruped_mujoco) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:659: CMakeFiles/quadruped_controller_node.dir/all] Error 2\n'}
+[3.837503] (quadruped_mujoco) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[3.908637] (-) TimerEvent: {}
+[4.008927] (-) TimerEvent: {}
+[4.109339] (-) TimerEvent: {}
+[4.209755] (-) TimerEvent: {}
+[4.310181] (-) TimerEvent: {}
+[4.410595] (-) TimerEvent: {}
+[4.510892] (-) TimerEvent: {}
+[4.611209] (-) TimerEvent: {}
+[4.711506] (-) TimerEvent: {}
+[4.811836] (-) TimerEvent: {}
+[4.912151] (-) TimerEvent: {}
+[5.012484] (-) TimerEvent: {}
+[5.112789] (-) TimerEvent: {}
+[5.213069] (-) TimerEvent: {}
+[5.313381] (-) TimerEvent: {}
+[5.413660] (-) TimerEvent: {}
+[5.514057] (-) TimerEvent: {}
+[5.614443] (-) TimerEvent: {}
+[5.714793] (-) TimerEvent: {}
+[5.815183] (-) TimerEvent: {}
+[5.915584] (-) TimerEvent: {}
+[6.015879] (-) TimerEvent: {}
+[6.116191] (-) TimerEvent: {}
+[6.216591] (-) TimerEvent: {}
+[6.316890] (-) TimerEvent: {}
+[6.417207] (-) TimerEvent: {}
+[6.517608] (-) TimerEvent: {}
+[6.617882] (-) TimerEvent: {}
+[6.718279] (-) TimerEvent: {}
+[6.818680] (-) TimerEvent: {}
+[6.919002] (-) TimerEvent: {}
+[7.019736] (-) TimerEvent: {}
+[7.120756] (-) TimerEvent: {}
+[7.221707] (-) TimerEvent: {}
+[7.322538] (-) TimerEvent: {}
+[7.423387] (-) TimerEvent: {}
+[7.523858] (-) TimerEvent: {}
+[7.624172] (-) TimerEvent: {}
+[7.724514] (-) TimerEvent: {}
+[7.824918] (-) TimerEvent: {}
+[7.865959] (quadruped_mujoco) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable mujoco_sim_node\x1b[0m\n'}
+[7.925125] (-) TimerEvent: {}
+[8.025542] (-) TimerEvent: {}
+[8.125848] (-) TimerEvent: {}
+[8.226207] (-) TimerEvent: {}
+[8.274378] (quadruped_mujoco) StdoutLine: {'line': b'[ 98%] Built target mujoco_sim_node\n'}
+[8.275739] (quadruped_mujoco) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.277382] (quadruped_mujoco) CommandEnded: {'returncode': 2}
+[8.286694] (quadruped_mujoco) JobEnded: {'identifier': 'quadruped_mujoco', 'rc': 2}
+[8.297179] (-) EventReactorShutdown: {}

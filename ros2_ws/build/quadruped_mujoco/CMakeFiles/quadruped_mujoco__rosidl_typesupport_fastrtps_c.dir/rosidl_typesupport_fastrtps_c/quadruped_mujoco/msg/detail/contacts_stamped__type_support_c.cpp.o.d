@@ -186,9 +186,10 @@ CMakeFiles/quadruped_mujoco__rosidl_typesupport_fastrtps_c.dir/rosidl_typesuppor
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__struct.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__functions.h \
  /usr/include/c++/11/stdlib.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
+ /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__functions.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h

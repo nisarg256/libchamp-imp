@@ -1,0 +1,112 @@
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |             bool [01;35m[Khas_swung_[m[K;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   17 |             bool [01;35m[Khas_started[m[K;
+      |                  [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+      |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+      |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+      |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |             bool [01;35m[Khas_swung_[m[K;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   17 |             bool [01;35m[Khas_started[m[K;
+      |                  [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+      |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+      |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+      |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |             bool [01;35m[Khas_swung_[m[K;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   17 |             bool [01;35m[Khas_started[m[K;
+      |                  [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+      |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+      |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+      |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   64 |             bool [01;35m[Khas_swung_[m[K;
+      |                  [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   17 |             bool [01;35m[Khas_started[m[K;
+      |                  [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+      |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+      |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+      |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+                 from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+      |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

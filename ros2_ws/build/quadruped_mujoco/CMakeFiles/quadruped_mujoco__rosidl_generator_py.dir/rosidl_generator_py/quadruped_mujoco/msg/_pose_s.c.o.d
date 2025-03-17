@@ -208,5 +208,7 @@ CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadrup
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/pose__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/pose__functions.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h

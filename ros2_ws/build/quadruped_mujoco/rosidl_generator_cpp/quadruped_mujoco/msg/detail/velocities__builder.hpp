@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Velocities_angular_z
+class Init_Velocities_angular
 {
 public:
-  explicit Init_Velocities_angular_z(::quadruped_mujoco::msg::Velocities & msg)
+  explicit Init_Velocities_angular(::quadruped_mujoco::msg::Velocities & msg)
   : msg_(msg)
   {}
-  ::quadruped_mujoco::msg::Velocities angular_z(::quadruped_mujoco::msg::Velocities::_angular_z_type arg)
+  ::quadruped_mujoco::msg::Velocities angular(::quadruped_mujoco::msg::Velocities::_angular_type arg)
   {
-    msg_.angular_z = std::move(arg);
+    msg_.angular = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,32 +37,16 @@ private:
   ::quadruped_mujoco::msg::Velocities msg_;
 };
 
-class Init_Velocities_linear_y
+class Init_Velocities_linear
 {
 public:
-  explicit Init_Velocities_linear_y(::quadruped_mujoco::msg::Velocities & msg)
-  : msg_(msg)
-  {}
-  Init_Velocities_angular_z linear_y(::quadruped_mujoco::msg::Velocities::_linear_y_type arg)
-  {
-    msg_.linear_y = std::move(arg);
-    return Init_Velocities_angular_z(msg_);
-  }
-
-private:
-  ::quadruped_mujoco::msg::Velocities msg_;
-};
-
-class Init_Velocities_linear_x
-{
-public:
-  Init_Velocities_linear_x()
+  Init_Velocities_linear()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Velocities_linear_y linear_x(::quadruped_mujoco::msg::Velocities::_linear_x_type arg)
+  Init_Velocities_angular linear(::quadruped_mujoco::msg::Velocities::_linear_type arg)
   {
-    msg_.linear_x = std::move(arg);
-    return Init_Velocities_linear_y(msg_);
+    msg_.linear = std::move(arg);
+    return Init_Velocities_angular(msg_);
   }
 
 private:
@@ -80,7 +64,7 @@ template<>
 inline
 auto build<::quadruped_mujoco::msg::Velocities>()
 {
-  return quadruped_mujoco::msg::builder::Init_Velocities_linear_x();
+  return quadruped_mujoco::msg::builder::Init_Velocities_linear();
 }
 
 }  // namespace quadruped_mujoco

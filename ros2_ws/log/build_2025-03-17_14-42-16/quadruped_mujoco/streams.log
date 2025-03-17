@@ -1,0 +1,783 @@
+[0.010s] Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --build /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco -- -j12 -l12
+[0.055s] [  1%] Built target quadruped_mujoco__cpp
+[0.060s] [ 10%] Built target quadruped_mujoco__rosidl_generator_c
+[0.060s] [ 10%] Built target ament_cmake_python_copy_quadruped_mujoco
+[0.062s] [ 13%] Built target mujoco_interface_node
+[0.076s] [ 23%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp
+[0.077s] [ 32%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp
+[0.077s] [ 42%] Built target quadruped_mujoco__rosidl_typesupport_cpp
+[0.080s] [ 52%] Built target quadruped_mujoco__rosidl_typesupport_c
+[0.080s] [ 61%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c
+[0.085s] [ 71%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c
+[0.104s] [ 71%] Built target quadruped_mujoco
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target trot_node[0m
+[0.116s] [35m[1mConsolidate compiler generated dependencies of target turn_node[0m
+[0.119s] [35m[1mConsolidate compiler generated dependencies of target quadruped_controller_node[0m
+[0.119s] [35m[1mConsolidate compiler generated dependencies of target waypoint_nav_node[0m
+[0.121s] [ 72%] Built target quadruped_mujoco__py
+[0.131s] [ 73%] [32mBuilding CXX object CMakeFiles/turn_node.dir/src/nodes/turn_node.cpp.o[0m
+[0.133s] [ 75%] [32mBuilding CXX object CMakeFiles/trot_node.dir/src/nodes/trot_node.cpp.o[0m
+[0.138s] [ 76%] [32mBuilding CXX object CMakeFiles/waypoint_nav_node.dir/src/nodes/waypoint_nav_node.cpp.o[0m
+[0.141s] [ 78%] [32mBuilding CXX object CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o[0m
+[0.145s] [ 86%] Built target quadruped_mujoco__rosidl_generator_py
+[0.168s] [ 89%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext
+[0.168s] [ 91%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext
+[0.170s] [ 94%] Built target quadruped_mujoco__rosidl_typesupport_c__pyext
+[0.260s] running egg_info
+[0.261s] writing quadruped_mujoco.egg-info/PKG-INFO
+[0.261s] writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt
+[0.262s] writing top-level names to quadruped_mujoco.egg-info/top_level.txt
+[0.264s] reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[0.265s] writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[0.289s] [ 94%] Built target ament_cmake_python_build_quadruped_mujoco_egg
+[2.135s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.135s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.135s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.135s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:[m[K In member function ‘[01m[Kvoid champ::BodyController::poseCommand(geometry::Transformation (&)[4], const champ::Pose&)[m[K’:
+[2.135s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:32:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::x(const float&)[m[K’
+[2.135s]    32 |                 [01;31m[Kbody_pose.p.x(req_pose.position.x)[m[K;
+[2.135s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.135s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.135s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.135s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.135s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.135s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.135s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.135s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:20:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::x()[m[K’
+[2.136s]    20 |             float& [01;36m[Kx[m[K() { return x_; }
+[2.136s]       |                    [01;36m[K^[m[K
+[2.136s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:20:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.136s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:24:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::x() const[m[K’
+[2.136s]    24 |             const float& [01;36m[Kx[m[K() const { return x_; }
+[2.136s]       |                          [01;36m[K^[m[K
+[2.136s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:24:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.136s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.136s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.136s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.136s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:33:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::y(const float&)[m[K’
+[2.136s]    33 |                 [01;31m[Kbody_pose.p.y(req_pose.position.y)[m[K;
+[2.136s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.136s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.136s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.136s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.136s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.136s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.137s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.137s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:21:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::y()[m[K’
+[2.137s]    21 |             float& [01;36m[Ky[m[K() { return y_; }
+[2.137s]       |                    [01;36m[K^[m[K
+[2.137s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:21:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.137s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:25:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::y() const[m[K’
+[2.137s]    25 |             const float& [01;36m[Ky[m[K() const { return y_; }
+[2.137s]       |                          [01;36m[K^[m[K
+[2.137s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:25:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.137s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.137s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.137s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.137s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:34:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::z(const float&)[m[K’
+[2.137s]    34 |                 [01;31m[Kbody_pose.p.z(req_pose.position.z)[m[K;
+[2.137s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.137s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.137s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.138s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.138s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.138s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.138s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.138s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:22:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::z()[m[K’
+[2.138s]    22 |             float& [01;36m[Kz[m[K() { return z_; }
+[2.138s]       |                    [01;36m[K^[m[K
+[2.138s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:22:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.138s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:26:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::z() const[m[K’
+[2.138s]    26 |             const float& [01;36m[Kz[m[K() const { return z_; }
+[2.138s]       |                          [01;36m[K^[m[K
+[2.138s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:26:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.138s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.139s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.139s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.139s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:[m[K In member function ‘[01m[Kvoid champ::BodyController::velocityCommand(geometry::Transformation (&)[4], const champ::Velocities&)[m[K’:
+[2.139s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:72:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.139s]    72 |                     float x = temp_foot_positions_[i].[01;31m[KX[m[K();
+[2.140s]       |                                                       [01;31m[K^[m[K
+[2.140s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:73:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.140s]    73 |                     float y = temp_foot_positions_[i].[01;31m[KY[m[K();
+[2.140s]       |                                                       [01;31m[K^[m[K
+[2.140s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:75:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.140s]    75 |                     foot_positions[i].[01;31m[KX[m[K() = x - delta_x;
+[2.140s]       |                                       [01;31m[K^[m[K
+[2.140s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:76:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.141s]    76 |                     foot_positions[i].[01;31m[KY[m[K() = y - delta_y;
+[2.141s]       |                                       [01;31m[K^[m[K
+[2.141s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:77:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KZ[m[K’
+[2.141s]    77 |                     foot_positions[i].[01;31m[KZ[m[K() = delta_z;
+[2.141s]       |                                       [01;31m[K^[m[K
+[2.141s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:83:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.141s]    83 |                     foot_positions[i].[01;31m[KX[m[K() = radius * cos(theta + delta_theta);
+[2.141s]       |                                       [01;31m[K^[m[K
+[2.141s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:84:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.142s]    84 |                     foot_positions[i].[01;31m[KY[m[K() = radius * sin(theta + delta_theta);
+[2.142s]       |                                       [01;31m[K^[m[K
+[2.142s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+[2.142s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[2.142s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.142s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.142s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[2.142s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.142s]    64 |             bool [01;35m[Khas_swung_[m[K;
+[2.142s]       |                  [01;35m[K^~~~~~~~~~[m[K
+[2.143s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.143s]    17 |             bool [01;35m[Khas_started[m[K;
+[2.143s]       |                  [01;35m[K^~~~~~~~~~~[m[K
+[2.143s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.143s]    19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+[2.143s]       |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[2.143s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[2.143s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.143s]    32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+[2.143s]       |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[2.143s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.143s]    32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+[2.144s]       |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+[2.144s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[2.144s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.144s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.144s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[2.144s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.144s]    13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+[2.144s]       |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.144s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:13[m[K,
+[2.144s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.144s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.144s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:[m[K In static member function ‘[01m[Kstatic void champ::Kinematics::inverse(float&, float&, float&, champ::QuadrupedLeg&, geometry::Transformation&)[m[K’:
+[2.145s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:18:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.145s]    18 |                 float x = foot_position.[01;31m[KX[m[K();
+[2.145s]       |                                         [01;31m[K^[m[K
+[2.145s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:19:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.145s]    19 |                 float y = foot_position.[01;31m[KY[m[K();
+[2.145s]       |                                         [01;31m[K^[m[K
+[2.145s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:20:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KZ[m[K’
+[2.145s]    20 |                 float z = foot_position.[01;31m[KZ[m[K();
+[2.145s]       |                                         [01;31m[K^[m[K
+[2.145s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:[m[K In static member function ‘[01m[Kstatic void champ::Kinematics::forward(geometry::Transformation&, const champ::QuadrupedLeg&, float, float, float)[m[K’:
+[2.146s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:41:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry::Transformation[m[K’ and ‘[01m[KMatrix<4, 4>[m[K’)
+[2.146s]    41 |                 foot_position = Identity<4,4>([01;31m[K)[m[K;
+[2.146s]       |                                               [01;31m[K^[m[K
+[2.146s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.146s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.146s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.146s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.146s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.147s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.147s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry::Transformation& geometry::Transformation::operator=(const geometry::Transformation&)[m[K’
+[2.147s]    93 |     class [01;36m[KTransformation[m[K : public Matrix<4,4>
+[2.147s]       |           [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.147s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KMatrix<4, 4>[m[K’ to ‘[01m[Kconst geometry::Transformation&[m[K’
+[2.147s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry::Transformation& geometry::Transformation::operator=(geometry::Transformation&&)[m[K’
+[2.147s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KMatrix<4, 4>[m[K’ to ‘[01m[Kgeometry::Transformation&&[m[K’
+[2.149s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.149s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:[m[K In member function ‘[01m[Kvirtual void champ::TurnController::execute(const champ::Velocities&)[m[K’:
+[2.149s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:28:66:[m[K [01;31m[Kerror: [m[Kbinding reference of type ‘[01m[Kchamp::Velocities&[m[K’ to ‘[01m[Kconst champ::Velocities[m[K’ discards qualifiers
+[2.149s]    28 |                 leg_controller_.velocityCommand(foot_positions_, [01;31m[Kreq_vel[m[K);
+[2.149s]       |                                                                  [01;31m[K^~~~~~~[m[K
+[2.149s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[2.149s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[2.149s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.150s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:28:44:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid champ::LegController::velocityCommand(geometry::Transformation*, champ::Velocities&, champ::PhaseGenerator::Time)[m[K’
+[2.150s]    28 |                                [01;36m[KVelocities &req_vel[m[K,
+[2.150s]       |                                [01;36m[K~~~~~~~~~~~~^~~~~~~[m[K
+[2.150s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:2[m[K:
+[2.150s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:[m[K In member function ‘[01m[Kvirtual void champ::TurnController::initializeGaitConfig()[m[K’:
+[2.150s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:54:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass champ::GaitConfig[m[K’ has no member named ‘[01m[Kcom_x_translation[m[K’
+[2.150s]    54 |                 gait_config.[01;31m[Kcom_x_translation[m[K = 0.0;
+[2.150s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.223s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.223s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.223s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.223s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:[m[K In member function ‘[01m[Kvoid champ::BodyController::poseCommand(geometry::Transformation (&)[4], const champ::Pose&)[m[K’:
+[2.223s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:32:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::x(const float&)[m[K’
+[2.223s]    32 |                 [01;31m[Kbody_pose.p.x(req_pose.position.x)[m[K;
+[2.223s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.223s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.224s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.224s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.224s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.224s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.224s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.224s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:20:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::x()[m[K’
+[2.224s]    20 |             float& [01;36m[Kx[m[K() { return x_; }
+[2.225s]       |                    [01;36m[K^[m[K
+[2.225s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:20:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.225s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:24:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::x() const[m[K’
+[2.225s]    24 |             const float& [01;36m[Kx[m[K() const { return x_; }
+[2.225s]       |                          [01;36m[K^[m[K
+[2.225s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:24:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.225s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.225s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.225s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.226s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:33:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::y(const float&)[m[K’
+[2.226s]    33 |                 [01;31m[Kbody_pose.p.y(req_pose.position.y)[m[K;
+[2.226s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.226s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.226s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.226s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.226s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.226s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.226s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.226s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:21:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::y()[m[K’
+[2.226s]    21 |             float& [01;36m[Ky[m[K() { return y_; }
+[2.226s]       |                    [01;36m[K^[m[K
+[2.226s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:21:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.227s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:25:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::y() const[m[K’
+[2.227s]    25 |             const float& [01;36m[Ky[m[K() const { return y_; }
+[2.227s]       |                          [01;36m[K^[m[K
+[2.227s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:25:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.227s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.227s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.227s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.227s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:34:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::z(const float&)[m[K’
+[2.227s]    34 |                 [01;31m[Kbody_pose.p.z(req_pose.position.z)[m[K;
+[2.227s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.227s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.227s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.227s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.228s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.228s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.228s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.228s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:22:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::z()[m[K’
+[2.228s]    22 |             float& [01;36m[Kz[m[K() { return z_; }
+[2.228s]       |                    [01;36m[K^[m[K
+[2.228s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:22:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.228s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:26:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::z() const[m[K’
+[2.229s]    26 |             const float& [01;36m[Kz[m[K() const { return z_; }
+[2.229s]       |                          [01;36m[K^[m[K
+[2.229s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:26:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.229s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.229s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.229s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.229s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:[m[K In member function ‘[01m[Kvoid champ::BodyController::velocityCommand(geometry::Transformation (&)[4], const champ::Velocities&)[m[K’:
+[2.229s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:72:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.229s]    72 |                     float x = temp_foot_positions_[i].[01;31m[KX[m[K();
+[2.229s]       |                                                       [01;31m[K^[m[K
+[2.229s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:73:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.229s]    73 |                     float y = temp_foot_positions_[i].[01;31m[KY[m[K();
+[2.229s]       |                                                       [01;31m[K^[m[K
+[2.230s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:75:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.230s]    75 |                     foot_positions[i].[01;31m[KX[m[K() = x - delta_x;
+[2.230s]       |                                       [01;31m[K^[m[K
+[2.230s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:76:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.230s]    76 |                     foot_positions[i].[01;31m[KY[m[K() = y - delta_y;
+[2.230s]       |                                       [01;31m[K^[m[K
+[2.230s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:77:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KZ[m[K’
+[2.230s]    77 |                     foot_positions[i].[01;31m[KZ[m[K() = delta_z;
+[2.230s]       |                                       [01;31m[K^[m[K
+[2.230s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:83:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.230s]    83 |                     foot_positions[i].[01;31m[KX[m[K() = radius * cos(theta + delta_theta);
+[2.230s]       |                                       [01;31m[K^[m[K
+[2.230s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:84:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.231s]    84 |                     foot_positions[i].[01;31m[KY[m[K() = radius * sin(theta + delta_theta);
+[2.231s]       |                                       [01;31m[K^[m[K
+[2.231s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+[2.231s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[2.231s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.231s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.231s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[2.232s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.232s]    64 |             bool [01;35m[Khas_swung_[m[K;
+[2.233s]       |                  [01;35m[K^~~~~~~~~~[m[K
+[2.233s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.233s]    17 |             bool [01;35m[Khas_started[m[K;
+[2.233s]       |                  [01;35m[K^~~~~~~~~~~[m[K
+[2.233s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.233s]    19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+[2.233s]       |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[2.233s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[2.233s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.233s]    32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+[2.234s]       |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[2.234s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.234s]    32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+[2.234s]       |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+[2.234s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[2.234s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.234s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.234s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[2.234s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.234s]    13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+[2.234s]       |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.234s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:13[m[K,
+[2.235s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.235s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.235s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:[m[K In static member function ‘[01m[Kstatic void champ::Kinematics::inverse(float&, float&, float&, champ::QuadrupedLeg&, geometry::Transformation&)[m[K’:
+[2.235s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:18:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.235s]    18 |                 float x = foot_position.[01;31m[KX[m[K();
+[2.235s]       |                                         [01;31m[K^[m[K
+[2.235s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:19:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.235s]    19 |                 float y = foot_position.[01;31m[KY[m[K();
+[2.235s]       |                                         [01;31m[K^[m[K
+[2.235s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:20:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KZ[m[K’
+[2.235s]    20 |                 float z = foot_position.[01;31m[KZ[m[K();
+[2.235s]       |                                         [01;31m[K^[m[K
+[2.235s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:[m[K In static member function ‘[01m[Kstatic void champ::Kinematics::forward(geometry::Transformation&, const champ::QuadrupedLeg&, float, float, float)[m[K’:
+[2.236s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:41:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry::Transformation[m[K’ and ‘[01m[KMatrix<4, 4>[m[K’)
+[2.236s]    41 |                 foot_position = Identity<4,4>([01;31m[K)[m[K;
+[2.236s]       |                                               [01;31m[K^[m[K
+[2.236s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.236s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.238s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.238s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.238s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.238s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.238s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry::Transformation& geometry::Transformation::operator=(const geometry::Transformation&)[m[K’
+[2.238s]    93 |     class [01;36m[KTransformation[m[K : public Matrix<4,4>
+[2.239s]       |           [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.239s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KMatrix<4, 4>[m[K’ to ‘[01m[Kconst geometry::Transformation&[m[K’
+[2.239s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry::Transformation& geometry::Transformation::operator=(geometry::Transformation&&)[m[K’
+[2.239s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KMatrix<4, 4>[m[K’ to ‘[01m[Kgeometry::Transformation&&[m[K’
+[2.239s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.239s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:[m[K In member function ‘[01m[Kvirtual void champ::TrotController::execute(const champ::Velocities&)[m[K’:
+[2.239s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:21:63:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kchamp::Velocities[m[K’ to ‘[01m[Kconst champ::Pose&[m[K’
+[2.239s]    21 |                 body_controller_.poseCommand(foot_positions_, [01;31m[Kreq_vel_[m[K);
+[2.239s]       |                                                               [01;31m[K^~~~~~~~[m[K
+[2.239s]       |                                                               [01;31m[K|[m[K
+[2.239s]       |                                                               [01;31m[Kchamp::Velocities[m[K
+[2.239s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.239s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.240s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.240s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:23:89:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid champ::BodyController::poseCommand(geometry::Transformation (&)[4], const champ::Pose&)[m[K’
+[2.240s]    23 |             void poseCommand(geometry::Transformation (&foot_positions)[4], [01;36m[Kconst Pose &req_pose[m[K)
+[2.240s]       |                                                                             [01;36m[K~~~~~~~~~~~~^~~~~~~~[m[K
+[2.240s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.240s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:27:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kchamp::Kinematics::inverse(float [12], geometry::Transformation [4])[m[K’
+[2.240s]    27 |                 [01;31m[Kkinematics_.inverse(target_joints_, foot_positions_)[m[K;
+[2.240s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.240s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:13[m[K,
+[2.240s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.240s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.241s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:13:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic void champ::Kinematics::inverse(float&, float&, float&, champ::QuadrupedLeg&, geometry::Transformation&)[m[K’
+[2.241s]    13 |             static void [01;36m[Kinverse[m[K(float &hip_joint, float &upper_leg_joint, float &lower_leg_joint,
+[2.241s]       |                         [01;36m[K^~~~~~~[m[K
+[2.241s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:13:25:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 2 provided
+[2.241s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:2[m[K:
+[2.241s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:[m[K In member function ‘[01m[Kvirtual void champ::TrotController::initializeGaitConfig()[m[K’:
+[2.241s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:44:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass champ::GaitConfig[m[K’ has no member named ‘[01m[Kcom_x_translation[m[K’
+[2.241s]    44 |                 gait_config.[01;31m[Kcom_x_translation[m[K = 0.0;
+[2.241s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.275s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.275s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.275s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.276s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:[m[K In member function ‘[01m[Kvoid champ::BodyController::poseCommand(geometry::Transformation (&)[4], const champ::Pose&)[m[K’:
+[2.276s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:32:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::x(const float&)[m[K’
+[2.276s]    32 |                 [01;31m[Kbody_pose.p.x(req_pose.position.x)[m[K;
+[2.276s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.276s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.276s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.276s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.276s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.276s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.276s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.276s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:20:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::x()[m[K’
+[2.276s]    20 |             float& [01;36m[Kx[m[K() { return x_; }
+[2.276s]       |                    [01;36m[K^[m[K
+[2.276s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:20:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.276s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:24:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::x() const[m[K’
+[2.276s]    24 |             const float& [01;36m[Kx[m[K() const { return x_; }
+[2.276s]       |                          [01;36m[K^[m[K
+[2.277s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:24:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.277s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.277s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.277s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.277s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:33:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::y(const float&)[m[K’
+[2.277s]    33 |                 [01;31m[Kbody_pose.p.y(req_pose.position.y)[m[K;
+[2.277s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.278s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.278s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.278s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.278s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.278s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.278s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.278s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:21:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::y()[m[K’
+[2.278s]    21 |             float& [01;36m[Ky[m[K() { return y_; }
+[2.278s]       |                    [01;36m[K^[m[K
+[2.278s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:21:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.279s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:25:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::y() const[m[K’
+[2.279s]    25 |             const float& [01;36m[Ky[m[K() const { return y_; }
+[2.279s]       |                          [01;36m[K^[m[K
+[2.279s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:25:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.279s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.279s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.279s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.279s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:34:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::z(const float&)[m[K’
+[2.279s]    34 |                 [01;31m[Kbody_pose.p.z(req_pose.position.z)[m[K;
+[2.279s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.279s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.279s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.280s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.280s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.280s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.280s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.280s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:22:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::z()[m[K’
+[2.280s]    22 |             float& [01;36m[Kz[m[K() { return z_; }
+[2.280s]       |                    [01;36m[K^[m[K
+[2.280s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:22:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.280s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:26:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::z() const[m[K’
+[2.280s]    26 |             const float& [01;36m[Kz[m[K() const { return z_; }
+[2.280s]       |                          [01;36m[K^[m[K
+[2.280s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:26:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.280s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.280s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.281s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.281s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:[m[K In member function ‘[01m[Kvoid champ::BodyController::velocityCommand(geometry::Transformation (&)[4], const champ::Velocities&)[m[K’:
+[2.281s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:72:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.281s]    72 |                     float x = temp_foot_positions_[i].[01;31m[KX[m[K();
+[2.281s]       |                                                       [01;31m[K^[m[K
+[2.281s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:73:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.281s]    73 |                     float y = temp_foot_positions_[i].[01;31m[KY[m[K();
+[2.281s]       |                                                       [01;31m[K^[m[K
+[2.281s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:75:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.282s]    75 |                     foot_positions[i].[01;31m[KX[m[K() = x - delta_x;
+[2.282s]       |                                       [01;31m[K^[m[K
+[2.282s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:76:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.282s]    76 |                     foot_positions[i].[01;31m[KY[m[K() = y - delta_y;
+[2.282s]       |                                       [01;31m[K^[m[K
+[2.282s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:77:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KZ[m[K’
+[2.282s]    77 |                     foot_positions[i].[01;31m[KZ[m[K() = delta_z;
+[2.282s]       |                                       [01;31m[K^[m[K
+[2.282s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:83:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.283s]    83 |                     foot_positions[i].[01;31m[KX[m[K() = radius * cos(theta + delta_theta);
+[2.283s]       |                                       [01;31m[K^[m[K
+[2.283s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:84:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.283s]    84 |                     foot_positions[i].[01;31m[KY[m[K() = radius * sin(theta + delta_theta);
+[2.283s]       |                                       [01;31m[K^[m[K
+[2.283s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+[2.283s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[2.283s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.283s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.283s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[2.283s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.283s]    64 |             bool [01;35m[Khas_swung_[m[K;
+[2.283s]       |                  [01;35m[K^~~~~~~~~~[m[K
+[2.284s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.284s]    17 |             bool [01;35m[Khas_started[m[K;
+[2.284s]       |                  [01;35m[K^~~~~~~~~~~[m[K
+[2.284s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.284s]    19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+[2.284s]       |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[2.284s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[2.284s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.284s]    32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+[2.284s]       |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[2.285s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.285s]    32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+[2.285s]       |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+[2.285s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[2.285s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.285s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.285s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[2.285s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.285s]    13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+[2.285s]       |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.286s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:13[m[K,
+[2.286s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.286s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.286s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:[m[K In static member function ‘[01m[Kstatic void champ::Kinematics::inverse(float&, float&, float&, champ::QuadrupedLeg&, geometry::Transformation&)[m[K’:
+[2.286s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:18:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[2.286s]    18 |                 float x = foot_position.[01;31m[KX[m[K();
+[2.286s]       |                                         [01;31m[K^[m[K
+[2.286s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:19:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[2.286s]    19 |                 float y = foot_position.[01;31m[KY[m[K();
+[2.286s]       |                                         [01;31m[K^[m[K
+[2.287s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:20:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KZ[m[K’
+[2.287s]    20 |                 float z = foot_position.[01;31m[KZ[m[K();
+[2.287s]       |                                         [01;31m[K^[m[K
+[2.287s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:[m[K In static member function ‘[01m[Kstatic void champ::Kinematics::forward(geometry::Transformation&, const champ::QuadrupedLeg&, float, float, float)[m[K’:
+[2.287s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:41:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry::Transformation[m[K’ and ‘[01m[KMatrix<4, 4>[m[K’)
+[2.287s]    41 |                 foot_position = Identity<4,4>([01;31m[K)[m[K;
+[2.287s]       |                                               [01;31m[K^[m[K
+[2.287s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[2.287s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[2.287s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[2.287s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[2.288s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.288s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.288s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry::Transformation& geometry::Transformation::operator=(const geometry::Transformation&)[m[K’
+[2.288s]    93 |     class [01;36m[KTransformation[m[K : public Matrix<4,4>
+[2.288s]       |           [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.288s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KMatrix<4, 4>[m[K’ to ‘[01m[Kconst geometry::Transformation&[m[K’
+[2.288s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry::Transformation& geometry::Transformation::operator=(geometry::Transformation&&)[m[K’
+[2.288s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KMatrix<4, 4>[m[K’ to ‘[01m[Kgeometry::Transformation&&[m[K’
+[2.318s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.318s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:[m[K In member function ‘[01m[Kbool champ::WaypointController::execute()[m[K’:
+[2.318s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:61:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kchamp::QuadrupedBase champ::QuadrupedController::base_[m[K’ is protected within this context
+[2.318s]    61 |                 float dx = target.pose.position.x - base_controller_->[01;31m[Kbase_[m[K.position.x;
+[2.318s]       |                                                                       [01;31m[K^~~~~[m[K
+[2.318s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.318s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.318s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:23:27:[m[K [01;36m[Knote: [m[Kdeclared protected here
+[2.318s]    23 |             QuadrupedBase [01;36m[Kbase_[m[K;
+[2.318s]       |                           [01;36m[K^~~~~[m[K
+[2.319s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.319s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:61:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass champ::QuadrupedBase[m[K’ has no member named ‘[01m[Kposition[m[K’
+[2.319s]    61 |                 float dx = target.pose.position.x - base_controller_->base_.[01;31m[Kposition[m[K.x;
+[2.319s]       |                                                                             [01;31m[K^~~~~~~~[m[K
+[2.319s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:62:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kchamp::QuadrupedBase champ::QuadrupedController::base_[m[K’ is protected within this context
+[2.319s]    62 |                 float dy = target.pose.position.y - base_controller_->[01;31m[Kbase_[m[K.position.y;
+[2.319s]       |                                                                       [01;31m[K^~~~~[m[K
+[2.319s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.319s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.319s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:23:27:[m[K [01;36m[Knote: [m[Kdeclared protected here
+[2.319s]    23 |             QuadrupedBase [01;36m[Kbase_[m[K;
+[2.319s]       |                           [01;36m[K^~~~~[m[K
+[2.319s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.319s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:62:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass champ::QuadrupedBase[m[K’ has no member named ‘[01m[Kposition[m[K’
+[2.319s]    62 |                 float dy = target.pose.position.y - base_controller_->base_.[01;31m[Kposition[m[K.y;
+[2.320s]       |                                                                             [01;31m[K^~~~~~~~[m[K
+[2.320s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:74:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kchamp::QuadrupedBase champ::QuadrupedController::base_[m[K’ is protected within this context
+[2.320s]    74 |                 float angle_diff = angle_to_target - base_controller_->[01;31m[Kbase_[m[K.orientation.yaw;
+[2.320s]       |                                                                        [01;31m[K^~~~~[m[K
+[2.320s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.320s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.320s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:23:27:[m[K [01;36m[Knote: [m[Kdeclared protected here
+[2.320s]    23 |             QuadrupedBase [01;36m[Kbase_[m[K;
+[2.320s]       |                           [01;36m[K^~~~~[m[K
+[2.320s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.320s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:74:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass champ::QuadrupedBase[m[K’ has no member named ‘[01m[Korientation[m[K’
+[2.320s]    74 |                 float angle_diff = angle_to_target - base_controller_->base_.[01;31m[Korientation[m[K.yaw;
+[2.320s]       |                                                                              [01;31m[K^~~~~~~~~~~[m[K
+[2.320s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:85:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kchamp::LegController champ::QuadrupedController::leg_controller_[m[K’ is protected within this context
+[2.320s]    85 |                 base_controller_->[01;31m[Kleg_controller_[m[K.velocityCommand(foot_positions_, req_vel);
+[2.321s]       |                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.321s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.321s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.321s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:25:27:[m[K [01;36m[Knote: [m[Kdeclared protected here
+[2.321s]    25 |             LegController [01;36m[Kleg_controller_[m[K;
+[2.321s]       |                           [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.321s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.321s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:86:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kchamp::Kinematics champ::QuadrupedController::kinematics_[m[K’ is protected within this context
+[2.321s]    86 |                 base_controller_->[01;31m[Kkinematics_[m[K.inverse(target_joints_, foot_positions_);
+[2.321s]       |                                   [01;31m[K^~~~~~~~~~~[m[K
+[2.321s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.321s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.321s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:26:24:[m[K [01;36m[Knote: [m[Kdeclared protected here
+[2.321s]    26 |             Kinematics [01;36m[Kkinematics_[m[K;
+[2.321s]       |                        [01;36m[K^~~~~~~~~~~[m[K
+[2.321s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.322s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:86:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kchamp::Kinematics::inverse(float [12], geometry::Transformation [4])[m[K’
+[2.322s]    86 |                 [01;31m[Kbase_controller_->kinematics_.inverse(target_joints_, foot_positions_)[m[K;
+[2.322s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.322s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:13[m[K,
+[2.322s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.322s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.322s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:13:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic void champ::Kinematics::inverse(float&, float&, float&, champ::QuadrupedLeg&, geometry::Transformation&)[m[K’
+[2.322s]    13 |             static void [01;36m[Kinverse[m[K(float &hip_joint, float &upper_leg_joint, float &lower_leg_joint,
+[2.322s]       |                         [01;36m[K^~~~~~~[m[K
+[2.322s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:13:25:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 2 provided
+[2.322s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.322s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:87:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid champ::QuadrupedController::updateJointStates()[m[K’ is protected within this context
+[2.322s]    87 |                 [01;31m[Kbase_controller_->updateJointStates()[m[K;
+[2.322s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.322s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[2.322s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[2.323s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:33:18:[m[K [01;36m[Knote: [m[Kdeclared protected here
+[2.323s]    33 |             void [01;36m[KupdateJointStates[m[K();
+[2.323s]       |                  [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[2.360s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:[m[K In member function ‘[01m[Kvoid WaypointNavNode::controlLoop()[m[K’:
+[2.361s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:25:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class champ::WaypointController[m[K’ {aka ‘[01m[Kclass champ::WaypointController[m[K’} has no member named ‘[01m[KgetJointPositions[m[K’
+[2.361s]    25 |                 const float* joint_positions = controller_->[01;31m[KgetJointPositions[m[K();
+[2.361s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[3.040s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[3.040s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[3.040s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[3.040s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.040s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:1[m[K:
+[3.041s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = champ::QuadrupedController; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController][m[K’:
+[3.041s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = champ::QuadrupedController; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<champ::QuadrupedController>][m[K’
+[3.041s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.041s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.041s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.041s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController][m[K’
+[3.041s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}][m[K’
+[3.041s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = champ::QuadrupedController; _Args = {std::shared_ptr<rclcpp::Node>&}][m[K’
+[3.041s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:33:71:[m[K   required from here
+[3.041s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Kchamp::QuadrupedController[m[K’
+[3.041s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[3.041s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.041s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[3.041s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:2[m[K:
+[3.042s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:20:11:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Kchamp::QuadrupedController[m[K’:
+[3.042s]    20 |     class [01;36m[KQuadrupedController[m[K
+[3.042s]       |           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.042s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:38:26:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual void champ::QuadrupedController::initializeGaitConfig()[m[K’
+[3.042s]    38 |             virtual void [01;36m[KinitializeGaitConfig[m[K() = 0;
+[3.042s]       |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.042s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:39:26:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual void champ::QuadrupedController::execute(const champ::Velocities&)[m[K’
+[3.042s]    39 |             virtual void [01;36m[Kexecute[m[K(const Velocities &req_vel) = 0;
+[3.042s]       |                          [01;36m[K^~~~~~~[m[K
+[3.307s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[3.307s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.307s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:[m[K In member function ‘[01m[Kvoid champ::BodyController::poseCommand(geometry::Transformation (&)[4], const champ::Pose&)[m[K’:
+[3.307s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:32:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::x(const float&)[m[K’
+[3.308s]    32 |                 [01;31m[Kbody_pose.p.x(req_pose.position.x)[m[K;
+[3.308s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.308s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[3.308s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[3.308s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[3.308s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[3.309s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.309s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:20:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::x()[m[K’
+[3.309s]    20 |             float& [01;36m[Kx[m[K() { return x_; }
+[3.309s]       |                    [01;36m[K^[m[K
+[3.309s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:20:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[3.309s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:24:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::x() const[m[K’
+[3.309s]    24 |             const float& [01;36m[Kx[m[K() const { return x_; }
+[3.310s]       |                          [01;36m[K^[m[K
+[3.310s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:24:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[3.310s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[3.310s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.310s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:33:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::y(const float&)[m[K’
+[3.310s]    33 |                 [01;31m[Kbody_pose.p.y(req_pose.position.y)[m[K;
+[3.310s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.310s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[3.310s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[3.311s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[3.311s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[3.311s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.311s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:21:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::y()[m[K’
+[3.311s]    21 |             float& [01;36m[Ky[m[K() { return y_; }
+[3.311s]       |                    [01;36m[K^[m[K
+[3.311s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:21:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[3.311s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:25:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::y() const[m[K’
+[3.311s]    25 |             const float& [01;36m[Ky[m[K() const { return y_; }
+[3.311s]       |                          [01;36m[K^[m[K
+[3.311s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:25:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[3.311s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[3.311s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.311s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:34:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry::Point::z(const float&)[m[K’
+[3.312s]    34 |                 [01;31m[Kbody_pose.p.z(req_pose.position.z)[m[K;
+[3.312s]       |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.312s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[3.312s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[3.312s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[3.312s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[3.312s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.312s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:22:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat& geometry::Point::z()[m[K’
+[3.312s]    22 |             float& [01;36m[Kz[m[K() { return z_; }
+[3.312s]       |                    [01;36m[K^[m[K
+[3.312s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:22:20:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[3.312s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:26:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst float& geometry::Point::z() const[m[K’
+[3.312s]    26 |             const float& [01;36m[Kz[m[K() const { return z_; }
+[3.313s]       |                          [01;36m[K^[m[K
+[3.313s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:26:26:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[3.313s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[3.313s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.313s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:[m[K In member function ‘[01m[Kvoid champ::BodyController::velocityCommand(geometry::Transformation (&)[4], const champ::Velocities&)[m[K’:
+[3.313s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:72:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[3.313s]    72 |                     float x = temp_foot_positions_[i].[01;31m[KX[m[K();
+[3.313s]       |                                                       [01;31m[K^[m[K
+[3.313s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:73:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[3.313s]    73 |                     float y = temp_foot_positions_[i].[01;31m[KY[m[K();
+[3.313s]       |                                                       [01;31m[K^[m[K
+[3.313s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:75:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[3.313s]    75 |                     foot_positions[i].[01;31m[KX[m[K() = x - delta_x;
+[3.313s]       |                                       [01;31m[K^[m[K
+[3.313s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:76:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[3.314s]    76 |                     foot_positions[i].[01;31m[KY[m[K() = y - delta_y;
+[3.314s]       |                                       [01;31m[K^[m[K
+[3.314s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:77:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KZ[m[K’
+[3.314s]    77 |                     foot_positions[i].[01;31m[KZ[m[K() = delta_z;
+[3.314s]       |                                       [01;31m[K^[m[K
+[3.314s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:83:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[3.314s]    83 |                     foot_positions[i].[01;31m[KX[m[K() = radius * cos(theta + delta_theta);
+[3.314s]       |                                       [01;31m[K^[m[K
+[3.314s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:84:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[3.314s]    84 |                     foot_positions[i].[01;31m[KY[m[K() = radius * sin(theta + delta_theta);
+[3.315s]       |                                       [01;31m[K^[m[K
+[3.315s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+[3.315s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[3.315s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.315s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[3.315s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.315s]    64 |             bool [01;35m[Khas_swung_[m[K;
+[3.315s]       |                  [01;35m[K^~~~~~~~~~[m[K
+[3.315s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.316s]    17 |             bool [01;35m[Khas_started[m[K;
+[3.316s]       |                  [01;35m[K^~~~~~~~~~~[m[K
+[3.316s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.316s]    19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+[3.316s]       |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[3.316s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[3.316s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.316s]    32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+[3.316s]       |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[3.316s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.316s]    32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+[3.316s]       |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+[3.316s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[3.317s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.317s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[3.317s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.317s]    13 |             LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+[3.317s]       |                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.317s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:13[m[K,
+[3.317s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.317s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:[m[K In static member function ‘[01m[Kstatic void champ::Kinematics::inverse(float&, float&, float&, champ::QuadrupedLeg&, geometry::Transformation&)[m[K’:
+[3.317s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:18:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KX[m[K’
+[3.317s]    18 |                 float x = foot_position.[01;31m[KX[m[K();
+[3.317s]       |                                         [01;31m[K^[m[K
+[3.318s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:19:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KY[m[K’
+[3.318s]    19 |                 float y = foot_position.[01;31m[KY[m[K();
+[3.318s]       |                                         [01;31m[K^[m[K
+[3.318s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:20:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass geometry::Transformation[m[K’ has no member named ‘[01m[KZ[m[K’
+[3.318s]    20 |                 float z = foot_position.[01;31m[KZ[m[K();
+[3.318s]       |                                         [01;31m[K^[m[K
+[3.318s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:[m[K In static member function ‘[01m[Kstatic void champ::Kinematics::forward(geometry::Transformation&, const champ::QuadrupedLeg&, float, float, float)[m[K’:
+[3.318s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/kinematics/kinematics.hpp:41:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry::Transformation[m[K’ and ‘[01m[KMatrix<4, 4>[m[K’)
+[3.318s]    41 |                 foot_position = Identity<4,4>([01;31m[K)[m[K;
+[3.318s]       |                                               [01;31m[K^[m[K
+[3.318s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_leg.hpp:4[m[K,
+[3.318s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/quadruped_base/quadruped_base.hpp:5[m[K,
+[3.318s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/body_controller/body_controller.hpp:4[m[K,
+[3.318s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:11[m[K,
+[3.319s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.319s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry::Transformation& geometry::Transformation::operator=(const geometry::Transformation&)[m[K’
+[3.319s]    93 |     class [01;36m[KTransformation[m[K : public Matrix<4,4>
+[3.319s]       |           [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.319s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KMatrix<4, 4>[m[K’ to ‘[01m[Kconst geometry::Transformation&[m[K’
+[3.319s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry::Transformation& geometry::Transformation::operator=(geometry::Transformation&&)[m[K’
+[3.319s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/geometry/geometry.hpp:93:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KMatrix<4, 4>[m[K’ to ‘[01m[Kgeometry::Transformation&&[m[K’
+[3.678s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[3.678s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[3.678s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[3.678s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.678s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:1[m[K:
+[3.678s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = champ::QuadrupedController; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController][m[K’:
+[3.678s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = champ::QuadrupedController; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<champ::QuadrupedController>][m[K’
+[3.678s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.678s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.678s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.679s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = champ::QuadrupedController][m[K’
+[3.679s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = champ::QuadrupedController; _Alloc = std::allocator<champ::QuadrupedController>; _Args = {std::shared_ptr<rclcpp::Node>&}][m[K’
+[3.679s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = champ::QuadrupedController; _Args = {std::shared_ptr<rclcpp::Node>&}][m[K’
+[3.679s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:9:67:[m[K   required from here
+[3.679s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Kchamp::QuadrupedController[m[K’
+[3.679s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[3.679s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.679s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.679s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:20:11:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Kchamp::QuadrupedController[m[K’:
+[3.679s]    20 |     class [01;36m[KQuadrupedController[m[K
+[3.679s]       |           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.679s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:38:26:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual void champ::QuadrupedController::initializeGaitConfig()[m[K’
+[3.680s]    38 |             virtual void [01;36m[KinitializeGaitConfig[m[K() = 0;
+[3.680s]       |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.680s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:39:26:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual void champ::QuadrupedController::execute(const champ::Velocities&)[m[K’
+[3.680s]    39 |             virtual void [01;36m[Kexecute[m[K(const Velocities &req_vel) = 0;
+[3.680s]       |                          [01;36m[K^~~~~~~[m[K
+[3.735s] gmake[2]: *** [CMakeFiles/quadruped_controller_node.dir/build.make:76: CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o] Error 1
+[3.735s] gmake[1]: *** [CMakeFiles/Makefile2:628: CMakeFiles/quadruped_controller_node.dir/all] Error 2
+[3.735s] gmake[1]: *** Waiting for unfinished jobs....
+[4.350s] gmake[2]: *** [CMakeFiles/trot_node.dir/build.make:76: CMakeFiles/trot_node.dir/src/nodes/trot_node.cpp.o] Error 1
+[4.350s] gmake[1]: *** [CMakeFiles/Makefile2:656: CMakeFiles/trot_node.dir/all] Error 2
+[4.415s] gmake[2]: *** [CMakeFiles/turn_node.dir/build.make:76: CMakeFiles/turn_node.dir/src/nodes/turn_node.cpp.o] Error 1
+[4.415s] gmake[1]: *** [CMakeFiles/Makefile2:684: CMakeFiles/turn_node.dir/all] Error 2
+[4.427s] gmake[2]: *** [CMakeFiles/waypoint_nav_node.dir/build.make:76: CMakeFiles/waypoint_nav_node.dir/src/nodes/waypoint_nav_node.cpp.o] Error 1
+[4.427s] gmake[1]: *** [CMakeFiles/Makefile2:712: CMakeFiles/waypoint_nav_node.dir/all] Error 2
+[4.428s] gmake: *** [Makefile:146: all] Error 2
+[4.430s] Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --build /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco -- -j12 -l12

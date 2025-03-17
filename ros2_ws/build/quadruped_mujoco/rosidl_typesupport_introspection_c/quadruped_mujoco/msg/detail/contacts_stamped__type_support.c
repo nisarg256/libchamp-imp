@@ -18,7 +18,9 @@
 // Member `header`
 #include "std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h"
 // Member `contacts`
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
+#include "quadruped_mujoco/msg/contacts.h"
+// Member `contacts`
+#include "quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -37,61 +39,6 @@ void quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c_
 void quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__ContactsStamped_fini_function(void * message_memory)
 {
   quadruped_mujoco__msg__ContactsStamped__fini(message_memory);
-}
-
-size_t quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__size_function__ContactsStamped__contacts(
-  const void * untyped_member)
-{
-  const rosidl_runtime_c__boolean__Sequence * member =
-    (const rosidl_runtime_c__boolean__Sequence *)(untyped_member);
-  return member->size;
-}
-
-const void * quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__get_const_function__ContactsStamped__contacts(
-  const void * untyped_member, size_t index)
-{
-  const rosidl_runtime_c__boolean__Sequence * member =
-    (const rosidl_runtime_c__boolean__Sequence *)(untyped_member);
-  return &member->data[index];
-}
-
-void * quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__get_function__ContactsStamped__contacts(
-  void * untyped_member, size_t index)
-{
-  rosidl_runtime_c__boolean__Sequence * member =
-    (rosidl_runtime_c__boolean__Sequence *)(untyped_member);
-  return &member->data[index];
-}
-
-void quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__fetch_function__ContactsStamped__contacts(
-  const void * untyped_member, size_t index, void * untyped_value)
-{
-  const bool * item =
-    ((const bool *)
-    quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__get_const_function__ContactsStamped__contacts(untyped_member, index));
-  bool * value =
-    (bool *)(untyped_value);
-  *value = *item;
-}
-
-void quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__assign_function__ContactsStamped__contacts(
-  void * untyped_member, size_t index, const void * untyped_value)
-{
-  bool * item =
-    ((bool *)
-    quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__get_function__ContactsStamped__contacts(untyped_member, index));
-  const bool * value =
-    (const bool *)(untyped_value);
-  *item = *value;
-}
-
-bool quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__resize_function__ContactsStamped__contacts(
-  void * untyped_member, size_t size)
-{
-  rosidl_runtime_c__boolean__Sequence * member =
-    (rosidl_runtime_c__boolean__Sequence *)(untyped_member);
-  rosidl_runtime_c__boolean__Sequence__fini(member);
-  return rosidl_runtime_c__boolean__Sequence__init(member, size);
 }
 
 static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__ContactsStamped_message_member_array[2] = {
@@ -114,20 +61,20 @@ static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__
   },
   {
     "contacts",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
-    true,  // is array
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(quadruped_mujoco__msg__ContactsStamped, contacts),  // bytes offset in struct
     NULL,  // default value
-    quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__size_function__ContactsStamped__contacts,  // size() function pointer
-    quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__get_const_function__ContactsStamped__contacts,  // get_const(index) function pointer
-    quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__get_function__ContactsStamped__contacts,  // get(index) function pointer
-    quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__fetch_function__ContactsStamped__contacts,  // fetch(index, &value) function pointer
-    quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__assign_function__ContactsStamped__contacts,  // assign(index, value) function pointer
-    quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__resize_function__ContactsStamped__contacts  // resize(index) function pointer
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
@@ -154,6 +101,8 @@ const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, quadruped_mujoco, msg, ContactsStamped)() {
   quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__ContactsStamped_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Header)();
+  quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__ContactsStamped_message_member_array[1].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, quadruped_mujoco, msg, Contacts)();
   if (!quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__ContactsStamped_message_type_support_handle.typesupport_identifier) {
     quadruped_mujoco__msg__ContactsStamped__rosidl_typesupport_introspection_c__ContactsStamped_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

@@ -52,6 +52,7 @@ CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__struct.h \
  /usr/include/assert.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
@@ -72,4 +73,4 @@ CMakeFiles/quadruped_mujoco__rosidl_generator_c.dir/rosidl_generator_c/quadruped
  /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
+ /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__functions.h

@@ -1,0 +1,81 @@
+[0.010s] Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --build /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco -- -j12 -l12
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_generator_c[0m
+[0.065s] [35m[1mConsolidate compiler generated dependencies of target mujoco_interface_node[0m
+[0.077s] [  1%] Built target quadruped_mujoco__cpp
+[0.079s] [ 10%] Built target quadruped_mujoco__rosidl_generator_c
+[0.092s] [ 10%] Built target ament_cmake_python_copy_quadruped_mujoco
+[0.098s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_cpp[0m
+[0.101s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_c[0m
+[0.101s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_c[0m
+[0.104s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_cpp[0m
+[0.106s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp[0m
+[0.107s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_c[0m
+[0.108s] [ 13%] Built target mujoco_interface_node
+[0.118s] [ 26%] Built target quadruped_mujoco__rosidl_typesupport_c
+[0.119s] [ 32%] Built target quadruped_mujoco__rosidl_typesupport_cpp
+[0.123s] [ 52%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp
+[0.123s] [ 52%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c
+[0.125s] [ 61%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp
+[0.126s] [ 71%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c
+[0.144s] [ 71%] Built target quadruped_mujoco
+[0.160s] [ 72%] [32mBuilding CXX object CMakeFiles/trot_node.dir/src/nodes/trot_node.cpp.o[0m
+[0.162s] [ 73%] [32mBuilding CXX object CMakeFiles/turn_node.dir/src/nodes/turn_node.cpp.o[0m
+[0.164s] [ 75%] [32mBuilding CXX object CMakeFiles/waypoint_nav_node.dir/src/nodes/waypoint_nav_node.cpp.o[0m
+[0.165s] [ 76%] Built target quadruped_mujoco__py
+[0.167s] [ 78%] [32mBuilding CXX object CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o[0m
+[0.183s] [ 83%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_velocities_s.c.o[0m
+[0.184s] [ 83%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_pose_s.c.o[0m
+[0.184s] [ 83%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_joints_s.c.o[0m
+[0.185s] [ 83%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_contacts_stamped_s.c.o[0m
+[0.188s] [ 84%] [32mBuilding C object CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_contacts_s.c.o[0m
+[0.320s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/quadruped_mujoco/libquadruped_mujoco__rosidl_generator_py.so[0m
+[0.325s] running egg_info
+[0.325s] writing quadruped_mujoco.egg-info/PKG-INFO
+[0.325s] writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt
+[0.325s] writing top-level names to quadruped_mujoco.egg-info/top_level.txt
+[0.327s] reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[0.328s] writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[0.353s] [ 86%] Built target ament_cmake_python_build_quadruped_mujoco_egg
+[0.354s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+[0.354s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[0.354s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/turn_controller.hpp:4[m[K,
+[0.354s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/turn_node.cpp:3[m[K:
+[0.354s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.h:32:10:[m[K [01;31m[Kfatal error: [m[Kquadruped_base/quadruped_base.h: No such file or directory
+[0.354s]    32 | #include [01;31m[K<quadruped_base/quadruped_base.h>[m[K
+[0.354s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.354s] compilation terminated.
+[0.356s] gmake[2]: *** [CMakeFiles/turn_node.dir/build.make:76: CMakeFiles/turn_node.dir/src/nodes/turn_node.cpp.o] Error 1
+[0.356s] gmake[1]: *** [CMakeFiles/Makefile2:684: CMakeFiles/turn_node.dir/all] Error 2
+[0.356s] gmake[1]: *** Waiting for unfinished jobs....
+[0.363s] [ 86%] Built target quadruped_mujoco__rosidl_generator_py
+[0.377s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+[0.377s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[0.377s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/waypoint_controller.hpp:4[m[K,
+[0.377s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/waypoint_nav_node.cpp:3[m[K:
+[0.377s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.h:32:10:[m[K [01;31m[Kfatal error: [m[Kquadruped_base/quadruped_base.h: No such file or directory
+[0.378s]    32 | #include [01;31m[K<quadruped_base/quadruped_base.h>[m[K
+[0.378s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.378s] compilation terminated.
+[0.379s] gmake[2]: *** [CMakeFiles/waypoint_nav_node.dir/build.make:76: CMakeFiles/waypoint_nav_node.dir/src/nodes/waypoint_nav_node.cpp.o] Error 1
+[0.379s] gmake[1]: *** [CMakeFiles/Makefile2:712: CMakeFiles/waypoint_nav_node.dir/all] Error 2
+[0.404s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+[0.404s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[0.404s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[0.404s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/trot_node.cpp:3[m[K:
+[0.404s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.h:32:10:[m[K [01;31m[Kfatal error: [m[Kquadruped_base/quadruped_base.h: No such file or directory
+[0.404s]    32 | #include [01;31m[K<quadruped_base/quadruped_base.h>[m[K
+[0.404s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.404s] compilation terminated.
+[0.406s] gmake[2]: *** [CMakeFiles/trot_node.dir/build.make:76: CMakeFiles/trot_node.dir/src/nodes/trot_node.cpp.o] Error 1
+[0.406s] gmake[1]: *** [CMakeFiles/Makefile2:656: CMakeFiles/trot_node.dir/all] Error 2
+[0.416s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+[0.416s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[0.416s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[0.416s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.h:32:10:[m[K [01;31m[Kfatal error: [m[Kquadruped_base/quadruped_base.h: No such file or directory
+[0.417s]    32 | #include [01;31m[K<quadruped_base/quadruped_base.h>[m[K
+[0.417s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.417s] compilation terminated.
+[0.418s] gmake[2]: *** [CMakeFiles/quadruped_controller_node.dir/build.make:76: CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o] Error 1
+[0.419s] gmake[1]: *** [CMakeFiles/Makefile2:628: CMakeFiles/quadruped_controller_node.dir/all] Error 2
+[0.419s] gmake: *** [Makefile:146: all] Error 2
+[0.421s] Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --build /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco -- -j12 -l12

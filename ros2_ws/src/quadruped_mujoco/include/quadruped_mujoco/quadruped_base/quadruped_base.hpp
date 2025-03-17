@@ -45,6 +45,13 @@ namespace champ
                     }
                 }
             }
+
+            Pose getCurrentPose() const 
+            { 
+                Pose current_pose;
+                // Fill in current pose from base state
+                return current_pose;
+            }
     };
 }
 

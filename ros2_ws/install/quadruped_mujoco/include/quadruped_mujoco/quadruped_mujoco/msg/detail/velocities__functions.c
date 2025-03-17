@@ -11,15 +11,27 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `linear`
+// Member `angular`
+#include "geometry_msgs/msg/detail/vector3__functions.h"
+
 bool
 quadruped_mujoco__msg__Velocities__init(quadruped_mujoco__msg__Velocities * msg)
 {
   if (!msg) {
     return false;
   }
-  // linear_x
-  // linear_y
-  // angular_z
+  // linear
+  if (!geometry_msgs__msg__Vector3__init(&msg->linear)) {
+    quadruped_mujoco__msg__Velocities__fini(msg);
+    return false;
+  }
+  // angular
+  if (!geometry_msgs__msg__Vector3__init(&msg->angular)) {
+    quadruped_mujoco__msg__Velocities__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -29,9 +41,10 @@ quadruped_mujoco__msg__Velocities__fini(quadruped_mujoco__msg__Velocities * msg)
   if (!msg) {
     return;
   }
-  // linear_x
-  // linear_y
-  // angular_z
+  // linear
+  geometry_msgs__msg__Vector3__fini(&msg->linear);
+  // angular
+  geometry_msgs__msg__Vector3__fini(&msg->angular);
 }
 
 bool
@@ -40,16 +53,16 @@ quadruped_mujoco__msg__Velocities__are_equal(const quadruped_mujoco__msg__Veloci
   if (!lhs || !rhs) {
     return false;
   }
-  // linear_x
-  if (lhs->linear_x != rhs->linear_x) {
+  // linear
+  if (!geometry_msgs__msg__Vector3__are_equal(
+      &(lhs->linear), &(rhs->linear)))
+  {
     return false;
   }
-  // linear_y
-  if (lhs->linear_y != rhs->linear_y) {
-    return false;
-  }
-  // angular_z
-  if (lhs->angular_z != rhs->angular_z) {
+  // angular
+  if (!geometry_msgs__msg__Vector3__are_equal(
+      &(lhs->angular), &(rhs->angular)))
+  {
     return false;
   }
   return true;
@@ -63,12 +76,18 @@ quadruped_mujoco__msg__Velocities__copy(
   if (!input || !output) {
     return false;
   }
-  // linear_x
-  output->linear_x = input->linear_x;
-  // linear_y
-  output->linear_y = input->linear_y;
-  // angular_z
-  output->angular_z = input->angular_z;
+  // linear
+  if (!geometry_msgs__msg__Vector3__copy(
+      &(input->linear), &(output->linear)))
+  {
+    return false;
+  }
+  // angular
+  if (!geometry_msgs__msg__Vector3__copy(
+      &(input->angular), &(output->angular)))
+  {
+    return false;
+  }
   return true;
 }
 

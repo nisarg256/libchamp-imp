@@ -15,6 +15,12 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
+// Include directives for member types
+// Member 'position'
+#include "geometry_msgs/msg/detail/point__struct.hpp"
+// Member 'orientation'
+#include "geometry_msgs/msg/detail/quaternion__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__quadruped_mujoco__msg__Pose __attribute__((deprecated))
 #else
@@ -34,89 +40,38 @@ struct Pose_
   using Type = Pose_<ContainerAllocator>;
 
   explicit Pose_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : position(_init),
+    orientation(_init)
   {
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->x = 0.0f;
-      this->y = 0.0f;
-      this->z = 0.0f;
-      this->roll = 0.0f;
-      this->pitch = 0.0f;
-      this->yaw = 0.0f;
-    }
+    (void)_init;
   }
 
   explicit Pose_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : position(_alloc, _init),
+    orientation(_alloc, _init)
   {
-    (void)_alloc;
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->x = 0.0f;
-      this->y = 0.0f;
-      this->z = 0.0f;
-      this->roll = 0.0f;
-      this->pitch = 0.0f;
-      this->yaw = 0.0f;
-    }
+    (void)_init;
   }
 
   // field types and members
-  using _x_type =
-    float;
-  _x_type x;
-  using _y_type =
-    float;
-  _y_type y;
-  using _z_type =
-    float;
-  _z_type z;
-  using _roll_type =
-    float;
-  _roll_type roll;
-  using _pitch_type =
-    float;
-  _pitch_type pitch;
-  using _yaw_type =
-    float;
-  _yaw_type yaw;
+  using _position_type =
+    geometry_msgs::msg::Point_<ContainerAllocator>;
+  _position_type position;
+  using _orientation_type =
+    geometry_msgs::msg::Quaternion_<ContainerAllocator>;
+  _orientation_type orientation;
 
   // setters for named parameter idiom
-  Type & set__x(
-    const float & _arg)
+  Type & set__position(
+    const geometry_msgs::msg::Point_<ContainerAllocator> & _arg)
   {
-    this->x = _arg;
+    this->position = _arg;
     return *this;
   }
-  Type & set__y(
-    const float & _arg)
+  Type & set__orientation(
+    const geometry_msgs::msg::Quaternion_<ContainerAllocator> & _arg)
   {
-    this->y = _arg;
-    return *this;
-  }
-  Type & set__z(
-    const float & _arg)
-  {
-    this->z = _arg;
-    return *this;
-  }
-  Type & set__roll(
-    const float & _arg)
-  {
-    this->roll = _arg;
-    return *this;
-  }
-  Type & set__pitch(
-    const float & _arg)
-  {
-    this->pitch = _arg;
-    return *this;
-  }
-  Type & set__yaw(
-    const float & _arg)
-  {
-    this->yaw = _arg;
+    this->orientation = _arg;
     return *this;
   }
 
@@ -162,22 +117,10 @@ struct Pose_
   // comparison operators
   bool operator==(const Pose_ & other) const
   {
-    if (this->x != other.x) {
+    if (this->position != other.position) {
       return false;
     }
-    if (this->y != other.y) {
-      return false;
-    }
-    if (this->z != other.z) {
-      return false;
-    }
-    if (this->roll != other.roll) {
-      return false;
-    }
-    if (this->pitch != other.pitch) {
-      return false;
-    }
-    if (this->yaw != other.yaw) {
+    if (this->orientation != other.orientation) {
       return false;
     }
     return true;

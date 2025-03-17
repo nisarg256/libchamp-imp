@@ -1,0 +1,36 @@
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  CMakeLists.txt:28 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::loadModel()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode9loadModelEv[_ZN13MujocoSimNode9loadModelEv]+0xa4): undefined reference to `mj_loadXML'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode9loadModelEv[_ZN13MujocoSimNode9loadModelEv]+0x3e3): undefined reference to `mj_makeData'
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::simulationStep()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode14simulationStepEv[_ZN13MujocoSimNode14simulationStepEv]+0x1e6): undefined reference to `mj_step'
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::publishJointStates()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode18publishJointStatesEv[_ZN13MujocoSimNode18publishJointStatesEv]+0x119): undefined reference to `mj_id2name'
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::jointCommandCallback(std::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >)':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode20jointCommandCallbackESt10shared_ptrIN11sensor_msgs3msg11JointState_ISaIvEEEE[_ZN13MujocoSimNode20jointCommandCallbackESt10shared_ptrIN11sensor_msgs3msg11JointState_ISaIvEEEE]+0x224): undefined reference to `mj_name2id'
+/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::~MujocoSimNode()':
+mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x3d): undefined reference to `mj_deleteData'
+/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x60): undefined reference to `mj_deleteModel'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:175: mujoco_sim_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:769: CMakeFiles/mujoco_sim_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

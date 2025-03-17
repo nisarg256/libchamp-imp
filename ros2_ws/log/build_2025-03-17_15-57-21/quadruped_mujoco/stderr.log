@@ -1,0 +1,7 @@
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:[m[K In member function ‘[01m[Kvoid MujocoSimNode::loadModel()[m[K’:
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:30:39:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ifstream file[m[K’ has initializer but incomplete type
+   30 |         std::ifstream file(model_path_[01;31m[K)[m[K;
+      |                                       [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:76: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:771: CMakeFiles/mujoco_sim_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

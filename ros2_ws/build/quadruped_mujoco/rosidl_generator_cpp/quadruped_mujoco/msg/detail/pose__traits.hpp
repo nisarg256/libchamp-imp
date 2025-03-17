@@ -14,6 +14,12 @@
 #include "quadruped_mujoco/msg/detail/pose__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
+// Include directives for member types
+// Member 'position'
+#include "geometry_msgs/msg/detail/point__traits.hpp"
+// Member 'orientation'
+#include "geometry_msgs/msg/detail/quaternion__traits.hpp"
+
 namespace quadruped_mujoco
 {
 
@@ -25,45 +31,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: x
+  // member: position
   {
-    out << "x: ";
-    rosidl_generator_traits::value_to_yaml(msg.x, out);
+    out << "position: ";
+    to_flow_style_yaml(msg.position, out);
     out << ", ";
   }
 
-  // member: y
+  // member: orientation
   {
-    out << "y: ";
-    rosidl_generator_traits::value_to_yaml(msg.y, out);
-    out << ", ";
-  }
-
-  // member: z
-  {
-    out << "z: ";
-    rosidl_generator_traits::value_to_yaml(msg.z, out);
-    out << ", ";
-  }
-
-  // member: roll
-  {
-    out << "roll: ";
-    rosidl_generator_traits::value_to_yaml(msg.roll, out);
-    out << ", ";
-  }
-
-  // member: pitch
-  {
-    out << "pitch: ";
-    rosidl_generator_traits::value_to_yaml(msg.pitch, out);
-    out << ", ";
-  }
-
-  // member: yaw
-  {
-    out << "yaw: ";
-    rosidl_generator_traits::value_to_yaml(msg.yaw, out);
+    out << "orientation: ";
+    to_flow_style_yaml(msg.orientation, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -72,64 +50,22 @@ inline void to_block_style_yaml(
   const Pose & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: x
+  // member: position
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "x: ";
-    rosidl_generator_traits::value_to_yaml(msg.x, out);
-    out << "\n";
+    out << "position:\n";
+    to_block_style_yaml(msg.position, out, indentation + 2);
   }
 
-  // member: y
+  // member: orientation
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "y: ";
-    rosidl_generator_traits::value_to_yaml(msg.y, out);
-    out << "\n";
-  }
-
-  // member: z
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "z: ";
-    rosidl_generator_traits::value_to_yaml(msg.z, out);
-    out << "\n";
-  }
-
-  // member: roll
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "roll: ";
-    rosidl_generator_traits::value_to_yaml(msg.roll, out);
-    out << "\n";
-  }
-
-  // member: pitch
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "pitch: ";
-    rosidl_generator_traits::value_to_yaml(msg.pitch, out);
-    out << "\n";
-  }
-
-  // member: yaw
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "yaw: ";
-    rosidl_generator_traits::value_to_yaml(msg.yaw, out);
-    out << "\n";
+    out << "orientation:\n";
+    to_block_style_yaml(msg.orientation, out, indentation + 2);
   }
 }  // NOLINT(readability/fn_size)
 
@@ -179,11 +115,11 @@ inline const char * name<quadruped_mujoco::msg::Pose>()
 
 template<>
 struct has_fixed_size<quadruped_mujoco::msg::Pose>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Point>::value && has_fixed_size<geometry_msgs::msg::Quaternion>::value> {};
 
 template<>
 struct has_bounded_size<quadruped_mujoco::msg::Pose>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Point>::value && has_bounded_size<geometry_msgs::msg::Quaternion>::value> {};
 
 template<>
 struct is_message<quadruped_mujoco::msg::Pose>

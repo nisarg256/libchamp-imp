@@ -15,7 +15,7 @@
 // Member `header`
 #include "std_msgs/msg/detail/header__functions.h"
 // Member `contacts`
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
+#include "quadruped_mujoco/msg/detail/contacts__functions.h"
 
 bool
 quadruped_mujoco__msg__ContactsStamped__init(quadruped_mujoco__msg__ContactsStamped * msg)
@@ -29,7 +29,7 @@ quadruped_mujoco__msg__ContactsStamped__init(quadruped_mujoco__msg__ContactsStam
     return false;
   }
   // contacts
-  if (!rosidl_runtime_c__boolean__Sequence__init(&msg->contacts, 0)) {
+  if (!quadruped_mujoco__msg__Contacts__init(&msg->contacts)) {
     quadruped_mujoco__msg__ContactsStamped__fini(msg);
     return false;
   }
@@ -45,7 +45,7 @@ quadruped_mujoco__msg__ContactsStamped__fini(quadruped_mujoco__msg__ContactsStam
   // header
   std_msgs__msg__Header__fini(&msg->header);
   // contacts
-  rosidl_runtime_c__boolean__Sequence__fini(&msg->contacts);
+  quadruped_mujoco__msg__Contacts__fini(&msg->contacts);
 }
 
 bool
@@ -61,7 +61,7 @@ quadruped_mujoco__msg__ContactsStamped__are_equal(const quadruped_mujoco__msg__C
     return false;
   }
   // contacts
-  if (!rosidl_runtime_c__boolean__Sequence__are_equal(
+  if (!quadruped_mujoco__msg__Contacts__are_equal(
       &(lhs->contacts), &(rhs->contacts)))
   {
     return false;
@@ -84,7 +84,7 @@ quadruped_mujoco__msg__ContactsStamped__copy(
     return false;
   }
   // contacts
-  if (!rosidl_runtime_c__boolean__Sequence__copy(
+  if (!quadruped_mujoco__msg__Contacts__copy(
       &(input->contacts), &(output->contacts)))
   {
     return false;

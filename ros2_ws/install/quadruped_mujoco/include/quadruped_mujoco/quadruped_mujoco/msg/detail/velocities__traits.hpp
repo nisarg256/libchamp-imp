@@ -14,6 +14,11 @@
 #include "quadruped_mujoco/msg/detail/velocities__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
+// Include directives for member types
+// Member 'linear'
+// Member 'angular'
+#include "geometry_msgs/msg/detail/vector3__traits.hpp"
+
 namespace quadruped_mujoco
 {
 
@@ -25,24 +30,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: linear_x
+  // member: linear
   {
-    out << "linear_x: ";
-    rosidl_generator_traits::value_to_yaml(msg.linear_x, out);
+    out << "linear: ";
+    to_flow_style_yaml(msg.linear, out);
     out << ", ";
   }
 
-  // member: linear_y
+  // member: angular
   {
-    out << "linear_y: ";
-    rosidl_generator_traits::value_to_yaml(msg.linear_y, out);
-    out << ", ";
-  }
-
-  // member: angular_z
-  {
-    out << "angular_z: ";
-    rosidl_generator_traits::value_to_yaml(msg.angular_z, out);
+    out << "angular: ";
+    to_flow_style_yaml(msg.angular, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -51,34 +49,22 @@ inline void to_block_style_yaml(
   const Velocities & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: linear_x
+  // member: linear
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "linear_x: ";
-    rosidl_generator_traits::value_to_yaml(msg.linear_x, out);
-    out << "\n";
+    out << "linear:\n";
+    to_block_style_yaml(msg.linear, out, indentation + 2);
   }
 
-  // member: linear_y
+  // member: angular
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "linear_y: ";
-    rosidl_generator_traits::value_to_yaml(msg.linear_y, out);
-    out << "\n";
-  }
-
-  // member: angular_z
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "angular_z: ";
-    rosidl_generator_traits::value_to_yaml(msg.angular_z, out);
-    out << "\n";
+    out << "angular:\n";
+    to_block_style_yaml(msg.angular, out, indentation + 2);
   }
 }  // NOLINT(readability/fn_size)
 
@@ -128,11 +114,11 @@ inline const char * name<quadruped_mujoco::msg::Velocities>()
 
 template<>
 struct has_fixed_size<quadruped_mujoco::msg::Velocities>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Vector3>::value> {};
 
 template<>
 struct has_bounded_size<quadruped_mujoco::msg::Velocities>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Vector3>::value> {};
 
 template<>
 struct is_message<quadruped_mujoco::msg::Velocities>

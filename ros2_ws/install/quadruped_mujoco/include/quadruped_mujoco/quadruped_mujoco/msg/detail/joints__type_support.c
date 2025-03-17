@@ -14,6 +14,8 @@
 
 // Include directives for member types
 // Member `position`
+// Member `velocity`
+// Member `effort`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 #ifdef __cplusplus
@@ -90,7 +92,117 @@ bool quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__resize_f
   return rosidl_runtime_c__float__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__Joints_message_member_array[1] = {
+size_t quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__size_function__Joints__velocity(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_const_function__Joints__velocity(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_function__Joints__velocity(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__fetch_function__Joints__velocity(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const float * item =
+    ((const float *)
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_const_function__Joints__velocity(untyped_member, index));
+  float * value =
+    (float *)(untyped_value);
+  *value = *item;
+}
+
+void quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__assign_function__Joints__velocity(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  float * item =
+    ((float *)
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_function__Joints__velocity(untyped_member, index));
+  const float * value =
+    (const float *)(untyped_value);
+  *item = *value;
+}
+
+bool quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__resize_function__Joints__velocity(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
+}
+
+size_t quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__size_function__Joints__effort(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_const_function__Joints__effort(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_function__Joints__effort(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__fetch_function__Joints__effort(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const float * item =
+    ((const float *)
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_const_function__Joints__effort(untyped_member, index));
+  float * value =
+    (float *)(untyped_value);
+  *value = *item;
+}
+
+void quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__assign_function__Joints__effort(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  float * item =
+    ((float *)
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_function__Joints__effort(untyped_member, index));
+  const float * value =
+    (const float *)(untyped_value);
+  *item = *value;
+}
+
+bool quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__resize_function__Joints__effort(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__Joints_message_member_array[3] = {
   {
     "position",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -107,13 +219,47 @@ static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__
     quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__fetch_function__Joints__position,  // fetch(index, &value) function pointer
     quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__assign_function__Joints__position,  // assign(index, value) function pointer
     quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__resize_function__Joints__position  // resize(index) function pointer
+  },
+  {
+    "velocity",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(quadruped_mujoco__msg__Joints, velocity),  // bytes offset in struct
+    NULL,  // default value
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__size_function__Joints__velocity,  // size() function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_const_function__Joints__velocity,  // get_const(index) function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_function__Joints__velocity,  // get(index) function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__fetch_function__Joints__velocity,  // fetch(index, &value) function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__assign_function__Joints__velocity,  // assign(index, value) function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__resize_function__Joints__velocity  // resize(index) function pointer
+  },
+  {
+    "effort",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(quadruped_mujoco__msg__Joints, effort),  // bytes offset in struct
+    NULL,  // default value
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__size_function__Joints__effort,  // size() function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_const_function__Joints__effort,  // get_const(index) function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__get_function__Joints__effort,  // get(index) function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__fetch_function__Joints__effort,  // fetch(index, &value) function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__assign_function__Joints__effort,  // assign(index, value) function pointer
+    quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__resize_function__Joints__effort  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__Joints_message_members = {
   "quadruped_mujoco__msg",  // message namespace
   "Joints",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(quadruped_mujoco__msg__Joints),
   quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__Joints_message_member_array,  // message members
   quadruped_mujoco__msg__Joints__rosidl_typesupport_introspection_c__Joints_init_function,  // function to initialize message memory (memory has to be allocated)

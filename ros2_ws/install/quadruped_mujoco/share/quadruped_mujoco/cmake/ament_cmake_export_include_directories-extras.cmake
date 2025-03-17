@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_include_directories/cmake/ament_cmake_export_include_directories-extras.cmake.in
 
-set(_exported_include_dirs "${quadruped_mujoco_DIR}/../../../include/quadruped_mujoco")
+set(_exported_include_dirs "${quadruped_mujoco_DIR}/../../../include/quadruped_mujoco;${quadruped_mujoco_DIR}/../../../include")
 
 # append include directories to quadruped_mujoco_INCLUDE_DIRS
 # warn about not existing paths

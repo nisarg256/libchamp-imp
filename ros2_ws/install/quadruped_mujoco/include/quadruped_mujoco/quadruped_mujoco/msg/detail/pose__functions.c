@@ -11,18 +11,28 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `position`
+#include "geometry_msgs/msg/detail/point__functions.h"
+// Member `orientation`
+#include "geometry_msgs/msg/detail/quaternion__functions.h"
+
 bool
 quadruped_mujoco__msg__Pose__init(quadruped_mujoco__msg__Pose * msg)
 {
   if (!msg) {
     return false;
   }
-  // x
-  // y
-  // z
-  // roll
-  // pitch
-  // yaw
+  // position
+  if (!geometry_msgs__msg__Point__init(&msg->position)) {
+    quadruped_mujoco__msg__Pose__fini(msg);
+    return false;
+  }
+  // orientation
+  if (!geometry_msgs__msg__Quaternion__init(&msg->orientation)) {
+    quadruped_mujoco__msg__Pose__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -32,12 +42,10 @@ quadruped_mujoco__msg__Pose__fini(quadruped_mujoco__msg__Pose * msg)
   if (!msg) {
     return;
   }
-  // x
-  // y
-  // z
-  // roll
-  // pitch
-  // yaw
+  // position
+  geometry_msgs__msg__Point__fini(&msg->position);
+  // orientation
+  geometry_msgs__msg__Quaternion__fini(&msg->orientation);
 }
 
 bool
@@ -46,28 +54,16 @@ quadruped_mujoco__msg__Pose__are_equal(const quadruped_mujoco__msg__Pose * lhs, 
   if (!lhs || !rhs) {
     return false;
   }
-  // x
-  if (lhs->x != rhs->x) {
+  // position
+  if (!geometry_msgs__msg__Point__are_equal(
+      &(lhs->position), &(rhs->position)))
+  {
     return false;
   }
-  // y
-  if (lhs->y != rhs->y) {
-    return false;
-  }
-  // z
-  if (lhs->z != rhs->z) {
-    return false;
-  }
-  // roll
-  if (lhs->roll != rhs->roll) {
-    return false;
-  }
-  // pitch
-  if (lhs->pitch != rhs->pitch) {
-    return false;
-  }
-  // yaw
-  if (lhs->yaw != rhs->yaw) {
+  // orientation
+  if (!geometry_msgs__msg__Quaternion__are_equal(
+      &(lhs->orientation), &(rhs->orientation)))
+  {
     return false;
   }
   return true;
@@ -81,18 +77,18 @@ quadruped_mujoco__msg__Pose__copy(
   if (!input || !output) {
     return false;
   }
-  // x
-  output->x = input->x;
-  // y
-  output->y = input->y;
-  // z
-  output->z = input->z;
-  // roll
-  output->roll = input->roll;
-  // pitch
-  output->pitch = input->pitch;
-  // yaw
-  output->yaw = input->yaw;
+  // position
+  if (!geometry_msgs__msg__Point__copy(
+      &(input->position), &(output->position)))
+  {
+    return false;
+  }
+  // orientation
+  if (!geometry_msgs__msg__Quaternion__copy(
+      &(input->orientation), &(output->orientation)))
+  {
+    return false;
+  }
   return true;
 }
 

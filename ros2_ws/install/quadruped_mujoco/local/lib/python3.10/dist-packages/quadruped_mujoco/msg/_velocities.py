@@ -7,8 +7,6 @@
 
 import builtins  # noqa: E402, I100
 
-import math  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -44,6 +42,10 @@ class Metaclass_Velocities(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__velocities
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__velocities
 
+            from geometry_msgs.msg import Vector3
+            if Vector3.__class__._TYPE_SUPPORT is None:
+                Vector3.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -57,30 +59,28 @@ class Velocities(metaclass=Metaclass_Velocities):
     """Message class 'Velocities'."""
 
     __slots__ = [
-        '_linear_x',
-        '_linear_y',
-        '_angular_z',
+        '_linear',
+        '_angular',
     ]
 
     _fields_and_field_types = {
-        'linear_x': 'float',
-        'linear_y': 'float',
-        'angular_z': 'float',
+        'linear': 'geometry_msgs/Vector3',
+        'angular': 'geometry_msgs/Vector3',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Vector3'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Vector3'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.linear_x = kwargs.get('linear_x', float())
-        self.linear_y = kwargs.get('linear_y', float())
-        self.angular_z = kwargs.get('angular_z', float())
+        from geometry_msgs.msg import Vector3
+        self.linear = kwargs.get('linear', Vector3())
+        from geometry_msgs.msg import Vector3
+        self.angular = kwargs.get('angular', Vector3())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -111,11 +111,9 @@ class Velocities(metaclass=Metaclass_Velocities):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.linear_x != other.linear_x:
+        if self.linear != other.linear:
             return False
-        if self.linear_y != other.linear_y:
-            return False
-        if self.angular_z != other.angular_z:
+        if self.angular != other.angular:
             return False
         return True
 
@@ -125,46 +123,29 @@ class Velocities(metaclass=Metaclass_Velocities):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def linear_x(self):
-        """Message field 'linear_x'."""
-        return self._linear_x
+    def linear(self):
+        """Message field 'linear'."""
+        return self._linear
 
-    @linear_x.setter
-    def linear_x(self, value):
+    @linear.setter
+    def linear(self, value):
         if __debug__:
+            from geometry_msgs.msg import Vector3
             assert \
-                isinstance(value, float), \
-                "The 'linear_x' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'linear_x' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._linear_x = value
+                isinstance(value, Vector3), \
+                "The 'linear' field must be a sub message of type 'Vector3'"
+        self._linear = value
 
     @builtins.property
-    def linear_y(self):
-        """Message field 'linear_y'."""
-        return self._linear_y
+    def angular(self):
+        """Message field 'angular'."""
+        return self._angular
 
-    @linear_y.setter
-    def linear_y(self, value):
+    @angular.setter
+    def angular(self, value):
         if __debug__:
+            from geometry_msgs.msg import Vector3
             assert \
-                isinstance(value, float), \
-                "The 'linear_y' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'linear_y' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._linear_y = value
-
-    @builtins.property
-    def angular_z(self):
-        """Message field 'angular_z'."""
-        return self._angular_z
-
-    @angular_z.setter
-    def angular_z(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'angular_z' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'angular_z' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._angular_z = value
+                isinstance(value, Vector3), \
+                "The 'angular' field must be a sub message of type 'Vector3'"
+        self._angular = value

@@ -48,12 +48,30 @@ struct Joints_
   using _position_type =
     std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _position_type position;
+  using _velocity_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _velocity_type velocity;
+  using _effort_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _effort_type effort;
 
   // setters for named parameter idiom
   Type & set__position(
     const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->position = _arg;
+    return *this;
+  }
+  Type & set__velocity(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->velocity = _arg;
+    return *this;
+  }
+  Type & set__effort(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->effort = _arg;
     return *this;
   }
 
@@ -100,6 +118,12 @@ struct Joints_
   bool operator==(const Joints_ & other) const
   {
     if (this->position != other.position) {
+      return false;
+    }
+    if (this->velocity != other.velocity) {
+      return false;
+    }
+    if (this->effort != other.effort) {
       return false;
     }
     return true;

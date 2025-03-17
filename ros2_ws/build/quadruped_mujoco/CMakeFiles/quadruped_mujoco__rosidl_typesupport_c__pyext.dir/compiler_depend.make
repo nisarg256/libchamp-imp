@@ -252,9 +252,12 @@ CMakeFiles/quadruped_mujoco__rosidl_typesupport_c__pyext.dir/rosidl_generator_py
   rosidl_generator_c/quadruped_mujoco/msg/detail/joints__functions.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/pose__type_support.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/pose__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/pose__functions.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__type_support.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__functions.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__type_support.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__struct.h \
@@ -294,6 +297,12 @@ rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__functions.h:
 
 /usr/include/python3.10/cpython/odictobject.h:
 
+rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
 rosidl_generator_py/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_c.c:
@@ -325,8 +334,6 @@ rosidl_generator_py/quadruped_mujoco/_quadruped_mujoco_s.ep.rosidl_typesupport_c
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/linux/limits.h:
 
@@ -375,6 +382,8 @@ rosidl_generator_c/quadruped_mujoco/msg/detail/joints__type_support.h:
 /usr/include/python3.10/cpython/objimpl.h:
 
 /usr/include/python3.10/cpython/pythonrun.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
@@ -505,12 +514,6 @@ rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__type_support.h:
 /usr/include/python3.10/longintrepr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__struct.h:
 
 /usr/include/python3.10/cpython/pymem.h:
 
@@ -776,6 +779,10 @@ rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__functions.h:
 
 rosidl_generator_c/quadruped_mujoco/msg/detail/joints__struct.h:
 
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h:
+
 /usr/include/python3.10/intrcheck.h:
 
 rosidl_generator_c/quadruped_mujoco/msg/detail/pose__functions.h:
@@ -785,3 +792,5 @@ rosidl_generator_c/quadruped_mujoco/msg/detail/pose__functions.h:
 rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__type_support.h:
 
 rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__struct.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h:

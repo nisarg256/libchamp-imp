@@ -18,6 +18,8 @@
 // Include directives for member types
 // Member 'header'
 #include "std_msgs/msg/detail/header__struct.hpp"
+// Member 'contacts'
+#include "quadruped_mujoco/msg/detail/contacts__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__quadruped_mujoco__msg__ContactsStamped __attribute__((deprecated))
@@ -38,13 +40,15 @@ struct ContactsStamped_
   using Type = ContactsStamped_<ContainerAllocator>;
 
   explicit ContactsStamped_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : header(_init)
+  : header(_init),
+    contacts(_init)
   {
     (void)_init;
   }
 
   explicit ContactsStamped_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : header(_alloc, _init)
+  : header(_alloc, _init),
+    contacts(_alloc, _init)
   {
     (void)_init;
   }
@@ -54,7 +58,7 @@ struct ContactsStamped_
     std_msgs::msg::Header_<ContainerAllocator>;
   _header_type header;
   using _contacts_type =
-    std::vector<bool, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<bool>>;
+    quadruped_mujoco::msg::Contacts_<ContainerAllocator>;
   _contacts_type contacts;
 
   // setters for named parameter idiom
@@ -65,7 +69,7 @@ struct ContactsStamped_
     return *this;
   }
   Type & set__contacts(
-    const std::vector<bool, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<bool>> & _arg)
+    const quadruped_mujoco::msg::Contacts_<ContainerAllocator> & _arg)
   {
     this->contacts = _arg;
     return *this;

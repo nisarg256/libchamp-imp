@@ -21,13 +21,13 @@ extern "C"
 // Member 'header'
 #include "std_msgs/msg/detail/header__struct.h"
 // Member 'contacts'
-#include "rosidl_runtime_c/primitives_sequence.h"
+#include "quadruped_mujoco/msg/detail/contacts__struct.h"
 
 /// Struct defined in msg/ContactsStamped in the package quadruped_mujoco.
 typedef struct quadruped_mujoco__msg__ContactsStamped
 {
   std_msgs__msg__Header header;
-  rosidl_runtime_c__boolean__Sequence contacts;
+  quadruped_mujoco__msg__Contacts contacts;
 } quadruped_mujoco__msg__ContactsStamped;
 
 // Struct for a sequence of quadruped_mujoco__msg__ContactsStamped.

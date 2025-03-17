@@ -211,9 +211,12 @@ CMakeFiles/quadruped_mujoco__rosidl_typesupport_c__pyext.dir/rosidl_generator_py
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/joints__functions.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/pose__type_support.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/pose__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/pose__functions.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__type_support.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__functions.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__type_support.h \
  /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__struct.h \

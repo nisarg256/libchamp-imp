@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Pose_yaw
+class Init_Pose_orientation
 {
 public:
-  explicit Init_Pose_yaw(::quadruped_mujoco::msg::Pose & msg)
+  explicit Init_Pose_orientation(::quadruped_mujoco::msg::Pose & msg)
   : msg_(msg)
   {}
-  ::quadruped_mujoco::msg::Pose yaw(::quadruped_mujoco::msg::Pose::_yaw_type arg)
+  ::quadruped_mujoco::msg::Pose orientation(::quadruped_mujoco::msg::Pose::_orientation_type arg)
   {
-    msg_.yaw = std::move(arg);
+    msg_.orientation = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,80 +37,16 @@ private:
   ::quadruped_mujoco::msg::Pose msg_;
 };
 
-class Init_Pose_pitch
+class Init_Pose_position
 {
 public:
-  explicit Init_Pose_pitch(::quadruped_mujoco::msg::Pose & msg)
-  : msg_(msg)
-  {}
-  Init_Pose_yaw pitch(::quadruped_mujoco::msg::Pose::_pitch_type arg)
-  {
-    msg_.pitch = std::move(arg);
-    return Init_Pose_yaw(msg_);
-  }
-
-private:
-  ::quadruped_mujoco::msg::Pose msg_;
-};
-
-class Init_Pose_roll
-{
-public:
-  explicit Init_Pose_roll(::quadruped_mujoco::msg::Pose & msg)
-  : msg_(msg)
-  {}
-  Init_Pose_pitch roll(::quadruped_mujoco::msg::Pose::_roll_type arg)
-  {
-    msg_.roll = std::move(arg);
-    return Init_Pose_pitch(msg_);
-  }
-
-private:
-  ::quadruped_mujoco::msg::Pose msg_;
-};
-
-class Init_Pose_z
-{
-public:
-  explicit Init_Pose_z(::quadruped_mujoco::msg::Pose & msg)
-  : msg_(msg)
-  {}
-  Init_Pose_roll z(::quadruped_mujoco::msg::Pose::_z_type arg)
-  {
-    msg_.z = std::move(arg);
-    return Init_Pose_roll(msg_);
-  }
-
-private:
-  ::quadruped_mujoco::msg::Pose msg_;
-};
-
-class Init_Pose_y
-{
-public:
-  explicit Init_Pose_y(::quadruped_mujoco::msg::Pose & msg)
-  : msg_(msg)
-  {}
-  Init_Pose_z y(::quadruped_mujoco::msg::Pose::_y_type arg)
-  {
-    msg_.y = std::move(arg);
-    return Init_Pose_z(msg_);
-  }
-
-private:
-  ::quadruped_mujoco::msg::Pose msg_;
-};
-
-class Init_Pose_x
-{
-public:
-  Init_Pose_x()
+  Init_Pose_position()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Pose_y x(::quadruped_mujoco::msg::Pose::_x_type arg)
+  Init_Pose_orientation position(::quadruped_mujoco::msg::Pose::_position_type arg)
   {
-    msg_.x = std::move(arg);
-    return Init_Pose_y(msg_);
+    msg_.position = std::move(arg);
+    return Init_Pose_orientation(msg_);
   }
 
 private:
@@ -128,7 +64,7 @@ template<>
 inline
 auto build<::quadruped_mujoco::msg::Pose>()
 {
-  return quadruped_mujoco::msg::builder::Init_Pose_x();
+  return quadruped_mujoco::msg::builder::Init_Pose_position();
 }
 
 }  // namespace quadruped_mujoco

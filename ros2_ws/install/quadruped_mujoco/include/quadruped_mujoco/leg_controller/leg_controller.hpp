@@ -1,4 +1,3 @@
-// quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp
 #ifndef LEG_CONTROLLER_HPP
 #define LEG_CONTROLLER_HPP
 
@@ -10,22 +9,14 @@ namespace champ
 {
     class LegController
     {
-        QuadrupedBase *base_;
-        champ::TrajectoryPlanner *trajectory_planners_[4];
-
-        float capVelocities(float velocity, float min_velocity, float max_velocity)
-        {
-            return std::min(std::max(velocity, min_velocity), max_velocity);
-        }
-
         public:
-            LegController(QuadrupedBase &quadruped_base, PhaseGenerator::Time time = PhaseGenerator::now()):
-                base_(&quadruped_base),     
-                phase_generator(quadruped_base, time),
-                lf(base_->lf),
-                rf(base_->rf),
-                lh(base_->lh),
-                rh(base_->rh)
+            LegController(QuadrupedBase &base, PhaseGenerator::Time time = PhaseGenerator::now()):
+                base_(&base),
+                phase_generator(*base_),
+                lf(*base_->legs[0]),
+                rf(*base_->legs[1]),
+                lh(*base_->legs[2]),
+                rh(*base_->legs[3])
             {
                 trajectory_planners_[0] = &lf;
                 trajectory_planners_[1] = &rf;
@@ -33,16 +24,35 @@ namespace champ
                 trajectory_planners_[3] = &rh;
             }
 
-            void velocityCommand(geometry::Transformation (&foot_positions)[4], 
-                               champ::Velocities &req_vel, 
-                               PhaseGenerator::Time time = PhaseGenerator::now());
+            void velocityCommand(geometry::Transformation *foot_positions, const Velocities &req_vel,
+                                PhaseGenerator::Time time = PhaseGenerator::now())
+            {
+                // If needed, make a copy of the velocity for internal modification
+                Velocities vel_cmd = req_vel; 
+                
+                phase_generator.run(vel_cmd.linear.x, vel_cmd.linear.y, time);
 
-            champ::PhaseGenerator phase_generator;
-            champ::TrajectoryPlanner lf;
-            champ::TrajectoryPlanner rf;
-            champ::TrajectoryPlanner lh;
-            champ::TrajectoryPlanner rh;
+                for(unsigned int i = 0; i < 4; i++)
+                {
+                    trajectory_planners_[i]->generate(foot_positions[i],
+                                                    vel_cmd.linear.x,
+                                                    vel_cmd.angular.z,
+                                                    phase_generator.swing_phase_signal[i],
+                                                    phase_generator.stance_phase_signal[i]);
+                }
+            }
+
+        private:
+            QuadrupedBase *base_;
+            PhaseGenerator phase_generator;
+            
+            TrajectoryPlanner lf;
+            TrajectoryPlanner rf;
+            TrajectoryPlanner lh;
+            TrajectoryPlanner rh;
+            
+            TrajectoryPlanner *trajectory_planners_[4];
     };
 }
 
-#endif
+#endif 

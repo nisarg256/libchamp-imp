@@ -1,9 +1,10 @@
 <!-- quadruped_mujoco/models/mjcf/yobotics.xml -->
 <mujoco model="yobotics">
     <compiler 
-        angle="radian" 
+        angle="degree" 
+        inertiafromgeom="true" 
+        coordinate="local"
         meshdir="../meshes/"
-        autolimits="true"
     />
     
     <option 

@@ -40,6 +40,42 @@ inline void to_flow_style_yaml(
       }
       out << "]";
     }
+    out << ", ";
+  }
+
+  // member: velocity
+  {
+    if (msg.velocity.size() == 0) {
+      out << "velocity: []";
+    } else {
+      out << "velocity: [";
+      size_t pending_items = msg.velocity.size();
+      for (auto item : msg.velocity) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: effort
+  {
+    if (msg.effort.size() == 0) {
+      out << "effort: []";
+    } else {
+      out << "effort: [";
+      size_t pending_items = msg.effort.size();
+      for (auto item : msg.effort) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -58,6 +94,46 @@ inline void to_block_style_yaml(
     } else {
       out << "position:\n";
       for (auto item : msg.position) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: velocity
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.velocity.size() == 0) {
+      out << "velocity: []\n";
+    } else {
+      out << "velocity:\n";
+      for (auto item : msg.velocity) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: effort
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.effort.size() == 0) {
+      out << "effort: []\n";
+    } else {
+      out << "effort:\n";
+      for (auto item : msg.effort) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }

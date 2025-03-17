@@ -17,15 +17,19 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'linear'
+// Member 'angular'
+#include "geometry_msgs/msg/detail/vector3__struct.h"
+
 /// Struct defined in msg/Velocities in the package quadruped_mujoco.
 /**
   * quadruped_mujoco/msg/Velocities.msg
  */
 typedef struct quadruped_mujoco__msg__Velocities
 {
-  float linear_x;
-  float linear_y;
-  float angular_z;
+  geometry_msgs__msg__Vector3 linear;
+  geometry_msgs__msg__Vector3 angular;
 } quadruped_mujoco__msg__Velocities;
 
 // Struct for a sequence of quadruped_mujoco__msg__Velocities.

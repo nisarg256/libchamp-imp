@@ -1,0 +1,117 @@
+<!-- Complete quadruped model -->
+<mujoco model="yobotics">
+    <compiler 
+        angle="degree" 
+        inertiafromgeom="true" 
+        coordinate="local"
+        meshdir="../meshes/"
+    />
+    
+    <option 
+        timestep="0.001"
+        iterations="50" 
+        solver="Newton" 
+        tolerance="1e-10"
+    />
+    
+    <size nstack="5000"/>
+    
+    <default>
+        <joint limited="true" damping="0.1" armature="0.01"/>
+        <motor ctrllimited="true" ctrlrange="-33.5 33.5"/>
+        <geom contype="1" conaffinity="1" friction="1.0 0.1 0.1" rgba="0.5 0.6 0.7 1"/>
+    </default>
+
+    <worldbody>
+        <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1"/>
+        <geom name="ground" type="plane" size="20 20 0.1" pos="0 0 0"/>
+        
+        <body name="trunk" pos="0 0 0.5">
+            <joint type="free" limited="false"/>
+            <geom type="box" size="0.2 0.1 0.05" rgba="0.8 0.2 0.2 1"/>
+            
+            <!-- Front right leg -->
+            <body name="FR_hip" pos="0.18 -0.07 0">
+                <joint name="FR_hip_joint" type="hinge" axis="0 0 1" range="-0.7 0.7"/>
+                <geom type="cylinder" size="0.02 0.02" pos="0 0 0"/>
+                
+                <body name="FR_thigh" pos="0 -0.05 0">
+                    <joint name="FR_thigh_joint" type="hinge" axis="1 0 0" range="-1.6 1.6"/>
+                    <geom type="capsule" size="0.01" fromto="0 0 0 0 0 -0.12"/>
+                    
+                    <body name="FR_calf" pos="0 0 -0.12">
+                        <joint name="FR_calf_joint" type="hinge" axis="1 0 0" range="-2.4 -0.4"/>
+                        <geom type="capsule" size="0.008" fromto="0 0 0 0 0 -0.12"/>
+                    </body>
+                </body>
+            </body>
+            
+            <!-- Front left leg -->
+            <body name="FL_hip" pos="0.18 0.07 0">
+                <joint name="FL_hip_joint" type="hinge" axis="0 0 1" range="-0.7 0.7"/>
+                <geom type="cylinder" size="0.02 0.02" pos="0 0 0"/>
+                
+                <body name="FL_thigh" pos="0 0.05 0">
+                    <joint name="FL_thigh_joint" type="hinge" axis="1 0 0" range="-1.6 1.6"/>
+                    <geom type="capsule" size="0.01" fromto="0 0 0 0 0 -0.12"/>
+                    
+                    <body name="FL_calf" pos="0 0 -0.12">
+                        <joint name="FL_calf_joint" type="hinge" axis="1 0 0" range="-2.4 -0.4"/>
+                        <geom type="capsule" size="0.008" fromto="0 0 0 0 0 -0.12"/>
+                    </body>
+                </body>
+            </body>
+            
+            <!-- Back right leg -->
+            <body name="BR_hip" pos="-0.18 -0.07 0">
+                <joint name="BR_hip_joint" type="hinge" axis="0 0 1" range="-0.7 0.7"/>
+                <geom type="cylinder" size="0.02 0.02" pos="0 0 0"/>
+                
+                <body name="BR_thigh" pos="0 -0.05 0">
+                    <joint name="BR_thigh_joint" type="hinge" axis="1 0 0" range="-1.6 1.6"/>
+                    <geom type="capsule" size="0.01" fromto="0 0 0 0 0 -0.12"/>
+                    
+                    <body name="BR_calf" pos="0 0 -0.12">
+                        <joint name="BR_calf_joint" type="hinge" axis="1 0 0" range="-2.4 -0.4"/>
+                        <geom type="capsule" size="0.008" fromto="0 0 0 0 0 -0.12"/>
+                    </body>
+                </body>
+            </body>
+            
+            <!-- Back left leg -->
+            <body name="BL_hip" pos="-0.18 0.07 0">
+                <joint name="BL_hip_joint" type="hinge" axis="0 0 1" range="-0.7 0.7"/>
+                <geom type="cylinder" size="0.02 0.02" pos="0 0 0"/>
+                
+                <body name="BL_thigh" pos="0 0.05 0">
+                    <joint name="BL_thigh_joint" type="hinge" axis="1 0 0" range="-1.6 1.6"/>
+                    <geom type="capsule" size="0.01" fromto="0 0 0 0 0 -0.12"/>
+                    
+                    <body name="BL_calf" pos="0 0 -0.12">
+                        <joint name="BL_calf_joint" type="hinge" axis="1 0 0" range="-2.4 -0.4"/>
+                        <geom type="capsule" size="0.008" fromto="0 0 0 0 0 -0.12"/>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    
+    <actuator>
+        <!-- Position actuators for each joint -->
+        <position name="FR_hip_pos" joint="FR_hip_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        <position name="FR_thigh_pos" joint="FR_thigh_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        <position name="FR_calf_pos" joint="FR_calf_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        
+        <position name="FL_hip_pos" joint="FL_hip_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        <position name="FL_thigh_pos" joint="FL_thigh_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        <position name="FL_calf_pos" joint="FL_calf_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        
+        <position name="BR_hip_pos" joint="BR_hip_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        <position name="BR_thigh_pos" joint="BR_thigh_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        <position name="BR_calf_pos" joint="BR_calf_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        
+        <position name="BL_hip_pos" joint="BL_hip_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        <position name="BL_thigh_pos" joint="BL_thigh_joint" kp="20" ctrlrange="-1.0 1.0"/>
+        <position name="BL_calf_pos" joint="BL_calf_joint" kp="20" ctrlrange="-1.0 1.0"/>
+    </actuator>
+</mujoco> 

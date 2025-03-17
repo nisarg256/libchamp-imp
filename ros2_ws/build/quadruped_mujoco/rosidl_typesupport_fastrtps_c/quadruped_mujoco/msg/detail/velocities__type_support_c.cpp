@@ -34,8 +34,23 @@ extern "C"
 {
 #endif
 
+#include "geometry_msgs/msg/detail/vector3__functions.h"  // angular, linear
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
+size_t get_serialized_size_geometry_msgs__msg__Vector3(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
+size_t max_serialized_size_geometry_msgs__msg__Vector3(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Vector3)();
 
 
 using _Velocities__ros_msg_type = quadruped_mujoco__msg__Velocities;
@@ -49,19 +64,32 @@ static bool _Velocities__cdr_serialize(
     return false;
   }
   const _Velocities__ros_msg_type * ros_message = static_cast<const _Velocities__ros_msg_type *>(untyped_ros_message);
-  // Field name: linear_x
+  // Field name: linear
   {
-    cdr << ros_message->linear_x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Vector3
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->linear, cdr))
+    {
+      return false;
+    }
   }
 
-  // Field name: linear_y
+  // Field name: angular
   {
-    cdr << ros_message->linear_y;
-  }
-
-  // Field name: angular_z
-  {
-    cdr << ros_message->angular_z;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Vector3
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->angular, cdr))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -76,19 +104,32 @@ static bool _Velocities__cdr_deserialize(
     return false;
   }
   _Velocities__ros_msg_type * ros_message = static_cast<_Velocities__ros_msg_type *>(untyped_ros_message);
-  // Field name: linear_x
+  // Field name: linear
   {
-    cdr >> ros_message->linear_x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Vector3
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->linear))
+    {
+      return false;
+    }
   }
 
-  // Field name: linear_y
+  // Field name: angular
   {
-    cdr >> ros_message->linear_y;
-  }
-
-  // Field name: angular_z
-  {
-    cdr >> ros_message->angular_z;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Vector3
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->angular))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -108,24 +149,14 @@ size_t get_serialized_size_quadruped_mujoco__msg__Velocities(
   (void)padding;
   (void)wchar_size;
 
-  // field.name linear_x
-  {
-    size_t item_size = sizeof(ros_message->linear_x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name linear_y
-  {
-    size_t item_size = sizeof(ros_message->linear_y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name angular_z
-  {
-    size_t item_size = sizeof(ros_message->angular_z);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // field.name linear
+
+  current_alignment += get_serialized_size_geometry_msgs__msg__Vector3(
+    &(ros_message->linear), current_alignment);
+  // field.name angular
+
+  current_alignment += get_serialized_size_geometry_msgs__msg__Vector3(
+    &(ros_message->angular), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -155,29 +186,43 @@ size_t max_serialized_size_quadruped_mujoco__msg__Velocities(
   full_bounded = true;
   is_plain = true;
 
-  // member: linear_x
+  // member: linear
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_geometry_msgs__msg__Vector3(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
-  // member: linear_y
+  // member: angular
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: angular_z
-  {
-    size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_geometry_msgs__msg__Vector3(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -188,7 +233,7 @@ size_t max_serialized_size_quadruped_mujoco__msg__Velocities(
     using DataType = quadruped_mujoco__msg__Velocities;
     is_plain =
       (
-      offsetof(DataType, angular_z) +
+      offsetof(DataType, angular) +
       last_member_size
       ) == ret_val;
   }

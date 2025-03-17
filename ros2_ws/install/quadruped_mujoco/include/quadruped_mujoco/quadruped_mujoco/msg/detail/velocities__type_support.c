@@ -12,6 +12,14 @@
 #include "quadruped_mujoco/msg/detail/velocities__struct.h"
 
 
+// Include directives for member types
+// Member `linear`
+// Member `angular`
+#include "geometry_msgs/msg/vector3.h"
+// Member `linear`
+// Member `angular`
+#include "geometry_msgs/msg/detail/vector3__rosidl_typesupport_introspection_c.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,16 +39,16 @@ void quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velo
   quadruped_mujoco__msg__Velocities__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velocities_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velocities_message_member_array[2] = {
   {
-    "linear_x",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    "linear",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(quadruped_mujoco__msg__Velocities, linear_x),  // bytes offset in struct
+    offsetof(quadruped_mujoco__msg__Velocities, linear),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -50,31 +58,14 @@ static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__
     NULL  // resize(index) function pointer
   },
   {
-    "linear_y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    "angular",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message
+    NULL,  // members of sub message (initialized later)
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(quadruped_mujoco__msg__Velocities, linear_y),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "angular_z",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(quadruped_mujoco__msg__Velocities, angular_z),  // bytes offset in struct
+    offsetof(quadruped_mujoco__msg__Velocities, angular),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -88,7 +79,7 @@ static rosidl_typesupport_introspection_c__MessageMember quadruped_mujoco__msg__
 static const rosidl_typesupport_introspection_c__MessageMembers quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velocities_message_members = {
   "quadruped_mujoco__msg",  // message namespace
   "Velocities",  // message name
-  3,  // number of fields
+  2,  // number of fields
   sizeof(quadruped_mujoco__msg__Velocities),
   quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velocities_message_member_array,  // message members
   quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velocities_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -106,6 +97,10 @@ static rosidl_message_type_support_t quadruped_mujoco__msg__Velocities__rosidl_t
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_quadruped_mujoco
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, quadruped_mujoco, msg, Velocities)() {
+  quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velocities_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Vector3)();
+  quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velocities_message_member_array[1].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Vector3)();
   if (!quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velocities_message_type_support_handle.typesupport_identifier) {
     quadruped_mujoco__msg__Velocities__rosidl_typesupport_introspection_c__Velocities_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

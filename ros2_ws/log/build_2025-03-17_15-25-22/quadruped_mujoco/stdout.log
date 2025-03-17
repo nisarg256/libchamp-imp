@@ -1,0 +1,25 @@
+[  9%] Built target quadruped_mujoco__rosidl_generator_c
+[ 12%] Built target mujoco_interface_node
+[ 13%] Built target quadruped_mujoco__cpp
+[ 13%] Built target ament_cmake_python_copy_quadruped_mujoco
+[ 22%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c
+[ 32%] Built target quadruped_mujoco__rosidl_typesupport_c
+[ 41%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c
+[ 50%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp
+[ 64%] Built target quadruped_mujoco__rosidl_typesupport_cpp
+[ 69%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco_lib[0m
+[ 69%] Built target quadruped_mujoco
+[ 70%] [32mBuilding CXX object CMakeFiles/quadruped_mujoco_lib.dir/src/controllers/quadruped_controller.cpp.o[0m
+[ 72%] Built target quadruped_mujoco__py
+[ 80%] Built target quadruped_mujoco__rosidl_generator_py
+[ 82%] Built target quadruped_mujoco__rosidl_typesupport_c__pyext
+[ 85%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext
+[ 88%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing quadruped_mujoco.egg-info/PKG-INFO
+writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt
+writing top-level names to quadruped_mujoco.egg-info/top_level.txt
+reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[ 88%] Built target ament_cmake_python_build_quadruped_mujoco_egg

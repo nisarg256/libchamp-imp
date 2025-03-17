@@ -17,18 +17,20 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'position'
+#include "geometry_msgs/msg/detail/point__struct.h"
+// Member 'orientation'
+#include "geometry_msgs/msg/detail/quaternion__struct.h"
+
 /// Struct defined in msg/Pose in the package quadruped_mujoco.
 /**
   * quadruped_mujoco/msg/Pose.msg
  */
 typedef struct quadruped_mujoco__msg__Pose
 {
-  float x;
-  float y;
-  float z;
-  float roll;
-  float pitch;
-  float yaw;
+  geometry_msgs__msg__Point position;
+  geometry_msgs__msg__Quaternion orientation;
 } quadruped_mujoco__msg__Pose;
 
 // Struct for a sequence of quadruped_mujoco__msg__Pose.

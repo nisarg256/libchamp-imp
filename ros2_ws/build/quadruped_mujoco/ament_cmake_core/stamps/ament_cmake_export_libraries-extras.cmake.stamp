@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_libraries/cmake/template/ament_cmake_export_libraries.cmake.in
 
-set(_exported_libraries "quadruped_mujoco__rosidl_generator_c;quadruped_mujoco__rosidl_typesupport_c;quadruped_mujoco__rosidl_typesupport_cpp")
+set(_exported_libraries "quadruped_mujoco__rosidl_generator_c;quadruped_mujoco__rosidl_typesupport_c;quadruped_mujoco__rosidl_typesupport_cpp;quadruped_mujoco_lib")
 set(_exported_library_names "")
 
 # populate quadruped_mujoco_LIBRARIES

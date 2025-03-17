@@ -2,23 +2,17 @@
 // with input from quadruped_mujoco/msg/Pose.msg
 // generated code does not contain a copyright notice
 
+#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Quaternion.idl"
 
 module quadruped_mujoco {
   module msg {
     @verbatim (language="comment", text=
       "quadruped_mujoco/msg/Pose.msg")
     struct Pose {
-      float x;
+      geometry_msgs::msg::Point position;
 
-      float y;
-
-      float z;
-
-      float roll;
-
-      float pitch;
-
-      float yaw;
+      geometry_msgs::msg::Quaternion orientation;
     };
   };
 };

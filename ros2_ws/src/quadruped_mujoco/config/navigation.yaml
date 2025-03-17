@@ -1,0 +1,25 @@
+navigation:
+    linear:
+        x:
+            max_velocity: 0.5
+            min_velocity: 0.0
+            acceleration: 0.25
+            deceleration: 0.25
+            
+        y:
+            max_velocity: 0.25
+            min_velocity: 0.0
+            acceleration: 0.125
+            deceleration: 0.125
+
+    angular:
+        z:
+            max_velocity: 1.0
+            min_velocity: 0.0
+            acceleration: 0.5
+            deceleration: 0.5
+
+    position_tolerance: 0.1
+    orientation_tolerance: 0.1
+    goal_reached_threshold: 0.05
+    waypoint_distance_threshold: 0.1 

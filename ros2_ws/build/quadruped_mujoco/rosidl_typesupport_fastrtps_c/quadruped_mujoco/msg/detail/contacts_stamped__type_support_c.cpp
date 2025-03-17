@@ -34,11 +34,21 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/primitives_sequence.h"  // contacts
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // contacts
+#include "quadruped_mujoco/msg/detail/contacts__functions.h"  // contacts
 #include "std_msgs/msg/detail/header__functions.h"  // header
 
 // forward declare type support functions
+size_t get_serialized_size_quadruped_mujoco__msg__Contacts(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+size_t max_serialized_size_quadruped_mujoco__msg__Contacts(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, quadruped_mujoco, msg, Contacts)();
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_quadruped_mujoco
 size_t get_serialized_size_std_msgs__msg__Header(
   const void * untyped_ros_message,
@@ -82,10 +92,16 @@ static bool _ContactsStamped__cdr_serialize(
 
   // Field name: contacts
   {
-    size_t size = ros_message->contacts.size;
-    auto array_ptr = ros_message->contacts.data;
-    cdr << static_cast<uint32_t>(size);
-    cdr.serializeArray(array_ptr, size);
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, quadruped_mujoco, msg, Contacts
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->contacts, cdr))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -116,21 +132,15 @@ static bool _ContactsStamped__cdr_deserialize(
 
   // Field name: contacts
   {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->contacts.data) {
-      rosidl_runtime_c__boolean__Sequence__fini(&ros_message->contacts);
-    }
-    if (!rosidl_runtime_c__boolean__Sequence__init(&ros_message->contacts, size)) {
-      fprintf(stderr, "failed to create array for field 'contacts'");
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, quadruped_mujoco, msg, Contacts
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->contacts))
+    {
       return false;
-    }
-    auto array_ptr = ros_message->contacts.data;
-    for (size_t i = 0; i < size; ++i) {
-      uint8_t tmp;
-      cdr >> tmp;
-      array_ptr[i] = tmp ? true : false;
     }
   }
 
@@ -156,16 +166,9 @@ size_t get_serialized_size_quadruped_mujoco__msg__ContactsStamped(
   current_alignment += get_serialized_size_std_msgs__msg__Header(
     &(ros_message->header), current_alignment);
   // field.name contacts
-  {
-    size_t array_size = ros_message->contacts.size;
-    auto array_ptr = ros_message->contacts.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+
+  current_alignment += get_serialized_size_quadruped_mujoco__msg__Contacts(
+    &(ros_message->contacts), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -216,14 +219,22 @@ size_t max_serialized_size_quadruped_mujoco__msg__ContactsStamped(
   }
   // member: contacts
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_quadruped_mujoco__msg__Contacts(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
 
   size_t ret_val = current_alignment - initial_alignment;

@@ -396,37 +396,134 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco" TYPE DIRECTORY FILES
-    "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/config"
-    "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/launch"
-    "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/urdf"
-    "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/models"
-    "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_interface_node" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_interface_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquadruped_mujoco_lib.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquadruped_mujoco_lib.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_interface_node"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquadruped_mujoco_lib.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco" TYPE EXECUTABLE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/mujoco_interface_node")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_interface_node" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_interface_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/libquadruped_mujoco_lib.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquadruped_mujoco_lib.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquadruped_mujoco_lib.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_interface_node"
-         OLD_RPATH "/opt/ros/humble/lib:/usr/local/lib:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquadruped_mujoco_lib.so"
+         OLD_RPATH "/opt/ros/humble/lib:/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_interface_node")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquadruped_mujoco_lib.so")
     endif()
   endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/trot_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/trot_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/trot_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco" TYPE EXECUTABLE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/trot_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/trot_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/trot_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/trot_node"
+         OLD_RPATH "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco:/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/trot_node")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/turn_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/turn_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/turn_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco" TYPE EXECUTABLE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/turn_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/turn_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/turn_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/turn_node"
+         OLD_RPATH "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco:/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/turn_node")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/waypoint_nav_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/waypoint_nav_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/waypoint_nav_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco" TYPE EXECUTABLE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/waypoint_nav_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/waypoint_nav_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/waypoint_nav_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/waypoint_nav_node"
+         OLD_RPATH "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco:/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/waypoint_nav_node")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/quadruped_controller_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/quadruped_controller_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/quadruped_controller_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco" TYPE EXECUTABLE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/quadruped_controller_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/quadruped_controller_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/quadruped_controller_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/quadruped_controller_node"
+         OLD_RPATH "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco:/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/quadruped_controller_node")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_sim_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_sim_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_sim_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco" TYPE EXECUTABLE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/mujoco_sim_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_sim_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_sim_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_sim_node"
+         OLD_RPATH "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco:/usr/local/lib:/opt/ros/humble/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/quadruped_mujoco/mujoco_sim_node")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/" TYPE DIRECTORY FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco" TYPE DIRECTORY FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -642,6 +739,25 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco/cmake" TYPE FILE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/CMakeFiles/Export/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_pyExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco/cmake" TYPE FILE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/CMakeFiles/Export/share/quadruped_mujoco/cmake/export_quadruped_mujoco__rosidl_generator_pyExport-noconfig.cmake")
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco/cmake/quadruped_mujocoExport.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco/cmake/quadruped_mujocoExport.cmake"
+         "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/CMakeFiles/Export/share/quadruped_mujoco/cmake/quadruped_mujocoExport.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco/cmake/quadruped_mujocoExport-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco/cmake/quadruped_mujocoExport.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco/cmake" TYPE FILE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/CMakeFiles/Export/share/quadruped_mujoco/cmake/quadruped_mujocoExport.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quadruped_mujoco/cmake" TYPE FILE FILES "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/CMakeFiles/Export/share/quadruped_mujoco/cmake/quadruped_mujocoExport-noconfig.cmake")
   endif()
 endif()
 

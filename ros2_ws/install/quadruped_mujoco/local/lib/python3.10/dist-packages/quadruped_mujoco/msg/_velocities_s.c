@@ -16,6 +16,14 @@
 #include "quadruped_mujoco/msg/detail/velocities__struct.h"
 #include "quadruped_mujoco/msg/detail/velocities__functions.h"
 
+ROSIDL_GENERATOR_C_IMPORT
+bool geometry_msgs__msg__vector3__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * geometry_msgs__msg__vector3__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+bool geometry_msgs__msg__vector3__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * geometry_msgs__msg__vector3__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool quadruped_mujoco__msg__velocities__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -50,31 +58,26 @@ bool quadruped_mujoco__msg__velocities__convert_from_py(PyObject * _pymsg, void 
     assert(strncmp("quadruped_mujoco.msg._velocities.Velocities", full_classname_dest, 43) == 0);
   }
   quadruped_mujoco__msg__Velocities * ros_message = _ros_message;
-  {  // linear_x
-    PyObject * field = PyObject_GetAttrString(_pymsg, "linear_x");
+  {  // linear
+    PyObject * field = PyObject_GetAttrString(_pymsg, "linear");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->linear_x = (float)PyFloat_AS_DOUBLE(field);
+    if (!geometry_msgs__msg__vector3__convert_from_py(field, &ros_message->linear)) {
+      Py_DECREF(field);
+      return false;
+    }
     Py_DECREF(field);
   }
-  {  // linear_y
-    PyObject * field = PyObject_GetAttrString(_pymsg, "linear_y");
+  {  // angular
+    PyObject * field = PyObject_GetAttrString(_pymsg, "angular");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->linear_y = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // angular_z
-    PyObject * field = PyObject_GetAttrString(_pymsg, "angular_z");
-    if (!field) {
+    if (!geometry_msgs__msg__vector3__convert_from_py(field, &ros_message->angular)) {
+      Py_DECREF(field);
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->angular_z = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -99,33 +102,28 @@ PyObject * quadruped_mujoco__msg__velocities__convert_to_py(void * raw_ros_messa
     }
   }
   quadruped_mujoco__msg__Velocities * ros_message = (quadruped_mujoco__msg__Velocities *)raw_ros_message;
-  {  // linear_x
+  {  // linear
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->linear_x);
+    field = geometry_msgs__msg__vector3__convert_to_py(&ros_message->linear);
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "linear_x", field);
+      int rc = PyObject_SetAttrString(_pymessage, "linear", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // linear_y
+  {  // angular
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->linear_y);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "linear_y", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
+    field = geometry_msgs__msg__vector3__convert_to_py(&ros_message->angular);
+    if (!field) {
+      return NULL;
     }
-  }
-  {  // angular_z
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->angular_z);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "angular_z", field);
+      int rc = PyObject_SetAttrString(_pymessage, "angular", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

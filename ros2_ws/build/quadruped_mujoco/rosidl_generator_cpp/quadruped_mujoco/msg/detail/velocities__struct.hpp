@@ -15,6 +15,11 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
+// Include directives for member types
+// Member 'linear'
+// Member 'angular'
+#include "geometry_msgs/msg/detail/vector3__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__quadruped_mujoco__msg__Velocities __attribute__((deprecated))
 #else
@@ -34,56 +39,38 @@ struct Velocities_
   using Type = Velocities_<ContainerAllocator>;
 
   explicit Velocities_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : linear(_init),
+    angular(_init)
   {
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->linear_x = 0.0f;
-      this->linear_y = 0.0f;
-      this->angular_z = 0.0f;
-    }
+    (void)_init;
   }
 
   explicit Velocities_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : linear(_alloc, _init),
+    angular(_alloc, _init)
   {
-    (void)_alloc;
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->linear_x = 0.0f;
-      this->linear_y = 0.0f;
-      this->angular_z = 0.0f;
-    }
+    (void)_init;
   }
 
   // field types and members
-  using _linear_x_type =
-    float;
-  _linear_x_type linear_x;
-  using _linear_y_type =
-    float;
-  _linear_y_type linear_y;
-  using _angular_z_type =
-    float;
-  _angular_z_type angular_z;
+  using _linear_type =
+    geometry_msgs::msg::Vector3_<ContainerAllocator>;
+  _linear_type linear;
+  using _angular_type =
+    geometry_msgs::msg::Vector3_<ContainerAllocator>;
+  _angular_type angular;
 
   // setters for named parameter idiom
-  Type & set__linear_x(
-    const float & _arg)
+  Type & set__linear(
+    const geometry_msgs::msg::Vector3_<ContainerAllocator> & _arg)
   {
-    this->linear_x = _arg;
+    this->linear = _arg;
     return *this;
   }
-  Type & set__linear_y(
-    const float & _arg)
+  Type & set__angular(
+    const geometry_msgs::msg::Vector3_<ContainerAllocator> & _arg)
   {
-    this->linear_y = _arg;
-    return *this;
-  }
-  Type & set__angular_z(
-    const float & _arg)
-  {
-    this->angular_z = _arg;
+    this->angular = _arg;
     return *this;
   }
 
@@ -129,13 +116,10 @@ struct Velocities_
   // comparison operators
   bool operator==(const Velocities_ & other) const
   {
-    if (this->linear_x != other.linear_x) {
+    if (this->linear != other.linear) {
       return false;
     }
-    if (this->linear_y != other.linear_y) {
-      return false;
-    }
-    if (this->angular_z != other.angular_z) {
+    if (this->angular != other.angular) {
       return false;
     }
     return true;

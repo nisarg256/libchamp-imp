@@ -1,0 +1,194 @@
+[0.000000] (-) TimerEvent: {}
+[0.000381] (quadruped_mujoco) JobQueued: {'identifier': 'quadruped_mujoco', 'dependencies': OrderedDict()}
+[0.000401] (quadruped_mujoco) JobStarted: {'identifier': 'quadruped_mujoco'}
+[0.009239] (quadruped_mujoco) JobProgress: {'identifier': 'quadruped_mujoco', 'progress': 'cmake'}
+[0.009704] (quadruped_mujoco) JobProgress: {'identifier': 'quadruped_mujoco', 'progress': 'build'}
+[0.010217] (quadruped_mujoco) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco', '--', '-j12', '-l12'], 'cwd': '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco', 'env': OrderedDict([('LANGUAGE', 'en_IN:en'), ('USER', 'nisarg'), ('ROS_PACKAGE_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/lib:/home/nisarg/.mujoco/mujoco210/bin:/home/nisarg/quadruped_ws/install/unitree_go/lib:/home/nisarg/quadruped_ws/install/unitree_api/lib:/home/nisarg/quadruped_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nisarg'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/nisarg/Documents/repo/libchamp-imp'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2064'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install:/home/nisarg/Documents/repo/libchamp-imp/install:/home/nisarg/Documents/repo/helium-quadruped-mjc/install:/home/nisarg/quadruped_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nisarg'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/nisarg/quadruped_ws/install/unitree_legged_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nisarg'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/nisarg/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nisarg-OMEN:@/tmp/.ICE-unix/2064,unix/nisarg-OMEN:/tmp/.ICE-unix/2064'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a2c74410_1cec_4ef8_bca7_33967d08ea0c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '47'), ('AMENT_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/nisarg/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CMAKE_MODULE_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/share/quadruped_mujoco/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/nisarg/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e03bf6c2ed0ad06e9aa581ee67d7e20e'), ('MUJOCO_PLUGIN_PATH', '/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco/local/lib/python3.10/dist-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description/lib/python3.10/site-packages:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller/lib/python3.10/site-packages:/home/nisarg/quadruped_ws/install/unitree_go/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/unitree_api/local/lib/python3.10/dist-packages:/home/nisarg/quadruped_ws/install/champ_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/install/quadruped_mujoco:/home/nisarg/quadruped_ws/install/unitree_go:/home/nisarg/quadruped_ws/install/unitree_api:/home/nisarg/quadruped_ws/install/champ_teleop:/home/nisarg/quadruped_ws/install/champ_msgs:/home/nisarg/quadruped_ws/install/champ_description:/home/nisarg/quadruped_ws/install/champ:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble'), ('MUJOCO_KEY_PATH', '/home/nisarg/.mujoco/mjkey.txt')]), 'shell': False}
+[0.043761] (quadruped_mujoco) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099680] (-) TimerEvent: {}
+[0.142097] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.161963] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.163586] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.167462] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.173843] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.182087] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199772] (-) TimerEvent: {}
+[0.204352] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.205544] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.280336] (quadruped_mujoco) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.299864] (-) TimerEvent: {}
+[0.313156] (quadruped_mujoco) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.332305] (quadruped_mujoco) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.342959] (quadruped_mujoco) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.345570] (quadruped_mujoco) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.397458] (quadruped_mujoco) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.399964] (-) TimerEvent: {}
+[0.403372] (quadruped_mujoco) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):\n'}
+[0.403625] (quadruped_mujoco) StderrLine: {'line': b'  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when\n'}
+[0.403740] (quadruped_mujoco) StderrLine: {'line': b'  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the\n'}
+[0.403839] (quadruped_mujoco) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[0.403934] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.404021] (quadruped_mujoco) StderrLine: {'line': b'  FindOpenGL found both a legacy GL library:\n'}
+[0.404110] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.404197] (quadruped_mujoco) StderrLine: {'line': b'    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so\n'}
+[0.404286] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.404369] (quadruped_mujoco) StderrLine: {'line': b'  and GLVND libraries for OpenGL and GLX:\n'}
+[0.404449] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.404530] (quadruped_mujoco) StderrLine: {'line': b'    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so\n'}
+[0.404625] (quadruped_mujoco) StderrLine: {'line': b'    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so\n'}
+[0.404707] (quadruped_mujoco) StderrLine: {'line': b'\n'}
+[0.404787] (quadruped_mujoco) StderrLine: {'line': b'  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for\n'}
+[0.404870] (quadruped_mujoco) StderrLine: {'line': b'  compatibility with CMake 3.10 and below the legacy GL library will be used.\n'}
+[0.404950] (quadruped_mujoco) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.405030] (quadruped_mujoco) StderrLine: {'line': b'  CMakeLists.txt:28 (find_package)\n'}
+[0.405110] (quadruped_mujoco) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.405188] (quadruped_mujoco) StderrLine: {'line': b'\x1b[0m\n'}
+[0.500057] (-) TimerEvent: {}
+[0.600435] (-) TimerEvent: {}
+[0.700776] (-) TimerEvent: {}
+[0.743037] (quadruped_mujoco) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.800895] (-) TimerEvent: {}
+[0.901269] (-) TimerEvent: {}
+[1.001639] (-) TimerEvent: {}
+[1.102001] (-) TimerEvent: {}
+[1.118694] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.202129] (-) TimerEvent: {}
+[1.252720] (quadruped_mujoco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.274234] (quadruped_mujoco) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.293615] (quadruped_mujoco) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.293772] (quadruped_mujoco) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.293832] (quadruped_mujoco) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.302226] (-) TimerEvent: {}
+[1.337256] (quadruped_mujoco) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.386628] (quadruped_mujoco) StdoutLine: {'line': b'-- Generating done\n'}
+[1.402355] (-) TimerEvent: {}
+[1.406801] (quadruped_mujoco) StdoutLine: {'line': b'-- Build files have been written to: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco\n'}
+[1.441990] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mujoco_interface_node\x1b[0m\n'}
+[1.443741] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_generator_c\x1b[0m\n'}
+[1.461831] (quadruped_mujoco) StdoutLine: {'line': b'[  1%] Built target quadruped_mujoco__cpp\n'}
+[1.462317] (quadruped_mujoco) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o\x1b[0m\n'}
+[1.467787] (quadruped_mujoco) StdoutLine: {'line': b'[  5%] Built target mujoco_interface_node\n'}
+[1.469980] (quadruped_mujoco) StdoutLine: {'line': b'[ 14%] Built target quadruped_mujoco__rosidl_generator_c\n'}
+[1.478513] (quadruped_mujoco) StdoutLine: {'line': b'[ 14%] Built target ament_cmake_python_copy_quadruped_mujoco\n'}
+[1.479907] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.480246] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.483713] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.485811] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_c\x1b[0m\n'}
+[1.486113] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.487037] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.497634] (quadruped_mujoco) StdoutLine: {'line': b'[ 23%] Built target quadruped_mujoco__rosidl_typesupport_cpp\n'}
+[1.497844] (quadruped_mujoco) StdoutLine: {'line': b'[ 32%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp\n'}
+[1.499770] (quadruped_mujoco) StdoutLine: {'line': b'[ 41%] Built target quadruped_mujoco__rosidl_typesupport_c\n'}
+[1.500434] (quadruped_mujoco) StdoutLine: {'line': b'[ 50%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp\n'}
+[1.501271] (quadruped_mujoco) StdoutLine: {'line': b'[ 59%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c\n'}
+[1.502182] (quadruped_mujoco) StdoutLine: {'line': b'[ 68%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c\n'}
+[1.502436] (-) TimerEvent: {}
+[1.507031] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco_lib\x1b[0m\n'}
+[1.520099] (quadruped_mujoco) StdoutLine: {'line': b'[ 71%] Built target quadruped_mujoco_lib\n'}
+[1.527892] (quadruped_mujoco) StdoutLine: {'line': b'[ 71%] Built target quadruped_mujoco\n'}
+[1.528986] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target waypoint_nav_node\x1b[0m\n'}
+[1.529605] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target turn_node\x1b[0m\n'}
+[1.529823] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_controller_node\x1b[0m\n'}
+[1.532234] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target trot_node\x1b[0m\n'}
+[1.542561] (quadruped_mujoco) StdoutLine: {'line': b'[ 74%] Built target waypoint_nav_node\n'}
+[1.545238] (quadruped_mujoco) StdoutLine: {'line': b'[ 76%] Built target turn_node\n'}
+[1.547872] (quadruped_mujoco) StdoutLine: {'line': b'[ 79%] Built target trot_node\n'}
+[1.549442] (quadruped_mujoco) StdoutLine: {'line': b'[ 81%] Built target quadruped_controller_node\n'}
+[1.549596] (quadruped_mujoco) StdoutLine: {'line': b'[ 83%] Built target quadruped_mujoco__py\n'}
+[1.558205] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_generator_py\x1b[0m\n'}
+[1.570110] (quadruped_mujoco) StdoutLine: {'line': b'[ 90%] Built target quadruped_mujoco__rosidl_generator_py\n'}
+[1.578419] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.582303] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.582778] (quadruped_mujoco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[1.591104] (quadruped_mujoco) StdoutLine: {'line': b'[ 93%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.594846] (quadruped_mujoco) StdoutLine: {'line': b'[ 96%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext\n'}
+[1.597485] (quadruped_mujoco) StdoutLine: {'line': b'[ 98%] Built target quadruped_mujoco__rosidl_typesupport_c__pyext\n'}
+[1.602550] (-) TimerEvent: {}
+[1.677663] (quadruped_mujoco) StdoutLine: {'line': b'running egg_info\n'}
+[1.678284] (quadruped_mujoco) StdoutLine: {'line': b'writing quadruped_mujoco.egg-info/PKG-INFO\n'}
+[1.678510] (quadruped_mujoco) StdoutLine: {'line': b'writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt\n'}
+[1.678729] (quadruped_mujoco) StdoutLine: {'line': b'writing top-level names to quadruped_mujoco.egg-info/top_level.txt\n'}
+[1.680662] (quadruped_mujoco) StdoutLine: {'line': b"reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'\n"}
+[1.681081] (quadruped_mujoco) StdoutLine: {'line': b"writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'\n"}
+[1.702595] (-) TimerEvent: {}
+[1.703848] (quadruped_mujoco) StdoutLine: {'line': b'[ 98%] Built target ament_cmake_python_build_quadruped_mujoco_egg\n'}
+[1.802684] (-) TimerEvent: {}
+[1.902942] (-) TimerEvent: {}
+[2.003256] (-) TimerEvent: {}
+[2.103514] (-) TimerEvent: {}
+[2.203798] (-) TimerEvent: {}
+[2.304086] (-) TimerEvent: {}
+[2.404372] (-) TimerEvent: {}
+[2.504697] (-) TimerEvent: {}
+[2.605022] (-) TimerEvent: {}
+[2.705343] (-) TimerEvent: {}
+[2.805609] (-) TimerEvent: {}
+[2.905902] (-) TimerEvent: {}
+[3.006175] (-) TimerEvent: {}
+[3.106505] (-) TimerEvent: {}
+[3.206891] (-) TimerEvent: {}
+[3.307203] (-) TimerEvent: {}
+[3.407577] (-) TimerEvent: {}
+[3.507834] (-) TimerEvent: {}
+[3.608101] (-) TimerEvent: {}
+[3.708408] (-) TimerEvent: {}
+[3.808706] (-) TimerEvent: {}
+[3.909021] (-) TimerEvent: {}
+[4.009288] (-) TimerEvent: {}
+[4.109570] (-) TimerEvent: {}
+[4.209830] (-) TimerEvent: {}
+[4.310082] (-) TimerEvent: {}
+[4.410383] (-) TimerEvent: {}
+[4.510630] (-) TimerEvent: {}
+[4.610901] (-) TimerEvent: {}
+[4.711208] (-) TimerEvent: {}
+[4.811460] (-) TimerEvent: {}
+[4.911726] (-) TimerEvent: {}
+[5.011977] (-) TimerEvent: {}
+[5.112282] (-) TimerEvent: {}
+[5.212582] (-) TimerEvent: {}
+[5.312861] (-) TimerEvent: {}
+[5.413184] (-) TimerEvent: {}
+[5.513595] (-) TimerEvent: {}
+[5.613823] (-) TimerEvent: {}
+[5.714141] (-) TimerEvent: {}
+[5.814470] (-) TimerEvent: {}
+[5.914710] (-) TimerEvent: {}
+[6.014965] (-) TimerEvent: {}
+[6.115289] (-) TimerEvent: {}
+[6.215512] (-) TimerEvent: {}
+[6.315741] (-) TimerEvent: {}
+[6.415960] (-) TimerEvent: {}
+[6.516210] (-) TimerEvent: {}
+[6.616524] (-) TimerEvent: {}
+[6.716764] (-) TimerEvent: {}
+[6.817083] (-) TimerEvent: {}
+[6.917329] (-) TimerEvent: {}
+[7.017589] (-) TimerEvent: {}
+[7.118191] (-) TimerEvent: {}
+[7.218535] (-) TimerEvent: {}
+[7.318916] (-) TimerEvent: {}
+[7.419191] (-) TimerEvent: {}
+[7.420475] (quadruped_mujoco) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mujoco_sim_node\x1b[0m\n'}
+[7.519287] (-) TimerEvent: {}
+[7.619642] (-) TimerEvent: {}
+[7.676063] (quadruped_mujoco) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::loadModel()':\n"}
+[7.676206] (quadruped_mujoco) StderrLine: {'line': b"mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode9loadModelEv[_ZN13MujocoSimNode9loadModelEv]+0xa4): undefined reference to `mj_loadXML'\n"}
+[7.676316] (quadruped_mujoco) StderrLine: {'line': b"/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode9loadModelEv[_ZN13MujocoSimNode9loadModelEv]+0x3e3): undefined reference to `mj_makeData'\n"}
+[7.676536] (quadruped_mujoco) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::simulationStep()':\n"}
+[7.676593] (quadruped_mujoco) StderrLine: {'line': b"mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode14simulationStepEv[_ZN13MujocoSimNode14simulationStepEv]+0x1e6): undefined reference to `mj_step'\n"}
+[7.677088] (quadruped_mujoco) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::publishJointStates()':\n"}
+[7.677128] (quadruped_mujoco) StderrLine: {'line': b"mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode18publishJointStatesEv[_ZN13MujocoSimNode18publishJointStatesEv]+0x119): undefined reference to `mj_id2name'\n"}
+[7.677248] (quadruped_mujoco) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::jointCommandCallback(std::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >)':\n"}
+[7.677285] (quadruped_mujoco) StderrLine: {'line': b"mujoco_sim_node.cpp:(.text._ZN13MujocoSimNode20jointCommandCallbackESt10shared_ptrIN11sensor_msgs3msg11JointState_ISaIvEEEE[_ZN13MujocoSimNode20jointCommandCallbackESt10shared_ptrIN11sensor_msgs3msg11JointState_ISaIvEEEE]+0x224): undefined reference to `mj_name2id'\n"}
+[7.677621] (quadruped_mujoco) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o: in function `MujocoSimNode::~MujocoSimNode()':\n"}
+[7.677664] (quadruped_mujoco) StderrLine: {'line': b"mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x3d): undefined reference to `mj_deleteData'\n"}
+[7.677889] (quadruped_mujoco) StderrLine: {'line': b"/usr/bin/ld: mujoco_sim_node.cpp:(.text._ZN13MujocoSimNodeD2Ev[_ZN13MujocoSimNodeD5Ev]+0x60): undefined reference to `mj_deleteModel'\n"}
+[7.703162] (quadruped_mujoco) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[7.704614] (quadruped_mujoco) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:175: mujoco_sim_node] Error 1\n'}
+[7.704701] (quadruped_mujoco) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:769: CMakeFiles/mujoco_sim_node.dir/all] Error 2\n'}
+[7.704951] (quadruped_mujoco) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.707223] (quadruped_mujoco) CommandEnded: {'returncode': 2}
+[7.719717] (-) TimerEvent: {}
+[7.722476] (quadruped_mujoco) JobEnded: {'identifier': 'quadruped_mujoco', 'rc': 2}
+[7.733089] (-) EventReactorShutdown: {}

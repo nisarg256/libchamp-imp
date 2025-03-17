@@ -2,17 +2,16 @@
 // with input from quadruped_mujoco/msg/Velocities.msg
 // generated code does not contain a copyright notice
 
+#include "geometry_msgs/msg/Vector3.idl"
 
 module quadruped_mujoco {
   module msg {
     @verbatim (language="comment", text=
       "quadruped_mujoco/msg/Velocities.msg")
     struct Velocities {
-      float linear_x;
+      geometry_msgs::msg::Vector3 linear;
 
-      float linear_y;
-
-      float angular_z;
+      geometry_msgs::msg::Vector3 angular;
     };
   };
 };

@@ -7,8 +7,6 @@
 
 import builtins  # noqa: E402, I100
 
-import math  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -44,6 +42,14 @@ class Metaclass_Pose(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__pose
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__pose
 
+            from geometry_msgs.msg import Point
+            if Point.__class__._TYPE_SUPPORT is None:
+                Point.__class__.__import_type_support__()
+
+            from geometry_msgs.msg import Quaternion
+            if Quaternion.__class__._TYPE_SUPPORT is None:
+                Quaternion.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -57,42 +63,28 @@ class Pose(metaclass=Metaclass_Pose):
     """Message class 'Pose'."""
 
     __slots__ = [
-        '_x',
-        '_y',
-        '_z',
-        '_roll',
-        '_pitch',
-        '_yaw',
+        '_position',
+        '_orientation',
     ]
 
     _fields_and_field_types = {
-        'x': 'float',
-        'y': 'float',
-        'z': 'float',
-        'roll': 'float',
-        'pitch': 'float',
-        'yaw': 'float',
+        'position': 'geometry_msgs/Point',
+        'orientation': 'geometry_msgs/Quaternion',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Quaternion'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.x = kwargs.get('x', float())
-        self.y = kwargs.get('y', float())
-        self.z = kwargs.get('z', float())
-        self.roll = kwargs.get('roll', float())
-        self.pitch = kwargs.get('pitch', float())
-        self.yaw = kwargs.get('yaw', float())
+        from geometry_msgs.msg import Point
+        self.position = kwargs.get('position', Point())
+        from geometry_msgs.msg import Quaternion
+        self.orientation = kwargs.get('orientation', Quaternion())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -123,17 +115,9 @@ class Pose(metaclass=Metaclass_Pose):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.x != other.x:
+        if self.position != other.position:
             return False
-        if self.y != other.y:
-            return False
-        if self.z != other.z:
-            return False
-        if self.roll != other.roll:
-            return False
-        if self.pitch != other.pitch:
-            return False
-        if self.yaw != other.yaw:
+        if self.orientation != other.orientation:
             return False
         return True
 
@@ -143,91 +127,29 @@ class Pose(metaclass=Metaclass_Pose):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def x(self):
-        """Message field 'x'."""
-        return self._x
+    def position(self):
+        """Message field 'position'."""
+        return self._position
 
-    @x.setter
-    def x(self, value):
+    @position.setter
+    def position(self, value):
         if __debug__:
+            from geometry_msgs.msg import Point
             assert \
-                isinstance(value, float), \
-                "The 'x' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'x' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._x = value
+                isinstance(value, Point), \
+                "The 'position' field must be a sub message of type 'Point'"
+        self._position = value
 
     @builtins.property
-    def y(self):
-        """Message field 'y'."""
-        return self._y
+    def orientation(self):
+        """Message field 'orientation'."""
+        return self._orientation
 
-    @y.setter
-    def y(self, value):
+    @orientation.setter
+    def orientation(self, value):
         if __debug__:
+            from geometry_msgs.msg import Quaternion
             assert \
-                isinstance(value, float), \
-                "The 'y' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'y' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._y = value
-
-    @builtins.property
-    def z(self):
-        """Message field 'z'."""
-        return self._z
-
-    @z.setter
-    def z(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'z' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'z' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._z = value
-
-    @builtins.property
-    def roll(self):
-        """Message field 'roll'."""
-        return self._roll
-
-    @roll.setter
-    def roll(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'roll' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'roll' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._roll = value
-
-    @builtins.property
-    def pitch(self):
-        """Message field 'pitch'."""
-        return self._pitch
-
-    @pitch.setter
-    def pitch(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'pitch' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'pitch' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._pitch = value
-
-    @builtins.property
-    def yaw(self):
-        """Message field 'yaw'."""
-        return self._yaw
-
-    @yaw.setter
-    def yaw(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'yaw' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'yaw' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._yaw = value
+                isinstance(value, Quaternion), \
+                "The 'orientation' field must be a sub message of type 'Quaternion'"
+        self._orientation = value

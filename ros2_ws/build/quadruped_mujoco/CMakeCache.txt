@@ -450,6 +450,12 @@ libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
 
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/humble/share/nav_msgs/cmake
+
+//Path to a library.
+pkgcfg_lib_GLFW3_glfw:FILEPATH=/usr/lib/x86_64-linux-gnu/libglfw.so
+
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
@@ -500,6 +506,9 @@ quadruped_mujoco__rosidl_typesupport_introspection_c__pyext_LIB_DEPENDS:STATIC=g
 
 //Dependencies for the target
 quadruped_mujoco__rosidl_typesupport_introspection_cpp_LIB_DEPENDS:STATIC=general;rosidl_runtime_c::rosidl_runtime_c;general;rosidl_typesupport_introspection_cpp::rosidl_typesupport_introspection_cpp;general;std_msgs::std_msgs__rosidl_typesupport_introspection_cpp;general;builtin_interfaces::builtin_interfaces__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;
+
+//Dependencies for the target
+quadruped_mujoco_lib_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;std_msgs::std_msgs__rosidl_generator_c;general;std_msgs::std_msgs__rosidl_typesupport_fastrtps_c;general;std_msgs::std_msgs__rosidl_typesupport_fastrtps_cpp;general;std_msgs::std_msgs__rosidl_typesupport_introspection_c;general;std_msgs::std_msgs__rosidl_typesupport_c;general;std_msgs::std_msgs__rosidl_typesupport_introspection_cpp;general;std_msgs::std_msgs__rosidl_typesupport_cpp;general;std_msgs::std_msgs__rosidl_generator_py;general;sensor_msgs::sensor_msgs__rosidl_generator_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_cpp;general;sensor_msgs::sensor_msgs__rosidl_generator_py;general;geometry_msgs::geometry_msgs__rosidl_generator_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_cpp;general;geometry_msgs::geometry_msgs__rosidl_generator_py;general;nav_msgs::nav_msgs__rosidl_generator_c;general;nav_msgs::nav_msgs__rosidl_typesupport_fastrtps_c;general;nav_msgs::nav_msgs__rosidl_typesupport_fastrtps_cpp;general;nav_msgs::nav_msgs__rosidl_typesupport_introspection_c;general;nav_msgs::nav_msgs__rosidl_typesupport_c;general;nav_msgs::nav_msgs__rosidl_typesupport_introspection_cpp;general;nav_msgs::nav_msgs__rosidl_typesupport_cpp;general;nav_msgs::nav_msgs__rosidl_generator_py;general;tf2::tf2;general;tf2_ros::tf2_ros;general;tf2_ros::static_transform_broadcaster_node;general;quadruped_mujoco__rosidl_typesupport_cpp;
 
 //The directory containing a CMake configuration file for rcl.
 rcl_DIR:PATH=/opt/ros/humble/share/rcl/cmake
@@ -796,6 +805,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcrypto.so][/usr/include][c ][v3.0.2()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.10.12()]
 //Details about finding PythonExtra
@@ -818,6 +829,41 @@ GLEW_SHARED_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 GLEW_STATIC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLEW_STATIC_LIBRARY_RELEASE
 GLEW_STATIC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+GLFW3_CFLAGS:INTERNAL=
+GLFW3_CFLAGS_I:INTERNAL=
+GLFW3_CFLAGS_OTHER:INTERNAL=
+GLFW3_FOUND:INTERNAL=1
+GLFW3_INCLUDEDIR:INTERNAL=/usr/include
+GLFW3_INCLUDE_DIRS:INTERNAL=
+GLFW3_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lglfw
+GLFW3_LDFLAGS_OTHER:INTERNAL=
+GLFW3_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLFW3_LIBRARIES:INTERNAL=glfw
+GLFW3_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLFW3_LIBS:INTERNAL=
+GLFW3_LIBS_L:INTERNAL=
+GLFW3_LIBS_OTHER:INTERNAL=
+GLFW3_LIBS_PATHS:INTERNAL=
+GLFW3_MODULE_NAME:INTERNAL=glfw3
+GLFW3_PREFIX:INTERNAL=/usr
+GLFW3_STATIC_CFLAGS:INTERNAL=
+GLFW3_STATIC_CFLAGS_I:INTERNAL=
+GLFW3_STATIC_CFLAGS_OTHER:INTERNAL=
+GLFW3_STATIC_INCLUDE_DIRS:INTERNAL=
+GLFW3_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lglfw;-lrt;-lm;-ldl
+GLFW3_STATIC_LDFLAGS_OTHER:INTERNAL=
+GLFW3_STATIC_LIBDIR:INTERNAL=
+GLFW3_STATIC_LIBRARIES:INTERNAL=glfw;rt;m;dl
+GLFW3_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLFW3_STATIC_LIBS:INTERNAL=
+GLFW3_STATIC_LIBS_L:INTERNAL=
+GLFW3_STATIC_LIBS_OTHER:INTERNAL=
+GLFW3_STATIC_LIBS_PATHS:INTERNAL=
+GLFW3_VERSION:INTERNAL=3.3.6
+GLFW3_glfw3_INCLUDEDIR:INTERNAL=
+GLFW3_glfw3_LIBDIR:INTERNAL=
+GLFW3_glfw3_PREFIX:INTERNAL=
+GLFW3_glfw3_VERSION:INTERNAL=
 //ADVANCED property for variable: MUJOCO_INCLUDE_DIR
 MUJOCO_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MUJOCO_LIBRARY
@@ -905,8 +951,12 @@ _Python3_EXECUTABLE:INTERNAL=/usr/bin/python3
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;cpython-310-x86_64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=0f3e53742e142b1d9e50e4ca5b901dd8
+__pkg_config_arguments_GLFW3:INTERNAL=REQUIRED;glfw3
 __pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
+__pkg_config_checked_GLFW3:INTERNAL=1
 __pkg_config_checked__OPENSSL:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GLFW3_glfw
+pkgcfg_lib_GLFW3_glfw-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_crypto
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl

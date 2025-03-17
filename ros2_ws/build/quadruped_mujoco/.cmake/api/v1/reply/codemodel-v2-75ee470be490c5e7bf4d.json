@@ -1,0 +1,296 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1e8b8a60e8b35c78d19e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24
+					]
+				},
+				{
+					"build" : "quadruped_mujoco__py",
+					"jsonFile" : "directory-quadruped_mujoco__py-49a7166ca890bbd665e3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco/quadruped_mujoco__py",
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "quadruped_mujoco",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_quadruped_mujoco_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_quadruped_mujoco_egg-e5a2a52a0592e14ca614.json",
+					"name" : "ament_cmake_python_build_quadruped_mujoco_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_quadruped_mujoco::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_quadruped_mujoco-ad9365c1da28b582f229.json",
+					"name" : "ament_cmake_python_copy_quadruped_mujoco",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mujoco_interface_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mujoco_interface_node-3534378d24346f90c74c.json",
+					"name" : "mujoco_interface_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mujoco_sim_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mujoco_sim_node-5d315a2a66e2cc530f8d.json",
+					"name" : "mujoco_sim_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_controller_node-954892163bfbff1cc60f.json",
+					"name" : "quadruped_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco-eefc4a48ffc20df398ef.json",
+					"name" : "quadruped_mujoco",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__cpp-930247210c66b206b41e.json",
+					"name" : "quadruped_mujoco__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "quadruped_mujoco__py::@021c7b8b610c57b93fd3",
+					"jsonFile" : "target-quadruped_mujoco__py-c5c82344cdd64b55e1e7.json",
+					"name" : "quadruped_mujoco__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_generator_c-ebd35d4689aac17d0a8c.json",
+					"name" : "quadruped_mujoco__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_generator_py-2c01d1180796cef7e22a.json",
+					"name" : "quadruped_mujoco__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_typesupport_c-f2bc1373b27f08eb4bd7.json",
+					"name" : "quadruped_mujoco__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_typesupport_c__pyext-2dc687451cb671997aa1.json",
+					"name" : "quadruped_mujoco__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_typesupport_cpp-2768d8cf240e6df3add4.json",
+					"name" : "quadruped_mujoco__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_typesupport_fastrtps_c-49d776e7cb7463245ada.json",
+					"name" : "quadruped_mujoco__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext-e031a629471e75133d5f.json",
+					"name" : "quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_typesupport_fastrtps_cpp-3f5649f57ca4bbd712e3.json",
+					"name" : "quadruped_mujoco__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_typesupport_introspection_c-4ef5e11de53cd0d1af70.json",
+					"name" : "quadruped_mujoco__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_typesupport_introspection_c__pyext-f2466850fd95baadfbbe.json",
+					"name" : "quadruped_mujoco__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco__rosidl_typesupport_introspection_cpp-405d71a458e430d9ee8c.json",
+					"name" : "quadruped_mujoco__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco_lib-ebb600779e412b85de62.json",
+					"name" : "quadruped_mujoco_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadruped_mujoco_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadruped_mujoco_uninstall-5ced21b7ea7d1a421031.json",
+					"name" : "quadruped_mujoco_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trot_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trot_node-629b1d6aafc6df770f64.json",
+					"name" : "trot_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turn_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turn_node-f2b8e751324934bcb57d.json",
+					"name" : "turn_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-38f96300ab8dd3e18a1f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waypoint_nav_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waypoint_nav_node-1a1c17bee33c0c70e1a9.json",
+					"name" : "waypoint_nav_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco",
+		"source" : "/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

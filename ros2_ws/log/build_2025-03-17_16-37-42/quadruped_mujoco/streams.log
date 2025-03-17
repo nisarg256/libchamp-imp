@@ -1,0 +1,164 @@
+[0.008s] Invoking command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --build /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco -- -j12 -l12
+[0.039s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.147s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.168s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.171s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.176s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.184s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.213s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.214s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.290s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.321s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.340s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.350s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.353s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.403s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.409s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):
+[0.409s]   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+[0.409s]   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+[0.409s]   cmake_policy command to set the policy and suppress this warning.
+[0.409s] 
+[0.409s]   FindOpenGL found both a legacy GL library:
+[0.409s] 
+[0.409s]     OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+[0.409s] 
+[0.409s]   and GLVND libraries for OpenGL and GLX:
+[0.409s] 
+[0.409s]     OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+[0.409s]     OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+[0.409s] 
+[0.409s]   OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+[0.410s]   compatibility with CMake 3.10 and below the legacy GL library will be used.
+[0.410s] Call Stack (most recent call first):
+[0.410s]   CMakeLists.txt:28 (find_package)
+[0.410s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.410s] [0m
+[0.685s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.991s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.134s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.152s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.178s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.179s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.179s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.224s] -- Configuring done
+[1.271s] -- Generating done
+[1.288s] -- Build files have been written to: /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco
+[1.309s] [35m[1mConsolidate compiler generated dependencies of target mujoco_interface_node[0m
+[1.312s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_generator_c[0m
+[1.316s] [  1%] Built target quadruped_mujoco__cpp
+[1.321s] [  2%] Built target ament_cmake_python_copy_quadruped_mujoco
+[1.321s] [ 10%] Built target quadruped_mujoco__rosidl_generator_c
+[1.322s] [ 12%] Built target mujoco_interface_node
+[1.324s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp[0m
+[1.325s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_cpp[0m
+[1.329s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_c[0m
+[1.329s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_cpp[0m
+[1.331s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_c[0m
+[1.333s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_c[0m
+[1.338s] [ 22%] Built target quadruped_mujoco__rosidl_typesupport_cpp
+[1.338s] [ 31%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp
+[1.339s] [ 40%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c
+[1.342s] [ 57%] Built target quadruped_mujoco__rosidl_typesupport_c
+[1.342s] [ 58%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp
+[1.343s] [ 67%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c
+[1.346s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco_lib[0m
+[1.362s] [ 67%] Built target quadruped_mujoco
+[1.362s] [ 70%] Built target quadruped_mujoco_lib
+[1.373s] [35m[1mConsolidate compiler generated dependencies of target mujoco_sim_node[0m
+[1.373s] [35m[1mConsolidate compiler generated dependencies of target trot_node[0m
+[1.373s] [35m[1mConsolidate compiler generated dependencies of target turn_node[0m
+[1.373s] [35m[1mConsolidate compiler generated dependencies of target waypoint_nav_node[0m
+[1.374s] [35m[1mConsolidate compiler generated dependencies of target quadruped_controller_node[0m
+[1.382s] [ 72%] Built target waypoint_nav_node
+[1.383s] [ 74%] [32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o[0m
+[1.383s] [ 76%] Built target turn_node
+[1.383s] [ 79%] Built target trot_node
+[1.384s] [ 80%] Built target quadruped_mujoco__py
+[1.386s] [ 81%] [32mBuilding CXX object CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o[0m
+[1.392s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_generator_py[0m
+[1.408s] [ 89%] Built target quadruped_mujoco__rosidl_generator_py
+[1.420s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_c__pyext[0m
+[1.420s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext[0m
+[1.420s] [35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.429s] [ 92%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext
+[1.430s] [ 94%] Built target quadruped_mujoco__rosidl_typesupport_c__pyext
+[1.433s] [ 97%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext
+[1.541s] running egg_info
+[1.541s] writing quadruped_mujoco.egg-info/PKG-INFO
+[1.541s] writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt
+[1.541s] writing top-level names to quadruped_mujoco.egg-info/top_level.txt
+[1.543s] reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[1.544s] writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[1.566s] [ 97%] Built target ament_cmake_python_build_quadruped_mujoco_egg
+[2.837s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:6[m[K,
+[2.837s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[2.837s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.837s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[2.837s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In constructor ‘[01m[Kchamp::PhaseGenerator::PhaseGenerator(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[2.837s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:64:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchamp::PhaseGenerator::has_swung_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.837s]    64 |             bool [01;35m[Khas_swung_[m[K;
+[2.837s]       |                  [01;35m[K^~~~~~~~~~[m[K
+[2.837s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:17:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool champ::PhaseGenerator::has_started[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.837s]    17 |             bool [01;35m[Khas_started[m[K;
+[2.837s]       |                  [01;35m[K^~~~~~~~~~~[m[K
+[2.837s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:19:13:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.837s]    19 |             [01;35m[KPhaseGenerator[m[K(QuadrupedBase &base, Time time = now()):
+[2.837s]       |             [01;35m[K^~~~~~~~~~~~~~[m[K
+[2.837s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:[m[K In member function ‘[01m[Kvoid champ::PhaseGenerator::run(float, float, champ::PhaseGenerator::Time)[m[K’:
+[2.837s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.837s]    32 |             void run([01;35m[Kfloat target_velocity[m[K, float step_length, Time time = now())
+[2.837s]       |                      [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[2.837s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/phase_generator.hpp:32:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.837s]    32 |             void run(float target_velocity, [01;35m[Kfloat step_length[m[K, Time time = now())
+[2.837s]       |                                             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+[2.837s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/quadruped_controller.hpp:12[m[K,
+[2.837s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:4[m[K,
+[2.837s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[2.837s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:[m[K In constructor ‘[01m[Kchamp::LegController::LegController(champ::QuadrupedBase&, champ::PhaseGenerator::Time)[m[K’:
+[2.837s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/leg_controller/leg_controller.hpp:13:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.837s]    13 |     LegController(QuadrupedBase &base, [01;35m[KPhaseGenerator::Time time = PhaseGenerator::now()[m[K):
+[2.837s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.838s] 
+[2.944s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:[m[K In member function ‘[01m[Kvoid QuadrupedControllerNode::jointStatesCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.944s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:16:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.944s]    16 | ointStatesCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K) {
+[2.944s]       |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.944s] 
+[3.480s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[3.480s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[3.480s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[3.480s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.480s]                  from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:1[m[K:
+[3.480s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = champ::TrotController; _Args = {champ::QuadrupedBase&}; _Tp = champ::TrotController][m[K’:
+[3.480s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = champ::TrotController; _Args = {champ::QuadrupedBase&}; _Tp = champ::TrotController; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<champ::TrotController>][m[K’
+[3.480s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {champ::QuadrupedBase&}; _Tp = champ::TrotController; _Alloc = std::allocator<champ::TrotController>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.480s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = champ::TrotController; _Alloc = std::allocator<champ::TrotController>; _Args = {champ::QuadrupedBase&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.480s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::TrotController>; _Args = {champ::QuadrupedBase&}; _Tp = champ::TrotController; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.480s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<champ::TrotController>; _Args = {champ::QuadrupedBase&}; _Tp = champ::TrotController][m[K’
+[3.480s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = champ::TrotController; _Alloc = std::allocator<champ::TrotController>; _Args = {champ::QuadrupedBase&}][m[K’
+[3.480s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = champ::TrotController; _Args = {champ::QuadrupedBase&}][m[K’
+[3.480s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:47:66:[m[K   required from here
+[3.480s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kchamp::TrotController::TrotController(champ::QuadrupedBase&)[m[K’
+[3.480s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[3.480s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.480s] In file included from [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/quadruped_controller_node.cpp:2[m[K:
+[3.480s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:11:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::TrotController::TrotController(rclcpp::Node::SharedPtr)[m[K’
+[3.480s]    11 |             [01;36m[KTrotController[m[K(rclcpp::Node::SharedPtr node) :
+[3.480s]       |             [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.480s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:11:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kchamp::QuadrupedBase[m[K’ to ‘[01m[Krclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’}
+[3.481s]    11 |             TrotController([01;36m[Krclcpp::Node::SharedPtr node[m[K) :
+[3.481s]       |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[3.481s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:8:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::TrotController::TrotController(const champ::TrotController&)[m[K’
+[3.481s]     8 |     class [01;36m[KTrotController[m[K : public QuadrupedController
+[3.481s]       |           [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.481s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:8:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kchamp::QuadrupedBase[m[K’ to ‘[01m[Kconst champ::TrotController&[m[K’
+[3.481s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:8:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kchamp::TrotController::TrotController(champ::TrotController&&)[m[K’
+[3.481s] [01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/include/quadruped_mujoco/controllers/trot_controller.hpp:8:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kchamp::QuadrupedBase[m[K’ to ‘[01m[Kchamp::TrotController&&[m[K’
+[5.018s] gmake[2]: *** [CMakeFiles/quadruped_controller_node.dir/build.make:76: CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o] Error 1
+[5.018s] gmake[1]: *** [CMakeFiles/Makefile2:659: CMakeFiles/quadruped_controller_node.dir/all] Error 2
+[5.018s] gmake[1]: *** Waiting for unfinished jobs....
+[6.892s] [ 98%] [32m[1mLinking CXX executable mujoco_sim_node[0m
+[7.264s] [ 98%] Built target mujoco_sim_node
+[7.265s] gmake: *** [Makefile:146: all] Error 2
+[7.267s] Invoked command in '/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_simulation:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_description:/home/nisarg/Documents/repo/helium-quadruped-mjc/install/helium_quadruped_controller:/opt/ros/humble /usr/bin/cmake --build /home/nisarg/Documents/repo/libchamp-imp/ros2_ws/build/quadruped_mujoco -- -j12 -l12

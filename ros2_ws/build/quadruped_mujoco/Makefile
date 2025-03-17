@@ -393,6 +393,19 @@ quadruped_mujoco__rosidl_typesupport_c__pyext/fast:
 .PHONY : quadruped_mujoco__rosidl_typesupport_c__pyext/fast
 
 #=============================================================================
+# Target rules for targets named quadruped_mujoco_lib
+
+# Build rule for target.
+quadruped_mujoco_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadruped_mujoco_lib
+.PHONY : quadruped_mujoco_lib
+
+# fast build rule for target.
+quadruped_mujoco_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quadruped_mujoco_lib.dir/build.make CMakeFiles/quadruped_mujoco_lib.dir/build
+.PHONY : quadruped_mujoco_lib/fast
+
+#=============================================================================
 # Target rules for targets named mujoco_interface_node
 
 # Build rule for target.
@@ -404,6 +417,71 @@ mujoco_interface_node: cmake_check_build_system
 mujoco_interface_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_interface_node.dir/build.make CMakeFiles/mujoco_interface_node.dir/build
 .PHONY : mujoco_interface_node/fast
+
+#=============================================================================
+# Target rules for targets named quadruped_controller_node
+
+# Build rule for target.
+quadruped_controller_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quadruped_controller_node
+.PHONY : quadruped_controller_node
+
+# fast build rule for target.
+quadruped_controller_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quadruped_controller_node.dir/build.make CMakeFiles/quadruped_controller_node.dir/build
+.PHONY : quadruped_controller_node/fast
+
+#=============================================================================
+# Target rules for targets named trot_node
+
+# Build rule for target.
+trot_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trot_node
+.PHONY : trot_node
+
+# fast build rule for target.
+trot_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trot_node.dir/build.make CMakeFiles/trot_node.dir/build
+.PHONY : trot_node/fast
+
+#=============================================================================
+# Target rules for targets named turn_node
+
+# Build rule for target.
+turn_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turn_node
+.PHONY : turn_node
+
+# fast build rule for target.
+turn_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turn_node.dir/build.make CMakeFiles/turn_node.dir/build
+.PHONY : turn_node/fast
+
+#=============================================================================
+# Target rules for targets named waypoint_nav_node
+
+# Build rule for target.
+waypoint_nav_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_nav_node
+.PHONY : waypoint_nav_node
+
+# fast build rule for target.
+waypoint_nav_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_node.dir/build.make CMakeFiles/waypoint_nav_node.dir/build
+.PHONY : waypoint_nav_node/fast
+
+#=============================================================================
+# Target rules for targets named mujoco_sim_node
+
+# Build rule for target.
+mujoco_sim_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mujoco_sim_node
+.PHONY : mujoco_sim_node
+
+# fast build rule for target.
+mujoco_sim_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_sim_node.dir/build.make CMakeFiles/mujoco_sim_node.dir/build
+.PHONY : mujoco_sim_node/fast
 
 #=============================================================================
 # Target rules for targets named quadruped_mujoco__py
@@ -1450,6 +1528,30 @@ rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__typ
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.cpp.s
 
+src/controllers/quadruped_controller.o: src/controllers/quadruped_controller.cpp.o
+.PHONY : src/controllers/quadruped_controller.o
+
+# target to build an object file
+src/controllers/quadruped_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quadruped_mujoco_lib.dir/build.make CMakeFiles/quadruped_mujoco_lib.dir/src/controllers/quadruped_controller.cpp.o
+.PHONY : src/controllers/quadruped_controller.cpp.o
+
+src/controllers/quadruped_controller.i: src/controllers/quadruped_controller.cpp.i
+.PHONY : src/controllers/quadruped_controller.i
+
+# target to preprocess a source file
+src/controllers/quadruped_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quadruped_mujoco_lib.dir/build.make CMakeFiles/quadruped_mujoco_lib.dir/src/controllers/quadruped_controller.cpp.i
+.PHONY : src/controllers/quadruped_controller.cpp.i
+
+src/controllers/quadruped_controller.s: src/controllers/quadruped_controller.cpp.s
+.PHONY : src/controllers/quadruped_controller.s
+
+# target to generate assembly for a file
+src/controllers/quadruped_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quadruped_mujoco_lib.dir/build.make CMakeFiles/quadruped_mujoco_lib.dir/src/controllers/quadruped_controller.cpp.s
+.PHONY : src/controllers/quadruped_controller.cpp.s
+
 src/mujoco_interface.o: src/mujoco_interface.cpp.o
 .PHONY : src/mujoco_interface.o
 
@@ -1474,6 +1576,126 @@ src/mujoco_interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_interface_node.dir/build.make CMakeFiles/mujoco_interface_node.dir/src/mujoco_interface.cpp.s
 .PHONY : src/mujoco_interface.cpp.s
 
+src/nodes/mujoco_sim_node.o: src/nodes/mujoco_sim_node.cpp.o
+.PHONY : src/nodes/mujoco_sim_node.o
+
+# target to build an object file
+src/nodes/mujoco_sim_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_sim_node.dir/build.make CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o
+.PHONY : src/nodes/mujoco_sim_node.cpp.o
+
+src/nodes/mujoco_sim_node.i: src/nodes/mujoco_sim_node.cpp.i
+.PHONY : src/nodes/mujoco_sim_node.i
+
+# target to preprocess a source file
+src/nodes/mujoco_sim_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_sim_node.dir/build.make CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.i
+.PHONY : src/nodes/mujoco_sim_node.cpp.i
+
+src/nodes/mujoco_sim_node.s: src/nodes/mujoco_sim_node.cpp.s
+.PHONY : src/nodes/mujoco_sim_node.s
+
+# target to generate assembly for a file
+src/nodes/mujoco_sim_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco_sim_node.dir/build.make CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.s
+.PHONY : src/nodes/mujoco_sim_node.cpp.s
+
+src/nodes/quadruped_controller_node.o: src/nodes/quadruped_controller_node.cpp.o
+.PHONY : src/nodes/quadruped_controller_node.o
+
+# target to build an object file
+src/nodes/quadruped_controller_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quadruped_controller_node.dir/build.make CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.o
+.PHONY : src/nodes/quadruped_controller_node.cpp.o
+
+src/nodes/quadruped_controller_node.i: src/nodes/quadruped_controller_node.cpp.i
+.PHONY : src/nodes/quadruped_controller_node.i
+
+# target to preprocess a source file
+src/nodes/quadruped_controller_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quadruped_controller_node.dir/build.make CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.i
+.PHONY : src/nodes/quadruped_controller_node.cpp.i
+
+src/nodes/quadruped_controller_node.s: src/nodes/quadruped_controller_node.cpp.s
+.PHONY : src/nodes/quadruped_controller_node.s
+
+# target to generate assembly for a file
+src/nodes/quadruped_controller_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quadruped_controller_node.dir/build.make CMakeFiles/quadruped_controller_node.dir/src/nodes/quadruped_controller_node.cpp.s
+.PHONY : src/nodes/quadruped_controller_node.cpp.s
+
+src/nodes/trot_node.o: src/nodes/trot_node.cpp.o
+.PHONY : src/nodes/trot_node.o
+
+# target to build an object file
+src/nodes/trot_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trot_node.dir/build.make CMakeFiles/trot_node.dir/src/nodes/trot_node.cpp.o
+.PHONY : src/nodes/trot_node.cpp.o
+
+src/nodes/trot_node.i: src/nodes/trot_node.cpp.i
+.PHONY : src/nodes/trot_node.i
+
+# target to preprocess a source file
+src/nodes/trot_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trot_node.dir/build.make CMakeFiles/trot_node.dir/src/nodes/trot_node.cpp.i
+.PHONY : src/nodes/trot_node.cpp.i
+
+src/nodes/trot_node.s: src/nodes/trot_node.cpp.s
+.PHONY : src/nodes/trot_node.s
+
+# target to generate assembly for a file
+src/nodes/trot_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trot_node.dir/build.make CMakeFiles/trot_node.dir/src/nodes/trot_node.cpp.s
+.PHONY : src/nodes/trot_node.cpp.s
+
+src/nodes/turn_node.o: src/nodes/turn_node.cpp.o
+.PHONY : src/nodes/turn_node.o
+
+# target to build an object file
+src/nodes/turn_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turn_node.dir/build.make CMakeFiles/turn_node.dir/src/nodes/turn_node.cpp.o
+.PHONY : src/nodes/turn_node.cpp.o
+
+src/nodes/turn_node.i: src/nodes/turn_node.cpp.i
+.PHONY : src/nodes/turn_node.i
+
+# target to preprocess a source file
+src/nodes/turn_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turn_node.dir/build.make CMakeFiles/turn_node.dir/src/nodes/turn_node.cpp.i
+.PHONY : src/nodes/turn_node.cpp.i
+
+src/nodes/turn_node.s: src/nodes/turn_node.cpp.s
+.PHONY : src/nodes/turn_node.s
+
+# target to generate assembly for a file
+src/nodes/turn_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turn_node.dir/build.make CMakeFiles/turn_node.dir/src/nodes/turn_node.cpp.s
+.PHONY : src/nodes/turn_node.cpp.s
+
+src/nodes/waypoint_nav_node.o: src/nodes/waypoint_nav_node.cpp.o
+.PHONY : src/nodes/waypoint_nav_node.o
+
+# target to build an object file
+src/nodes/waypoint_nav_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_node.dir/build.make CMakeFiles/waypoint_nav_node.dir/src/nodes/waypoint_nav_node.cpp.o
+.PHONY : src/nodes/waypoint_nav_node.cpp.o
+
+src/nodes/waypoint_nav_node.i: src/nodes/waypoint_nav_node.cpp.i
+.PHONY : src/nodes/waypoint_nav_node.i
+
+# target to preprocess a source file
+src/nodes/waypoint_nav_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_node.dir/build.make CMakeFiles/waypoint_nav_node.dir/src/nodes/waypoint_nav_node.cpp.i
+.PHONY : src/nodes/waypoint_nav_node.cpp.i
+
+src/nodes/waypoint_nav_node.s: src/nodes/waypoint_nav_node.cpp.s
+.PHONY : src/nodes/waypoint_nav_node.s
+
+# target to generate assembly for a file
+src/nodes/waypoint_nav_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_node.dir/build.make CMakeFiles/waypoint_nav_node.dir/src/nodes/waypoint_nav_node.cpp.s
+.PHONY : src/nodes/waypoint_nav_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1495,6 +1717,8 @@ help:
 	@echo "... quadruped_mujoco_uninstall"
 	@echo "... uninstall"
 	@echo "... mujoco_interface_node"
+	@echo "... mujoco_sim_node"
+	@echo "... quadruped_controller_node"
 	@echo "... quadruped_mujoco__rosidl_generator_c"
 	@echo "... quadruped_mujoco__rosidl_generator_py"
 	@echo "... quadruped_mujoco__rosidl_typesupport_c"
@@ -1506,6 +1730,10 @@ help:
 	@echo "... quadruped_mujoco__rosidl_typesupport_introspection_c"
 	@echo "... quadruped_mujoco__rosidl_typesupport_introspection_c__pyext"
 	@echo "... quadruped_mujoco__rosidl_typesupport_introspection_cpp"
+	@echo "... quadruped_mujoco_lib"
+	@echo "... trot_node"
+	@echo "... turn_node"
+	@echo "... waypoint_nav_node"
 	@echo "... rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__functions.o"
 	@echo "... rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__functions.i"
 	@echo "... rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__functions.s"
@@ -1635,9 +1863,27 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/quadruped_mujoco/msg/detail/velocities__type_support.s"
+	@echo "... src/controllers/quadruped_controller.o"
+	@echo "... src/controllers/quadruped_controller.i"
+	@echo "... src/controllers/quadruped_controller.s"
 	@echo "... src/mujoco_interface.o"
 	@echo "... src/mujoco_interface.i"
 	@echo "... src/mujoco_interface.s"
+	@echo "... src/nodes/mujoco_sim_node.o"
+	@echo "... src/nodes/mujoco_sim_node.i"
+	@echo "... src/nodes/mujoco_sim_node.s"
+	@echo "... src/nodes/quadruped_controller_node.o"
+	@echo "... src/nodes/quadruped_controller_node.i"
+	@echo "... src/nodes/quadruped_controller_node.s"
+	@echo "... src/nodes/trot_node.o"
+	@echo "... src/nodes/trot_node.i"
+	@echo "... src/nodes/trot_node.s"
+	@echo "... src/nodes/turn_node.o"
+	@echo "... src/nodes/turn_node.i"
+	@echo "... src/nodes/turn_node.s"
+	@echo "... src/nodes/waypoint_nav_node.o"
+	@echo "... src/nodes/waypoint_nav_node.i"
+	@echo "... src/nodes/waypoint_nav_node.s"
 .PHONY : help
 
 

@@ -134,13 +134,17 @@ CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_types
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__struct.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/header.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
+  rosidl_generator_c/quadruped_mujoco/msg/contacts.h \
+  rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__functions.h \
+  rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__type_support.h \
+  rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/contacts__rosidl_typesupport_introspection_c.h
 
 CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/joints__type_support.c.o: rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/joints__type_support.c \
   /usr/include/stdc-predef.h \
@@ -270,7 +274,19 @@ CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_types
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/quadruped_mujoco/msg/detail/pose__struct.h
+  rosidl_generator_c/quadruped_mujoco/msg/detail/pose__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__functions.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__type_support.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__rosidl_typesupport_introspection_c.h
 
 CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/velocities__type_support.c.o: rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/velocities__type_support.c \
   /usr/include/stdc-predef.h \
@@ -334,22 +350,57 @@ CMakeFiles/quadruped_mujoco__rosidl_typesupport_introspection_c.dir/rosidl_types
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__struct.h
+  rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__functions.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
 
 rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__functions.h:
 
 rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/velocities__type_support.c:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__rosidl_typesupport_introspection_c.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__functions.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__rosidl_typesupport_introspection_c.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h:
+
 rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/pose__rosidl_typesupport_introspection_c.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__rosidl_typesupport_introspection_c.h:
 
 rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/pose__type_support.c:
 
 rosidl_generator_c/quadruped_mujoco/msg/detail/joints__functions.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion.h:
+
 rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/joints__rosidl_typesupport_introspection_c.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h:
+
 rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/joints__type_support.c:
+
+rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__type_support.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.h:
+
+rosidl_generator_c/quadruped_mujoco/msg/contacts.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h:
 
@@ -359,6 +410,8 @@ rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/joints__type_supp
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__type_support.h:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/header.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h:
@@ -366,6 +419,8 @@ rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/joints__type_supp
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
 
 rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__struct.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h:
 
 rosidl_typesupport_introspection_c/quadruped_mujoco/msg/detail/contacts_stamped__type_support.c:
 
@@ -380,6 +435,8 @@ rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__struct.h:
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.h:
 
 rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h:
 
@@ -396,6 +453,8 @@ rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -504,6 +563,8 @@ rosidl_generator_c/quadruped_mujoco/msg/detail/joints__struct.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__functions.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 

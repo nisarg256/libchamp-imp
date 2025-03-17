@@ -16,6 +16,14 @@
 #include "quadruped_mujoco/msg/detail/pose__struct.h"
 #include "quadruped_mujoco/msg/detail/pose__functions.h"
 
+ROSIDL_GENERATOR_C_IMPORT
+bool geometry_msgs__msg__point__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * geometry_msgs__msg__point__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+bool geometry_msgs__msg__quaternion__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * geometry_msgs__msg__quaternion__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool quadruped_mujoco__msg__pose__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -50,58 +58,26 @@ bool quadruped_mujoco__msg__pose__convert_from_py(PyObject * _pymsg, void * _ros
     assert(strncmp("quadruped_mujoco.msg._pose.Pose", full_classname_dest, 31) == 0);
   }
   quadruped_mujoco__msg__Pose * ros_message = _ros_message;
-  {  // x
-    PyObject * field = PyObject_GetAttrString(_pymsg, "x");
+  {  // position
+    PyObject * field = PyObject_GetAttrString(_pymsg, "position");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->x = (float)PyFloat_AS_DOUBLE(field);
+    if (!geometry_msgs__msg__point__convert_from_py(field, &ros_message->position)) {
+      Py_DECREF(field);
+      return false;
+    }
     Py_DECREF(field);
   }
-  {  // y
-    PyObject * field = PyObject_GetAttrString(_pymsg, "y");
+  {  // orientation
+    PyObject * field = PyObject_GetAttrString(_pymsg, "orientation");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->y = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // z
-    PyObject * field = PyObject_GetAttrString(_pymsg, "z");
-    if (!field) {
+    if (!geometry_msgs__msg__quaternion__convert_from_py(field, &ros_message->orientation)) {
+      Py_DECREF(field);
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->z = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // roll
-    PyObject * field = PyObject_GetAttrString(_pymsg, "roll");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->roll = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // pitch
-    PyObject * field = PyObject_GetAttrString(_pymsg, "pitch");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->pitch = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // yaw
-    PyObject * field = PyObject_GetAttrString(_pymsg, "yaw");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->yaw = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -126,66 +102,28 @@ PyObject * quadruped_mujoco__msg__pose__convert_to_py(void * raw_ros_message)
     }
   }
   quadruped_mujoco__msg__Pose * ros_message = (quadruped_mujoco__msg__Pose *)raw_ros_message;
-  {  // x
+  {  // position
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->x);
+    field = geometry_msgs__msg__point__convert_to_py(&ros_message->position);
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "x", field);
+      int rc = PyObject_SetAttrString(_pymessage, "position", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // y
+  {  // orientation
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->y);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "y", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
+    field = geometry_msgs__msg__quaternion__convert_to_py(&ros_message->orientation);
+    if (!field) {
+      return NULL;
     }
-  }
-  {  // z
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->z);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "z", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // roll
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->roll);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "roll", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // pitch
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->pitch);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "pitch", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // yaw
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->yaw);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "yaw", field);
+      int rc = PyObject_SetAttrString(_pymessage, "orientation", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

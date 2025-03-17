@@ -506,9 +506,9 @@ CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadrup
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/quadruped_mujoco/msg/detail/contacts__struct.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/contacts_stamped__functions.h \
-  rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
+  rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadruped_mujoco/msg/_joints_s.c.o: rosidl_generator_py/quadruped_mujoco/msg/_joints_s.c \
   /usr/include/stdc-predef.h \
@@ -1011,6 +1011,8 @@ CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadrup
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/pose__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/pose__functions.h \
   rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h
 
@@ -1262,9 +1264,12 @@ CMakeFiles/quadruped_mujoco__rosidl_generator_py.dir/rosidl_generator_py/quadrup
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__struct.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
   rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__functions.h \
   rosidl_generator_c/quadruped_mujoco/msg/rosidl_generator_c__visibility_control.h
 
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h:
 
 rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__struct.h:
 
@@ -1333,6 +1338,8 @@ rosidl_generator_c/quadruped_mujoco/msg/detail/joints__functions.h:
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
@@ -1467,6 +1474,8 @@ rosidl_generator_c/quadruped_mujoco/msg/detail/velocities__functions.h:
 /usr/include/assert.h:
 
 /usr/include/python3.10/structseq.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h:
 
 rosidl_generator_py/quadruped_mujoco/msg/_contacts_s.c:
 

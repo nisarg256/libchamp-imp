@@ -1,0 +1,74 @@
+[35m[1mConsolidate compiler generated dependencies of target mujoco_interface_node[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_generator_c[0m
+[  1%] Built target quadruped_mujoco__cpp
+[  3%] Built target mujoco_interface_node
+[ 12%] Built target quadruped_mujoco__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_quadruped_mujoco
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_c[0m
+[ 22%] Built target quadruped_mujoco__rosidl_typesupport_c
+[ 31%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c
+[ 40%] Built target quadruped_mujoco__rosidl_typesupport_cpp
+[ 49%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_cpp
+[ 58%] Built target quadruped_mujoco__rosidl_typesupport_introspection_cpp
+[ 67%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco_lib[0m
+[ 67%] Built target quadruped_mujoco
+[ 70%] Built target quadruped_mujoco_lib
+[35m[1mConsolidate compiler generated dependencies of target turn_node[0m
+[35m[1mConsolidate compiler generated dependencies of target mujoco_sim_node[0m
+[35m[1mConsolidate compiler generated dependencies of target trot_node[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_controller_node[0m
+[35m[1mConsolidate compiler generated dependencies of target waypoint_nav_node[0m
+[ 71%] Built target quadruped_mujoco__py
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_generator_py[0m
+[ 74%] Built target turn_node
+[ 77%] Built target waypoint_nav_node
+[ 77%] [32mBuilding CXX object CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o[0m
+[ 81%] Built target trot_node
+[ 83%] Built target quadruped_controller_node
+[ 90%] Built target quadruped_mujoco__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext[0m
+[ 93%] Built target quadruped_mujoco__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] Built target quadruped_mujoco__rosidl_typesupport_introspection_c__pyext
+[ 98%] Built target quadruped_mujoco__rosidl_typesupport_c__pyext
+running egg_info
+writing quadruped_mujoco.egg-info/PKG-INFO
+writing dependency_links to quadruped_mujoco.egg-info/dependency_links.txt
+writing top-level names to quadruped_mujoco.egg-info/top_level.txt
+reading manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+writing manifest file 'quadruped_mujoco.egg-info/SOURCES.txt'
+[ 98%] Built target ament_cmake_python_build_quadruped_mujoco_egg
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:32:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid MujocoSimNode::loadModel()[m[K’ cannot be overloaded with ‘[01m[Kvoid MujocoSimNode::loadModel()[m[K’
+   32 |     void [01;31m[KloadModel[m[K() {
+      |          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:27:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid MujocoSimNode::loadModel()[m[K’
+   27 |     void [01;36m[KloadModel[m[K();
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:70:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid MujocoSimNode::simulationStep()[m[K’ cannot be overloaded with ‘[01m[Kvoid MujocoSimNode::simulationStep()[m[K’
+   70 |     void [01;31m[KsimulationStep[m[K() {
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:28:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid MujocoSimNode::simulationStep()[m[K’
+   28 |     void [01;36m[KsimulationStep[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:103:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid MujocoSimNode::jointCommandCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’ cannot be overloaded with ‘[01m[Kvoid MujocoSimNode::jointCommandCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’
+  103 |     void [01;31m[KjointCommandCallback[m[K(const sensor_msgs::msg::JointState::SharedPtr msg) {
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:29:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid MujocoSimNode::jointCommandCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’
+   29 |     void [01;36m[KjointCommandCallback[m[K(const sensor_msgs::msg::JointState::SharedPtr msg);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:121:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid MujocoSimNode::initializeJoints()[m[K’ cannot be overloaded with ‘[01m[Kvoid MujocoSimNode::initializeJoints()[m[K’
+  121 |     void [01;31m[KinitializeJoints[m[K() {
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nisarg/Documents/repo/libchamp-imp/ros2_ws/src/quadruped_mujoco/src/nodes/mujoco_sim_node.cpp:30:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid MujocoSimNode::initializeJoints()[m[K’
+   30 |     void [01;36m[KinitializeJoints[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mujoco_sim_node.dir/build.make:76: CMakeFiles/mujoco_sim_node.dir/src/nodes/mujoco_sim_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:771: CMakeFiles/mujoco_sim_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
